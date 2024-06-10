@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TFGAndroid.Pages"
+             x:Class="TFGAndroid.Pages.MenuLateral">
+    <HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Frame x:Name="boton1" Padding="10" VerticalOptions="FillAndExpand" Margin="5" BackgroundColor="#32DB97" BorderColor="Transparent" IsVisible="true">
+                <Grid>
+                    <Image Source="climatica.png" HeightRequest="25" WidthRequest="25" Margin="0"/>
+                </Grid>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onTapClimatica"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+            <Frame x:Name="boton2" Padding="10" VerticalOptions="FillAndExpand" Margin="5" BackgroundColor="#32DB97" BorderColor="Transparent">
+                <Grid>
+                    <Image Source="agua.png" HeightRequest="25" WidthRequest="25" Margin="0"/>
+                </Grid>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onTapHidraulica"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+            <Frame x:Name="boton3" Padding="10" VerticalOptions="FillAndExpand" Margin="5" BackgroundColor="#32DB97" BorderColor="Transparent">
+                <Grid>
+                    <Image Source="laboratorio.png" HeightRequest="25" WidthRequest="25" Margin="0"/>
+                </Grid>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onTapLaboratorio"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+            <Frame x:Name="boton4" Padding="10" VerticalOptions="FillAndExpand" Margin="5" BackgroundColor="#32DB97" BorderColor="Transparent">
+                <Grid>
+                    <Image Source="luz.png" HeightRequest="25" WidthRequest="25" Margin="0"/>
+                </Grid>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onTapLuminica"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+            <Frame x:Name="boton5" Padding="10" VerticalOptions="FillAndExpand" Margin="5" BackgroundColor="#32DB97" BorderColor="Transparent">
+                <Grid>
+                    <Image Source="red.png" HeightRequest="25" WidthRequest="25" Margin="0"/>
+                </Grid>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onTapRed"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+            <Frame x:Name="boton6" Padding="10" VerticalOptions="FillAndExpand" Margin="5" BackgroundColor="#32DB97" BorderColor="Transparent" IsVisible="true">
+                <Grid>
+                    <Image Source="admin.png" HeightRequest="25" WidthRequest="25" Margin="0"/>
+                </Grid>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onTapAdministrador"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout HorizontalOptions="FillAndExpand">
+            <Frame x:Name="btn_cerrar" Padding="10" VerticalOptions="FillAndExpand" Margin="5" BackgroundColor="AliceBlue" BorderColor="AliceBlue" IsVisible="true">
+                <Grid>
+                    <Image Source="cerrar.png" HeightRequest="25" WidthRequest="25" Margin="0"/>
+                </Grid>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnClickCerrarSesion"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+
+        </HorizontalStackLayout>
+    </HorizontalStackLayout>
+</ContentView>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HidroponíaTFG.Pages"
+             x:Class="HidroponíaTFG.Pages.FaseClimatica"
+             Title="FaseClimatica"
+             Appearing="aparece"
+             Disappearing="desaparece">
+    
+    <Grid>
+        <Grid BackgroundColor="#79B4BE">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Contenido principal -->
+        <ContentView Grid.Column="1" Margin="5">
+            <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Contenido principal -->
+                <ContentView Grid.Row="1" BackgroundColor="Transparent">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid BackgroundColor="Transparent" Grid.Row="0" Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="auto"/>
+
+                                <RowDefinition Height="*"/>
+
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="AUTO"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="AUTO"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="AUTO"/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <Grid Grid.Row="3" Grid.Column="0" BackgroundColor="Transparent">
+                                    <Button x:Name="acta1" Text="c" HorizontalOptions="Center" VerticalOptions="Fill" ToolTipProperties.Text="Temperatura aire acondicionado izquierdo"/>
+                            </Grid>
+
+
+
+
+                            <Grid Grid.Row="0" Grid.Column="1" BackgroundColor="Transparent">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                    <Button x:Name="actv1" Text="a" HorizontalOptions="Fill" VerticalOptions="Center" Grid.Column="1" ToolTipProperties.Text="Ventilador superior izquierda"/>
+                            </Grid>
+                            <Grid Grid.Row="1" Grid.Column="1" BackgroundColor="White">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                    <Button x:Name="ButonZona1" Grid.Column="0" VerticalOptions="Fill" Margin="5" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Temperatura de la zona esclavo 1 maestro 1"/>
+                                    <Button x:Name="ButonZona2" Grid.Column="1" VerticalOptions="Fill" Margin="5" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Temperatura de la zona esclavo 2 maestro 1"/>
+                            </Grid>
+                            <Grid Grid.Row="2" Grid.Column="1" BackgroundColor="White">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                    <Button x:Name="actr1" Grid.Column="0" VerticalOptions="End" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Rejilla de ventilacion, muestra el porcentaje de apertura"/>
+                                    <Button x:Name="actr2" Grid.Column="1" VerticalOptions="End" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Rejilla de ventilacion, muestra el porcentaje de apertura"/>
+                            </Grid>
+                                <Grid Grid.Row="3" Grid.Column="1" BackgroundColor="Grey" ToolTipProperties.Text="Conducto de ventilacion conectado al aire acondicionado izquierdo">
+                                    <BoxView VerticalOptions="FillAndExpand" HorizontalOptions="End" Color="White" WidthRequest="2" />
+                                </Grid>
+                            <Grid Grid.Row="4" Grid.Column="1" BackgroundColor="White">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                    <Button x:Name="actr3" Grid.Column="0" VerticalOptions="Start" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Rejilla de ventilacion, muestra el porcentaje de apertura" />
+                                    <Button x:Name="actr4" Grid.Column="1" VerticalOptions="Start" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Rejilla de ventilacion, muestra el porcentaje de apertura"/>
+                            </Grid>
+                            <Grid Grid.Row="5" Grid.Column="1" BackgroundColor="White">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                    <Button x:Name="ButonZona3" Grid.Column="0" VerticalOptions="Fill" Margin="5" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Temperatura de la zona esclavo 1 maestro 2"/>
+                                    <Button x:Name="ButonZona4" Grid.Column="1" VerticalOptions="Fill" Margin="5" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Temperatura de la zona esclavo 2 maestro 2"/>
+                            </Grid>
+                            <Grid Grid.Row="6" Grid.Column="1" BackgroundColor="Transparent">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                    <Button x:Name="actv3" Text="e" HorizontalOptions="Fill" VerticalOptions="Center" Grid.Column="1" ToolTipProperties.Text="Ventilador inferior izquierda"/>
+                            </Grid>
+
+
+
+                            <Grid Grid.Row="0" Grid.Column="2" BackgroundColor="Transparent">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                    <Button x:Name="actv2" Text="b" HorizontalOptions="Fill" VerticalOptions="Center" Grid.Column="1" ToolTipProperties.Text="Ventilador superior derecha"/>
+                            </Grid>
+                            <Grid Grid.Row="1" Grid.Column="2" BackgroundColor="White">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                    <Button x:Name="ButonZona5" Grid.Column="0" VerticalOptions="Fill" Margin="5" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Temperatura de la zona esclavo 1 maestro 3"/>
+                                    <Button x:Name="ButonZona6" Grid.Column="1" VerticalOptions="Fill" Margin="5" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Temperatura de la zona esclavo 2 maestro 3"/>
+                            </Grid>
+                            <Grid Grid.Row="2" Grid.Column="2" BackgroundColor="White">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                    <Button x:Name="actr5" Grid.Column="0" VerticalOptions="End" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Rejilla de ventilacion, muestra el porcentaje de apertura"/>
+                                    <Button x:Name="actr6" Grid.Column="1" VerticalOptions="End" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Rejilla de ventilacion, muestra el porcentaje de apertura"/>
+                            </Grid>
+                                <Grid Grid.Row="3" Grid.Column="2" BackgroundColor="Grey" ToolTipProperties.Text="Conducto de ventilacion conectado al aire acondicionado derecho">
+                                    <BoxView VerticalOptions="FillAndExpand" HorizontalOptions="Start" Color="White" WidthRequest="2" />
+                                </Grid>
+                            <Grid Grid.Row="4" Grid.Column="2" BackgroundColor="White">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                    <Button x:Name="actr7" Grid.Column="0" VerticalOptions="Start" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Rejilla de ventilacion, muestra el porcentaje de apertura"/>
+                                    <Button x:Name="actr8" Grid.Column="1" VerticalOptions="Start" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Rejilla de ventilacion, muestra el porcentaje de apertura"/>
+                            </Grid>
+                            <Grid Grid.Row="5" Grid.Column="2" BackgroundColor="White">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                    <Button x:Name="ButonZona7" Grid.Column="0" VerticalOptions="Fill" Margin="5" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Temperatura de la zona esclavo 1 maestro 4" />
+                                    <Button x:Name="ButonZona8" Grid.Column="1" VerticalOptions="Fill" Margin="5" WidthRequest="{Binding Path=Height, Source={x:Reference ButonZona1}}" ToolTipProperties.Text="Temperatura de la zona esclavo 2 maestro 4"/>
+                            </Grid>
+                            <Grid Grid.Row="6" Grid.Column="2" BackgroundColor="Transparent">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                    <Button x:Name="actv4" Text="f" HorizontalOptions="Fill" VerticalOptions="Center" Grid.Column="1" ToolTipProperties.Text="Ventilador inferior derecha"/>
+                            </Grid>
+
+
+                            <Grid Grid.Row="3" Grid.Column="3" BackgroundColor="Transparent">
+                                    <Button x:Name="acta2" Text="d" HorizontalOptions="Center" VerticalOptions="Fill" ToolTipProperties.Text="Temperatura aire acondicionado derecho"/>
+                            </Grid>
+
+                        </Grid>
+
+
+                        <Grid BackgroundColor="Transparent" Grid.Row="1" Margin="0,20,0,0" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <Label Grid.Row="0" Grid.Column="1" Text="valores optimos de temperatura" HorizontalOptions="Start" VerticalOptions="Center" Margin="10,0,10,0"/>
+                                <Entry x:Name="entry1" BackgroundColor="White" Grid.Row="0" Grid.Column="2" HorizontalOptions="Start" VerticalOptions="Center" ToolTipProperties.Text="Temperatura optima en las zonas"/>
+                            
+                            <Label Grid.Row="0" Grid.Column="3" Text="renovacion del aire cada" HorizontalOptions="Start" VerticalOptions="Center" Margin="10,0,10,0"/>
+                                <Entry x:Name="entry2" BackgroundColor="White" Grid.Row="0" Grid.Column="4" HorizontalOptions="Start" VerticalOptions="Center" ToolTipProperties.Text="Intervalo de tiempo entre cada renovacion de aire, por parte de los ventiladores"/>
+                            
+                            
+
+                                <Button x:Name="btn1" Text="Aplicar cambios" Grid.Row="1" Grid.ColumnSpan="8" HorizontalOptions="Center" VerticalOptions="Center" Clicked="btn1_Clicked"/>
+
+
+                        </Grid>
+                    </Grid>
+                </ContentView>
+                <Label Grid.Row="2" Text="Fase encargada de la monitorización de la temperatura y la visualizacion de los actuadores que la regulan " HorizontalOptions="Center"/>
+            </Grid>
+        </ContentView>
+
+            <!-- Menú lateral -->
+            <Grid Grid.Column="0" IsVisible="True" BackgroundColor="#92F0CA">
+                <StackLayout Orientation="Horizontal">
+
+                    <local:MenuLateral x:Name="menulateral" IsVisible="false" Grid.ColumnSpan="2"/> 
+                    <!-- StackLayout para el botón de ocultar el menú -->
+                    <StackLayout VerticalOptions="FillAndExpand" >
+                        <!-- Botón para ocultar el menú -->
+                        <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumWidthRequest="0" Text="||" Padding="0"  VerticalOptions="FillAndExpand" BackgroundColor="Transparent" />
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </Grid>
+</ContentPage>

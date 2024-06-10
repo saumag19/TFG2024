@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TFGAndroid.Pages.Registro"
+             Title="Registro">
+    <ScrollView>
+        <StackLayout>
+            <Entry x:Name="EntryNombre" 
+        Placeholder="Nombre de usuario" 
+        Margin="10"/>
+            <Entry x:Name="EntryContraseña" 
+        Placeholder="Contraseña" 
+        IsPassword="True" 
+        Margin="10"/>
+            <Entry x:Name="EntryContraseña2" 
+        Placeholder="Confirmar contraseña" 
+        IsPassword="True"
+        Margin="10"/>
+            <Entry x:Name="EntryEmail"
+        Placeholder="E-Mail" 
+        Margin="10"/>
+
+            <Button Text="Inicio de Sesión" 
+        Margin="10" 
+        Clicked="OnButtonIniciarClicked"/>
+            <Button Text="Registrarse"
+        Margin="10" 
+        Clicked="OnButtonRegistrarseClicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

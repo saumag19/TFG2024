@@ -1,0 +1,517 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\menulateral.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\menulateral.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\database\\monitorlaboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:database\\monitorlaboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\tfgandroid.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:tfgandroid.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\administrador.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\administrador.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\menulateral.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\menulateral.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\registro.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\registro.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\iniciosesion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\iniciosesion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\iniciosesion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\iniciosesion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\database\\bbdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:database\\bbdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\database\\monitorclimatica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:database\\monitorclimatica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\faseclimatica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\faseclimatica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\faseclimatica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\faseclimatica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\faselaboratorio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\faselaboratorio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\fasehidraulica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\fasehidraulica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\fasered.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\fasered.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\faseluminica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\faseluminica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\database\\monitorred.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:database\\monitorred.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\fasered.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\fasered.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\administrador.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\administrador.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\fasehidraulica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\fasehidraulica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\faselaboratorio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\faselaboratorio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\faseluminica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\faseluminica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\database\\monitorluz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:database\\monitorluz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\database\\monitorhidraulica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:database\\monitorhidraulica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\tfgandroid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:tfgandroid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\registro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\registro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\SamuelArribasGallart\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 338,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FaseClimatica.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseClimatica.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\FaseClimatica.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseClimatica.xaml.cs",
+              "RelativeToolTip": "Pages\\FaseClimatica.xaml.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwDUAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T09:00:10.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BBDD.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\BBDD.cs",
+              "RelativeDocumentMoniker": "Database\\BBDD.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\BBDD.cs",
+              "RelativeToolTip": "Database\\BBDD.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwA4AAAA8AQAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T07:30:11.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Models\\Usuario.cs",
+              "RelativeToolTip": "Models\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T07:30:30.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InicioSesion.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\InicioSesion.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\InicioSesion.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\InicioSesion.xaml.cs",
+              "RelativeToolTip": "Pages\\InicioSesion.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T07:33:57.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Registro.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\Registro.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\Registro.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\Registro.xaml.cs",
+              "RelativeToolTip": "Pages\\Registro.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T08:53:35.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InicioSesion.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\InicioSesion.xaml",
+              "RelativeDocumentMoniker": "Pages\\InicioSesion.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\InicioSesion.xaml",
+              "RelativeToolTip": "Pages\\InicioSesion.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-04T07:33:15.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuLateral.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\MenuLateral.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\MenuLateral.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\MenuLateral.xaml.cs",
+              "RelativeToolTip": "Pages\\MenuLateral.xaml.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAApwEMAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T11:22:02.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuLateral.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\MenuLateral.xaml",
+              "RelativeDocumentMoniker": "Pages\\MenuLateral.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\MenuLateral.xaml",
+              "RelativeToolTip": "Pages\\MenuLateral.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-04T11:20:40.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MonitorClimatica.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\MonitorClimatica.cs",
+              "RelativeDocumentMoniker": "Database\\MonitorClimatica.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\MonitorClimatica.cs",
+              "RelativeToolTip": "Database\\MonitorClimatica.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAgwKkAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T11:33:08.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Administrador.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\Administrador.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\Administrador.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\Administrador.xaml.cs",
+              "RelativeToolTip": "Pages\\Administrador.xaml.cs",
+              "ViewState": "AQIAALwAAAAAAAAAAAAwwMEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T11:27:36.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TFGAndroid",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\TFGAndroid.csproj",
+              "RelativeDocumentMoniker": "TFGAndroid.csproj",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\TFGAndroid.csproj",
+              "RelativeToolTip": "TFGAndroid.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-04T07:54:43.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FaseClimatica.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseClimatica.xaml",
+              "RelativeDocumentMoniker": "Pages\\FaseClimatica.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseClimatica.xaml",
+              "RelativeToolTip": "Pages\\FaseClimatica.xaml",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAAALAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-05T08:37:32.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FaseHidraulica.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseHidraulica.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\FaseHidraulica.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseHidraulica.xaml.cs",
+              "RelativeToolTip": "Pages\\FaseHidraulica.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T11:49:53.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FaseLaboratorio.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseLaboratorio.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\FaseLaboratorio.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseLaboratorio.xaml.cs",
+              "RelativeToolTip": "Pages\\FaseLaboratorio.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:26:57.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FaseLuminica.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseLuminica.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\FaseLuminica.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseLuminica.xaml.cs",
+              "RelativeToolTip": "Pages\\FaseLuminica.xaml.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T10:56:26.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FaseRed.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseRed.xaml",
+              "RelativeDocumentMoniker": "Pages\\FaseRed.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseRed.xaml",
+              "RelativeToolTip": "Pages\\FaseRed.xaml",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T08:43:37.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MonitorRed.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\MonitorRed.cs",
+              "RelativeDocumentMoniker": "Database\\MonitorRed.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\MonitorRed.cs",
+              "RelativeToolTip": "Database\\MonitorRed.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAA/wDwAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T11:34:59.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FaseRed.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseRed.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\FaseRed.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseRed.xaml.cs",
+              "RelativeToolTip": "Pages\\FaseRed.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T08:48:54.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Administrador.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\Administrador.xaml",
+              "RelativeDocumentMoniker": "Pages\\Administrador.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\Administrador.xaml",
+              "RelativeToolTip": "Pages\\Administrador.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T10:55:41.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FaseHidraulica.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseHidraulica.xaml",
+              "RelativeDocumentMoniker": "Pages\\FaseHidraulica.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseHidraulica.xaml",
+              "RelativeToolTip": "Pages\\FaseHidraulica.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-05T11:35:08.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FaseLaboratorio.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseLaboratorio.xaml",
+              "RelativeDocumentMoniker": "Pages\\FaseLaboratorio.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseLaboratorio.xaml",
+              "RelativeToolTip": "Pages\\FaseLaboratorio.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T10:36:59.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FaseLuminica.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseLuminica.xaml",
+              "RelativeDocumentMoniker": "Pages\\FaseLuminica.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseLuminica.xaml",
+              "RelativeToolTip": "Pages\\FaseLuminica.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-04T10:55:11.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MonitorLuz.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\MonitorLuz.cs",
+              "RelativeDocumentMoniker": "Database\\MonitorLuz.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\MonitorLuz.cs",
+              "RelativeToolTip": "Database\\MonitorLuz.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAUwEEAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T11:34:47.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MonitorLaboratorio.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\MonitorLaboratorio.cs",
+              "RelativeDocumentMoniker": "Database\\MonitorLaboratorio.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\MonitorLaboratorio.cs",
+              "RelativeToolTip": "Database\\MonitorLaboratorio.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwDEAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T11:34:16.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MonitorHidraulica.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\MonitorHidraulica.cs",
+              "RelativeDocumentMoniker": "Database\\MonitorHidraulica.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\MonitorHidraulica.cs",
+              "RelativeToolTip": "Database\\MonitorHidraulica.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwC8AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T11:33:40.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Registro.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\Registro.xaml",
+              "RelativeDocumentMoniker": "Pages\\Registro.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\Registro.xaml",
+              "RelativeToolTip": "Pages\\Registro.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-04T08:52:37.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TFGAndroid.csproj",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\TFGAndroid.csproj",
+              "RelativeDocumentMoniker": "TFGAndroid.csproj",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\TFGAndroid.csproj",
+              "RelativeToolTip": "TFGAndroid.csproj",
+              "ViewState": "AQIAAFAAAAAAAAAAAABBwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-04T11:25:19.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-04T07:37:55.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-04T07:37:56.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T07:37:58.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
+              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
+              "ViewState": "AQIAAE0BAAAAAAAAAAAswF8BAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-06-04T07:39:11.613Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

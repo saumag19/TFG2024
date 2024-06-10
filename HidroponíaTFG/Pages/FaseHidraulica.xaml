@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HidroponíaTFG.Pages"
+             xmlns:micro="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:Class="HidroponíaTFG.Pages.FaseHidraulica"
+             Title="FaseHidraulica" MinimumHeightRequest="100"
+             Appearing="aparece"
+             Disappearing="desaparece">
+
+    <Grid BackgroundColor="#79B4BE">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Contenido principal -->
+        <ContentView Grid.Column="1" Margin="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Contenido principal -->
+                <ContentView Grid.Row="1" >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Frame BackgroundColor="#ADCDCC" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Margin="2" ToolTipProperties.Text="Aquí que muestran los valores referentes nivel del deposito de agua del container">
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Frame Grid.Row="0" BackgroundColor="White" >
+                                    <micro:ChartView x:Name="chartView1" Margin="0"/>
+                                </Frame>
+                                <Label x:Name="lblNivelDeposito" Grid.Row="1" Text="Nivel actual" Margin="10"/>
+                                <Grid Grid.Row="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Text="Nivel requerido" VerticalOptions="Center" Margin="10"/>
+                                    <Entry x:Name="entryNivelDeposito" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5"/>
+                                </Grid>
+                                <Button x:Name="btn1" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosNivelDeposito" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido"/>
+                            </Grid>
+                        </Frame>
+                        <Frame Grid.Column="1" Grid.Row="0" BackgroundColor="#ADCDCC" Margin="2" ToolTipProperties.Text="Aquí que muestran los valores referentes nivel de nitrogeno del agua que circula">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Frame Grid.Row="0" BackgroundColor="White" >
+                                    <micro:ChartView x:Name="chartView2" Margin="0"/>
+                                </Frame>
+                                <Label x:Name="lblNitrogeno" Grid.Row="1" Text="Nivel actual" Margin="10"/>
+                                <Grid Grid.Row="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Text="Nivel requerido" VerticalOptions="Center" Margin="10"/>
+                                    <Entry x:Name="entryNitrogeno" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5"/>
+                                </Grid>
+                                <Button x:Name="btn2" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosNitrogeno" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido"/>
+                            </Grid>
+                        </Frame>
+                        <Frame Grid.Column="2" Grid.Row="0" BackgroundColor="#ADCDCC" Margin="2" ToolTipProperties.Text="Aquí que muestran los valores referentes nivel de potasio del agua que circula">
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Frame Grid.Row="0" BackgroundColor="White" >
+                                    <micro:ChartView x:Name="chartView3" Margin="0"/>
+                                </Frame>
+                                <Label x:Name="lblPotasio" Grid.Row="1" Text="Nivel actual" Margin="10"/>
+                                <Grid Grid.Row="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Text="Nivel requerido" VerticalOptions="Center" Margin="10"/>
+                                    <Entry x:Name="entryPotasio" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5"/>
+                                </Grid>
+                                <Button x:Name="btn3" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosPotasio" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido"/>
+                            </Grid>
+                        </Frame>
+
+
+
+                        <Frame Grid.Column="1" Grid.Row="1" BackgroundColor="#ADCDCC" Margin="2" ToolTipProperties.Text="Aquí que muestran los valores referentes nivel de fósforo del agua que circula">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Frame Grid.Row="0" BackgroundColor="White" >
+                                    <micro:ChartView x:Name="chartView5" Margin="0"/>
+                                </Frame>
+                                <Label x:Name="lblFosforo" Grid.Row="1" Text="Nivel actual" Margin="10"/>
+                                <Grid Grid.Row="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Text="Nivel requerido" VerticalOptions="Center" Margin="10"/>
+                                    <Entry x:Name="entryFosforo" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5"/>
+                                </Grid>
+                                <Button x:Name="btn4" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosFosforo" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido"/>
+                            </Grid>
+                        </Frame>
+                        <Frame Grid.Column="2" Grid.Row="1" BackgroundColor="#ADCDCC" Margin="2" ToolTipProperties.Text="Aquí que muestran los valores referentes nivel de oxígeno del agua que circula">
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Frame Grid.Row="0" BackgroundColor="White" >
+                                    <micro:ChartView x:Name="chartView6" Margin="0"/>
+                                </Frame>
+                                <Label x:Name="lblOxigeno" Grid.Row="1" Text="Nivel actual" Margin="10"/>
+                                <Grid Grid.Row="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Text="Nivel requerido" VerticalOptions="Center" Margin="10"/>
+                                    <Entry x:Name="entryOxigeno" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5"/>
+                                </Grid>
+                                <Button x:Name="btn5" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosOxigeno" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido"/>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                </ContentView>
+                <Label Grid.Row="2" Text="Fase encargada de la monitorización de las variables respecto al agua " HorizontalOptions="Center"/>
+            </Grid>
+        </ContentView>
+
+        <!-- Menú lateral -->
+        <Grid Grid.Column="0" IsVisible="True" BackgroundColor="#92F0CA">
+            <StackLayout Orientation="Horizontal">
+
+                <local:MenuLateral x:Name="menulateral" IsVisible="false" Grid.ColumnSpan="2"/>
+                <!-- StackLayout para el botón de ocultar el menú -->
+                <StackLayout VerticalOptions="FillAndExpand" >
+                    <!-- Botón para ocultar el menú -->
+                    <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumWidthRequest="0" Text="||" Padding="0"  VerticalOptions="FillAndExpand" BackgroundColor="Transparent" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

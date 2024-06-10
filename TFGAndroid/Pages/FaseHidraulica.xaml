@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TFGAndroid.Pages"
+             x:Class="TFGAndroid.Pages.FaseHidraulica"
+             Title="FaseHidraulica"
+             Appearing="aparece"
+             Disappearing="desaparece">
+    <ScrollView>
+        <StackLayout>
+            <!-- Menú -->
+            <Grid BackgroundColor="#92F0CA">
+                <StackLayout Orientation="Vertical">
+
+                    <local:MenuLateral x:Name="menulateral" IsVisible="false" Grid.ColumnSpan="2"/>
+                    <!-- StackLayout para el botón de ocultar el menú -->
+                    <StackLayout VerticalOptions="FillAndExpand" >
+                        <!-- Botón para ocultar el menú -->
+                        <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumHeightRequest="0" Text="__" Padding="0"  HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" />
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+
+            <Frame BackgroundColor="Transparent" Margin="0,10,0,10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label x:Name="lblNivelDeposito" Text="Nivel actual" Margin="10" Grid.Row="0"/>
+                    <Label Text="Nivel requerido" Margin="10" Grid.Row="1"/>
+                    <Entry x:Name="entryNivelDeposito" Placeholder="Introduce el nivel requerido" Margin="10" Grid.Row="2"/>
+                    <Button x:Name="btn1" Text="APLICAR CAMBIOS" Margin="10" Grid.Row="3" Clicked="AplicarCambiosNivelDeposito"/>
+                </Grid>
+            </Frame>
+
+
+            <Frame BackgroundColor="Transparent" Margin="0,10,0,10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label x:Name="lblNitrogeno" Text="Nivel actual" Margin="10" Grid.Row="0"/>
+                    <Label Text="Nivel requerido" Margin="10" Grid.Row="1"/>
+                    <Entry x:Name="entryNitrogeno" Placeholder="Introduce el nivel requerido" Margin="10" Grid.Row="2"/>
+                    <Button x:Name="btn2" Text="APLICAR CAMBIOS" Margin="10" Grid.Row="3" Clicked="AplicarCambiosNitrogeno"/>
+                </Grid>
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" Margin="0,10,0,10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label x:Name="lblFosforo" Text="Nivel actual" Margin="10" Grid.Row="0"/>
+                    <Label Text="Nivel requerido" Margin="10" Grid.Row="1"/>
+                    <Entry x:Name="entryFosforo" Placeholder="Introduce el nivel requerido" Margin="10" Grid.Row="2"/>
+                    <Button x:Name="btn4" Text="APLICAR CAMBIOS" Margin="10" Grid.Row="3" Clicked="AplicarCambiosFosforo"/>
+                </Grid>
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" Margin="0,10,0,10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label x:Name="lblPotasio" Text="Nivel actual" Margin="10" Grid.Row="0"/>
+                    <Label Text="Nivel requerido" Margin="10" Grid.Row="1"/>
+                    <Entry x:Name="entryPotasio" Placeholder="Introduce el nivel requerido" Margin="10" Grid.Row="2"/>
+                    <Button x:Name="btn3" Text="APLICAR CAMBIOS" Margin="10" Grid.Row="3" Clicked="AplicarCambiosPotasio"/>
+                </Grid>
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" Margin="0,10,0,10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Label x:Name="lblOxigeno" Text="Nivel actual" Margin="10" Grid.Row="0"/>
+                    <Label Text="Nivel requerido" Margin="10" Grid.Row="1"/>
+                    <Entry x:Name="entryOxigeno" Placeholder="Introduce el nivel requerido" Margin="10" Grid.Row="2"/>
+                    <Button x:Name="btn5" Text="APLICAR CAMBIOS" Margin="10" Grid.Row="3" Clicked="AplicarCambiosOxigeno"/>
+                </Grid>
+            </Frame>
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

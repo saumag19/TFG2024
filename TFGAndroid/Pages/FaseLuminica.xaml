@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TFGAndroid.Pages"
+             x:Class="TFGAndroid.Pages.FaseLuminica"
+             Title="FaseLuminica"
+             Appearing="aparece"
+             Disappearing="desaparece">
+    <ScrollView>
+        <StackLayout>
+            <!-- Menú -->
+            <Grid BackgroundColor="#92F0CA" Margin="0,0,0,20">
+                <StackLayout Orientation="Vertical">
+
+                    <local:MenuLateral x:Name="menulateral" IsVisible="false" Grid.ColumnSpan="2"/>
+                    <!-- StackLayout para el botón de ocultar el menú -->
+                    <StackLayout VerticalOptions="FillAndExpand"  >
+                        <!-- Botón para ocultar el menú -->
+                        <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumHeightRequest="0" Text="__" Padding="0"  HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" />
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+
+            
+            <!-- Contenido -->
+            <VerticalStackLayout x:Name="stackLayout" Rotation="90" SizeChanged="OnSizeChanged" Margin="10">
+                <Button x:Name="btn1" Text="hola1" Margin="50,0,50,0"/>
+                <Button x:Name="btn2" Text="hola2" Margin="50,0,50,0"/>
+                <Button x:Name="btn3" Text="hola3" Margin="50,0,50,0"/>
+                <Button x:Name="btn4" Text="hola4" Margin="50,0,50,0"/>
+                <Button x:Name="btn5" Text="hola5" Margin="50,0,50,0"/>
+                <Button x:Name="btn6" Text="hola6" Margin="50,0,50,0"/>
+                <Button x:Name="btn7" Text="hola7" Margin="50,0,50,0"/>
+                <Button x:Name="btn8" Text="hola8" Margin="50,0,50,0"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="stackLayout2" Rotation="90" SizeChanged="OnSizeChanged" Margin="10">
+                <Button x:Name="btn11" Text="hola1" Margin="50,0,50,0"/>
+                <Button x:Name="btn22" Text="hola2" Margin="50,0,50,0"/>
+                <Button x:Name="btn33" Text="hola3" Margin="50,0,50,0"/>
+                <Button x:Name="btn44" Text="hola4" Margin="50,0,50,0"/>
+                <Button x:Name="btn55" Text="hola5" Margin="50,0,50,0"/>
+                <Button x:Name="btn66" Text="hola6" Margin="50,0,50,0"/>
+                <Button x:Name="btn77" Text="hola7" Margin="50,0,50,0"/>
+                <Button x:Name="btn88" Text="hola8" Margin="50,0,50,0"/>
+            </VerticalStackLayout>
+
+
+
+            <Label Text="NIVEL DE LUZ OPTIMO: " VerticalOptions="CenterAndExpand" Margin="10"/>
+            <Entry x:Name="entry1" Placeholder="X Lux" VerticalOptions="CenterAndExpand" Margin="10"/>
+            <Label Text="POTENCIA POR DEFECTO: " VerticalOptions="CenterAndExpand" Margin="10"/>
+            <Entry x:Name="entry2" Placeholder="X%" VerticalOptions="CenterAndExpand" Margin="10"/>
+            <Button x:Name="btn10" Margin="10" Text="Aplicar Cambios" Clicked="AplicarCambios" />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

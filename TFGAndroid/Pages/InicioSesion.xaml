@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TFGAndroid.Pages.InicioSesion"
+             Title="InicioSesion"
+             >
+    <VerticalStackLayout>
+        <Image Source="fondo.jpeg"/>
+        <Entry x:Name="nombreEntry" 
+    Placeholder="Nombre de usuario" 
+    Margin="10"/>
+        <Entry x:Name="contrasenaEntry" 
+    Placeholder="Contraseña" 
+    IsPassword="True"
+    Margin="10"/>
+        <Button Text="Iniciar Sesión" 
+    Margin="10"
+    Clicked="OnButtonIniciarClicked"/>
+        <Button 
+    Text="Registrarse"
+    Margin="10" 
+    Clicked="OnButtonRegistrarseClicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

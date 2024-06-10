@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TFGAndroid.Pages"
+             x:Class="TFGAndroid.Pages.Administrador"
+             Title="Administrador">
+    <ScrollView>
+        <StackLayout>
+            <!-- Menú -->
+            <Grid BackgroundColor="#92F0CA">
+                <StackLayout Orientation="Vertical">
+
+                    <local:MenuLateral x:Name="menulateral" IsVisible="false" Grid.ColumnSpan="2"/>
+                    <!-- StackLayout para el botón de ocultar el menú -->
+                    <StackLayout VerticalOptions="FillAndExpand" >
+                        <!-- Botón para ocultar el menú -->
+                        <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumHeightRequest="0" Text="__" Padding="0"  HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" />
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+
+
+            <SearchBar x:Name="searchBar" Placeholder="Buscar usuario..." Margin="10" TextChanged="SearchBar_TextChanged"/>
+            <ListView x:Name="UsuariosListView" BackgroundColor="#D6EAF8" MaximumHeightRequest="400" ItemTapped="UsuariosListView_ItemTapped">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Usuario 1</x:String>
+                        <x:String>Usuario 2</x:String>
+                        <x:String>Usuario 1</x:String>
+                        <x:String>Usuario 2</x:String>
+                        <x:String>Usuario 1</x:String>
+                        <x:String>Usuario 2</x:String>
+                        <x:String>Usuario 1</x:String>
+                        <x:String>Usuario 2</x:String>
+                        <x:String>Usuario 1</x:String>
+                        <x:String>Usuario 2</x:String>
+                        <x:String>Usuario 1</x:String>
+                        <x:String>Usuario 2</x:String>
+                        <x:String>Usuario 1</x:String>
+                        <x:String>Usuario 2</x:String>
+                        <x:String>Usuario 1</x:String>
+                        <x:String>Usuario 2</x:String>
+                        <x:String>Usuario 1</x:String>
+                        <x:String>Usuario 2</x:String>
+                        <x:String>Usuario 1</x:String>
+                        <x:String>Usuario 2</x:String>
+                        <x:String>Usuario 1</x:String>
+                        <x:String>Usuario 2</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+
+                <!-- Aquí se define la apariencia de cada elemento de la lista -->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+            <Label Text="Nombre:" Margin="10"/>
+            <Entry x:Name="EntryNombre" Placeholder="Introduce aquí el nombre " Margin="10"/>
+
+            <Label Text="Contraseña:" Margin="10"/>
+            <Entry x:Name="EntryContraseña" Placeholder="Introduce aquí la contraseña " Margin="10"/>
+
+            <Label Text="Mail:" Margin="10"/>
+            <Entry x:Name="EntryEmail" Placeholder="Introduce aquí el correo electronico " Margin="10"/>
+
+            <Label Text="Tipo de Usuario: " Margin="10"/>
+
+            <RadioButton x:Name="InvitadoRadioButton"  GroupName="TipoUsuario" Content="Invitado" Margin="10"/>
+            <RadioButton x:Name="JardineroRadioButton"  GroupName="TipoUsuario" Content="Jardinero" Margin="10"/>
+            <RadioButton x:Name="AdministradorRadioButton"  GroupName="TipoUsuario" Content="Administrador" Margin="10"/>
+
+            <Button Text="Insertar Usuario" Margin="10" Clicked="BtnInsertarUsuario_Clicked"/>
+            <Button Text="Modificar" Margin="10" Clicked="BtnModificarUsuario_Clicked"/>
+            <Button Text="Eliminar" Margin="10" Clicked="BtnEliminarUsuario_Clicked"/>
+
+            <Button x:Name="vaciar" Text="Vaciar Formulario" Margin="10" Clicked="BtnVaciarFormulario_Clicked"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

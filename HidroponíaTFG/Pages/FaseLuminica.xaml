@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HidroponíaTFG.Pages"
+             x:Class="HidroponíaTFG.Pages.FaseLuminica"
+             Title="FaseLuminica"
+             Appearing="aparece"
+             Disappearing="desaparece">
+
+    <Grid BackgroundColor="#79B4BE">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+
+        <!-- Contenido principal -->
+        <ContentView Grid.Column="1" Margin="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Contenido principal -->
+                <ContentView Grid.Row="1" >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+
+                        <!-- Contenido -->
+                        <Grid Grid.Row="0" Grid.Column="0" Margin="50,40,50,40">
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Button x:Name="btn1" Grid.Row="1" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 1"></Button>
+                            <Button x:Name="btn2" Grid.Row="2" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 2"></Button>
+                            <Button x:Name="btn3" Grid.Row="3" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 3"></Button>
+                            <Button x:Name="btn4" Grid.Row="4" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 4"></Button>
+                            <Button x:Name="btn5" Grid.Row="5" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 5"></Button>
+                            <Button x:Name="btn6" Grid.Row="6" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 6"></Button>
+                            <Button x:Name="btn7" Grid.Row="7" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 7"></Button>
+                            <Button x:Name="btn8" Grid.Row="8" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 8"></Button>
+
+                        </Grid>
+
+                        <!-- Formulario -->
+                        
+                            <Grid Grid.Row="1" Grid.Column="0" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Primer StackLayout -->
+                                <StackLayout Grid.Column="0" VerticalOptions="CenterAndExpand">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>   
+
+                                    <StackLayout Grid.Column="1">
+                                        <Label Text="NIVEL DE LUZ OPTIMO: " VerticalOptions="CenterAndExpand" ToolTipProperties.Text="Nivel de luz optimo medido en lux"></Label>
+                                        <Label Text="POTENCIA POR DEFECTO: " VerticalOptions="CenterAndExpand" ToolTipProperties.Text="Nivel potencia de luz por defecto de las tiras led medido en porcentaje "></Label>
+                                        </StackLayout>
+                                        <StackLayout Grid.Column="2">
+                                            <Entry x:Name="entry1" Placeholder="X Lux" VerticalOptions="CenterAndExpand"/>
+                                            <Entry x:Name="entry2" Placeholder="X%" VerticalOptions="CenterAndExpand"/>
+                                        </StackLayout>
+                                    </Grid>
+
+                                </StackLayout>
+
+
+                                <!-- Segundo StackLayout -->
+                                <StackLayout Grid.Column="2"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                                <Button x:Name="btn10" Margin="0,0,40,0" Padding="50,10,50,10" Text="Aplicar Cambios" Clicked="AplicarCambios"  ToolTipProperties.Text="Haz click aquí para realizar los cambios en el nivel de luz optimo y la potencia por defecto"></Button>
+                                </StackLayout>
+                            </Grid>
+                        <Label Grid.Row="2" Text="Fase encargada del factor luminico cada uno de los botones representa cada linea de luz dentro del container" HorizontalOptions="Center" VerticalOptions="End" />
+
+
+                    </Grid>
+                </ContentView>
+            </Grid>
+        </ContentView>
+
+        <!-- Menú lateral -->
+        <Grid Grid.Column="0" IsVisible="True" BackgroundColor="#92F0CA" ToolTipProperties.Text="Menu">
+            <StackLayout Orientation="Horizontal">
+
+                <local:MenuLateral x:Name="menulateral" IsVisible="false" Grid.ColumnSpan="2"/>
+                <!-- StackLayout para el botón de ocultar el menú -->
+                <StackLayout VerticalOptions="FillAndExpand" >
+                    <!-- Botón para ocultar el menú -->
+                    <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumWidthRequest="0" Text="||" Padding="0"  VerticalOptions="FillAndExpand" BackgroundColor="Transparent" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+        <local:Popupview x:Name="popup" IsVisible="false" Grid.ColumnSpan="2"/>
+    </Grid>
+</ContentPage>

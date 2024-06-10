@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="HidroponíaTFG.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:HidroponíaTFG"
+    xmlns:a="clr-namespace:HidroponíaTFG.Pages"
+    Shell.FlyoutBehavior="Flyout">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate a:InicioSesion}"
+        Route="InicioSesion" />
+    <!-- 
+    <FlyoutItem Title="Fase Climatica">
+        <ShellContent ContentTemplate="{DataTemplate a:FaseClimatica}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Fase Hidraulica">
+        <ShellContent ContentTemplate="{DataTemplate a:FaseHidraulica}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Fase Laboratorio">
+        <ShellContent ContentTemplate="{DataTemplate a:FaseLaboratorio}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Fase FaseLuminica">
+        <ShellContent ContentTemplate="{DataTemplate a:FaseLuminica}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Fase FaseRed">
+        <ShellContent ContentTemplate="{DataTemplate a:FaseRed}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Administrador">
+        <ShellContent ContentTemplate="{DataTemplate a:Administrador}"/>
+    </FlyoutItem>-->
+
+</Shell>

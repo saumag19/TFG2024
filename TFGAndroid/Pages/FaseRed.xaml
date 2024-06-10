@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TFGAndroid.Pages"
+             x:Class="TFGAndroid.Pages.FaseRed"
+             Title="FaseRed"
+             Appearing="aparece"
+             Disappearing="desaparece">
+    <ScrollView>
+        <StackLayout>
+
+            <!-- Menú -->
+            <Grid BackgroundColor="#92F0CA" Margin="0,0,0,20">
+                <StackLayout Orientation="Vertical">
+
+                    <local:MenuLateral x:Name="menulateral" IsVisible="false" Grid.ColumnSpan="2"/>
+                    <!-- StackLayout para el botón de ocultar el menú -->
+                    <StackLayout VerticalOptions="FillAndExpand"  >
+                        <!-- Botón para ocultar el menú -->
+                        <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumHeightRequest="0" Text="__" Padding="0"  HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" />
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="frameplaca3" Text="Esclavo 1" Grid.Row="0" Grid.Column="0" Margin="10,10,10,0"/>
+                <Button x:Name="frameplaca1" Text="Esclavo 1" Grid.Row="0" Grid.Column="1" Margin="10,10,10,0"/>
+
+                <Button x:Name="frameplaca4" Text="Esclavo 2" Grid.Row="1" Grid.Column="0" Margin="10,0,10,10"/>
+                <Button x:Name="frameplaca2" Text="Esclavo 2" Grid.Row="1" Grid.Column="1" Margin="10,0,10,10"/>
+
+                <Button x:Name="frameplaca7" Text="Esclavo 1" Grid.Row="2" Grid.Column="0" Margin="10,10,10,0"/>
+                <Button x:Name="frameplaca5" Text="Esclavo 1" Grid.Row="2" Grid.Column="1" Margin="10,10,10,0"/>
+
+                <Button x:Name="frameplaca8" Text="Esclavo 2" Grid.Row="3" Grid.Column="0" Margin="10,0,10,10"/>
+                <Button x:Name="frameplaca6" Text="Esclavo 2" Grid.Row="3" Grid.Column="1" Margin="10,0,10,10"/>
+
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

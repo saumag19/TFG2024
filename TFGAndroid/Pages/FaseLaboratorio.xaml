@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TFGAndroid.Pages"
+             x:Class="TFGAndroid.Pages.FaseLaboratorio"
+             Title="FaseLaboratorio" 
+             Appearing="aparece"
+             Disappearing="desaparece">
+    <ScrollView>
+        <StackLayout>
+            <!-- Menú -->
+            <Grid BackgroundColor="#92F0CA">
+                <StackLayout Orientation="Vertical">
+
+                    <local:MenuLateral x:Name="menulateral" IsVisible="false" Grid.ColumnSpan="2"/>
+                    <!-- StackLayout para el botón de ocultar el menú -->
+                    <StackLayout VerticalOptions="FillAndExpand" >
+                        <!-- Botón para ocultar el menú -->
+                        <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumHeightRequest="0" Text="__" Padding="0"  HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" />
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+
+            <Label x:Name="lblHumedad" Text="Nivel de humedad: X" Margin="10"/>
+            <Label x:Name="lblOxigeno" Text="Nivel de oxigeno: X" Margin="10"/>
+            <Label x:Name="lblLuz" Text="Nivel de luz: X" Margin="10"/>
+            <Label x:Name="lblNutrientes" Text="Nivel de nutrientes: X" Margin="10"/>
+
+            <Label Text="Etapa semilla" Margin="10"/>
+
+            <Button x:Name="btn1s" Text="nivel 1" Margin="10" Clicked="ClickButon1s"/>
+            <Button x:Name="btn2s" Text="nivel 2" Margin="10" Clicked="ClickButon2s"/>
+            <Button x:Name="btn3s" Text="nivel 3" Margin="10" Clicked="ClickButon3s"/>
+            <Button x:Name="btn4s" Text="nivel 4" Margin="10" Clicked="ClickButon4s"/>
+            <Button x:Name="btn5s" Text="nivel 5" Margin="10" Clicked="ClickButon5s"/>
+            <Button x:Name="btn6s" Text="nivel 6" Margin="10" Clicked="ClickButon6s"/>
+
+            <Label Text="Etapa plantula" Margin="10"/>
+
+            <Button x:Name="btn1p" Text="nivel 1" Margin="10" Clicked="ClickButon1p"/>
+            <Button x:Name="btn2p" Text="nivel 2" Margin="10" Clicked="ClickButon2p"/>
+            <Button x:Name="btn3p" Text="nivel 3" Margin="10" Clicked="ClickButon3p"/>
+            <Button x:Name="btn4p" Text="nivel 4" Margin="10" Clicked="ClickButon4p"/>
+            <Button x:Name="btn5p" Text="nivel 5" Margin="10" Clicked="ClickButon5p"/>
+            <Button x:Name="btn6p" Text="nivel 6" Margin="10" Clicked="ClickButon6p"/>
+
+            <Label Text="Nivel de humedad optimos (etapa semilla): " Margin="10"/>
+            <Entry x:Name="entry1" Text="X" Margin="10"/>
+
+            <Label Text="Nivel de oxigeno optimos (etapa semilla): " Margin="10"/>
+            <Entry x:Name="entry2" Text="X" Margin="10"/>
+
+            <Label Text="Nivel de luz optimos (etapa semilla): " Margin="10"/>
+            <Entry x:Name="entry3" Text="X" Margin="10"/>
+
+            <Label Text="Nivel de nutrientes optimos (etapa semilla): " Margin="10"/>
+            <Entry x:Name="entry4" Text="X" Margin="10"/>
+
+            <Button x:Name="btnAplicar1" Text="Aplicar cambios" Margin="10" Clicked="AplicarCambiosSemilla"/>
+            
+
+            <Label Text="Nivel de humedad optimos (etapa plantula): " Margin="10"/>
+            <Entry x:Name="entry5" Text="X" Margin="10"/>
+
+            <Label Text="Nivel de oxigeno optimos (etapa plantula): " Margin="10"/>
+            <Entry x:Name="entry6" Text="X" Margin="10"/>
+
+            <Label Text="Nivel de luz optimos (etapa plantula): " Margin="10"/>
+            <Entry x:Name="entry7" Text="X" Margin="10"/>
+
+            <Label Text="Nivel de nutrientes optimos (etapa plantula): " Margin="10"/>
+            <Entry x:Name="entry8" Text="X" Margin="10"/>
+
+            <Button x:Name="btnAplicar2" Text="Aplicar cambios" Margin="10" Clicked="AplicarCambiosPlantula"/>
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,1 @@
+C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppPackages\HidroponiaTFG_0.0.5.0_Test\HidroponiaTFG_0.0.5.0_x86.msix

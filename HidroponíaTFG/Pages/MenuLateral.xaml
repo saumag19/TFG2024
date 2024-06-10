@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HidroponíaTFG.Pages"
+             x:Class="HidroponíaTFG.Pages.MenuLateral">
+    <!-- StackLayout para los botones del menú -->
+    <StackLayout x:Name="Menu" Margin="15,10,0,10" IsVisible="True">
+        <!-- Botones del menú -->
+        <Frame x:Name="boton1"  VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent" IsVisible="true">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="1" Source="climatica.png" HeightRequest="40" WidthRequest="40" Margin="3"/>
+                </Grid>
+                
+                <Label Grid.Row="1" Text="Fase"/>
+                <Label Grid.Row="2" Text="Climatica"/>
+            </Grid>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="onTapClimatica"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+        <Frame x:Name="boton2" VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="1" Source="agua.png" HeightRequest="40" WidthRequest="40" Margin="3"/>
+                </Grid>
+                <Label Grid.Row="1" Text="Fase"/>
+                <Label Grid.Row="2" Text="Hidraulica"/>
+            </Grid>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="onTapHidraulica"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+        <Frame x:Name="boton3" VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="1" Source="laboratorio.png" HeightRequest="40" WidthRequest="40" Margin="3"/>
+                </Grid>
+                <Label Grid.Row="1" Text="Fase"/>
+                <Label Grid.Row="2" Text="Laboratorio"/>
+            </Grid>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="onTapLaboratorio"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+        <Frame x:Name="boton4"  VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="1" Source="luz.png" HeightRequest="40" WidthRequest="40" Margin="3"/>
+                </Grid>
+                <Label Grid.Row="1" Text="Fase"/>
+                <Label Grid.Row="2" Text="Luminica"/>
+            </Grid>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="onTapLuminica"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+        <Frame x:Name="boton5" VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="1" Source="red.png" HeightRequest="40" WidthRequest="40" Margin="3"/>
+                </Grid>
+                <Label Grid.Row="1" Text="Fase"/>
+                <Label Grid.Row="2" Text="Red"/>
+            </Grid>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="onTapRed"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+        <Frame x:Name="boton6" VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent" IsVisible="true">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="1" Source="admin.png" HeightRequest="40" WidthRequest="40" Margin="3"/>
+                </Grid>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Zona"/>
+                <Label Grid.Row="2" Grid.Column="0" Text="Administrador"/>
+            </Grid>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="onTapAdministrador"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+        <Button x:Name="btn_cerrar" Margin="5" Text="Cerrar Sesión  Usuario: " BackgroundColor="AliceBlue" Clicked="OnClickCerrarSesion"/>
+    </StackLayout>
+    
+</ContentView>

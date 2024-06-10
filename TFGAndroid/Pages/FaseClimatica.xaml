@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TFGAndroid.Pages"
+             x:Class="TFGAndroid.Pages.FaseClimatica"
+             Title="FaseClimatica" 
+             Appearing="aparece"
+             Disappearing="desaparece">
+    <ScrollView>
+        <StackLayout>
+            <!-- Menú -->
+        <Grid BackgroundColor="#92F0CA">
+            <StackLayout Orientation="Vertical">
+
+                <local:MenuLateral x:Name="menulateral" IsVisible="false" Grid.ColumnSpan="2"/>
+                <!-- StackLayout para el botón de ocultar el menú -->
+                <StackLayout VerticalOptions="FillAndExpand" >
+                    <!-- Botón para ocultar el menú -->
+                    <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumHeightRequest="0" Text="__" Padding="0"  HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+            <Grid Margin="5" MinimumHeightRequest="500" Padding="0">
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+
+                <ColumnDefinition Width="auto"/>
+
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+                
+                <!-- Fila 1 -->
+                <Button x:Name="acta1" Text="25" Grid.Row="1" Grid.Column="4"/>
+            
+            <!-- Fila 2 -->
+            <Grid Grid.Row="2" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                    <Button x:Name="actv3" Grid.Row="1" Text="b"/>
+            </Grid>
+
+            <Grid Grid.Row="2" Grid.Column="2" Margin="0,0,0,10" BackgroundColor="#EBCDF5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                    <Button x:Name="ButonZona3" Grid.Row="0" Text="3" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Button x:Name="ButonZona4" Grid.Row="1" Text="61" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Grid>
+
+            <Grid Grid.Row="2" Grid.Column="3" Margin="0,0,0,10" BackgroundColor="#EBCDF5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                    <Button x:Name="actr3" Grid.Row="0" Text="25a" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Button x:Name="actr4" Grid.Row="1" Text="25b" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Grid>
+
+            <Grid Grid.Row="2" Grid.Column="4" BackgroundColor="Gray" />
+
+            <Grid Grid.Row="2" Grid.Column="5" Margin="0,0,0,10" BackgroundColor="#EBCDF5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                    <Button x:Name="actr1" Grid.Row="0" Text="25c" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Button x:Name="actr2" Grid.Row="1" Text="25d" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Grid>
+
+            <Grid Grid.Row="2" Grid.Column="6" Margin="0,0,0,10" BackgroundColor="#EBCDF5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                    <Button x:Name="ButonZona1" Grid.Row="0" Text="74" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Button x:Name="ButonZona2" Grid.Row="1" Text="36" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Grid>
+
+            <Grid Grid.Row="2" Grid.Column="7">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                    <Button x:Name="actv1" Grid.Row="1" Text="f"/>
+            </Grid>
+
+            <!-- Fila 3 -->
+            <Grid Grid.Row="3" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                    <Button x:Name="actv4" Grid.Row="1" Text="b"/>
+            </Grid>
+
+            <Grid Grid.Row="3" Grid.Column="2" BackgroundColor="#EBCDF5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                    <Button x:Name="ButonZona7" Grid.Row="0" Text="3" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Button x:Name="ButonZona8" Grid.Row="1" Text="61" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Grid>
+
+            <Grid Grid.Row="3" Grid.Column="3" BackgroundColor="#EBCDF5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                    <Button x:Name="actr7" Grid.Row="0" Text="25a" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Button x:Name="actr8" Grid.Row="1" Text="25b" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Grid>
+
+            <Grid Grid.Row="3" Grid.Column="4" BackgroundColor="Gray"/>
+
+            <Grid Grid.Row="3" Grid.Column="5" BackgroundColor="#EBCDF5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                    <Button x:Name="actr5" Grid.Row="0" Text="25c" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Button x:Name="actr6" Grid.Row="1" Text="25d" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Grid>
+
+            <Grid Grid.Row="3" Grid.Column="6" BackgroundColor="#EBCDF5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                    <Button x:Name="ButonZona5" Grid.Row="0" Text="74" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Button x:Name="ButonZona6" Grid.Row="1" Text="36" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Grid>
+
+            <Grid Grid.Row="3" Grid.Column="7">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                    <Button x:Name="actv2" Grid.Row="1" Text="f"/>
+            </Grid>
+
+            <!-- Fila 4 -->
+                <Button x:Name="acta2" Text="25" Grid.Row="4" Grid.Column="4" />
+        </Grid>
+
+        <Label Text="valores optimos de temperatura" Margin="10"/>
+        <Entry x:Name="entry1" Margin="10"/>
+
+        <Label Text="renovacion del aire cada" Margin="10"/>
+        <Entry x:Name="entry2" Margin="10"/>
+
+
+            <Button x:Name="btn1" Text="Aplicar cambios" Margin="10" Clicked="btn1_Clicked"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

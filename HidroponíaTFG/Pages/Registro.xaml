@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HidroponíaTFG.Pages.Registro"
+             Title="Registro"
+             
+             >
+
+    <Grid BackgroundColor="#2E2C2C">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Entry x:Name="EntryNombre" 
+                Grid.Column="1" 
+                Grid.ColumnSpan="3"
+                Grid.Row="1"
+                Placeholder="Nombre de usuario" 
+                Margin="0,0,0,10"
+                BackgroundColor="White"
+                HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="EntryContraseña" 
+                Grid.Column="1" 
+                Grid.ColumnSpan="3"
+                Grid.Row="2"
+                Placeholder="Contraseña" 
+                IsPassword="True" 
+                Margin="0,0,0,10"
+                BackgroundColor="White"
+                HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="EntryContraseña2" 
+                Grid.Column="1" 
+                Grid.ColumnSpan="3"
+                Grid.Row="3"
+                Placeholder="Confirmar contraseña" 
+                IsPassword="True"
+                Margin="0,0,0,10"  
+                BackgroundColor="White"
+                HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="EntryEmail"
+                Grid.Column="1" 
+                Grid.ColumnSpan="3"
+                Grid.Row="4"
+                Placeholder="E-Mail" 
+                Margin="0,0,0,10"   
+                BackgroundColor="White"
+                HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="Inicio de Sesión" 
+                Grid.Column="1" 
+                Grid.Row="5"    
+                Margin="0,0,10,0" 
+                Clicked="OnButtonIniciarClicked"/>
+            <Button Text="Registrarse"
+                Grid.Column="3" 
+                Grid.Row="5"
+                Margin="10,0,0,0" 
+                Clicked="OnButtonRegistrarseClicked"/>
+        </Grid>
+    </Grid>
+</ContentPage>
