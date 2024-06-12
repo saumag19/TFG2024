@@ -68,6 +68,6 @@ public partial class FaseLuminica : ContentPage
         var nivel = entry1.Text;
         var potencia = entry2.Text;
 
-        await _monitorLuz.UpdateLuzOptStatus(nivel, potencia);
+        await _monitorLuz.UpdateLuzOptStatus(nivel, potencia,_usuario);
     }
 }

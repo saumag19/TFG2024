@@ -58,9 +58,10 @@ public partial class FaseLuminica : ContentPage
 
     private async void AplicarCambios(object sender, EventArgs e)
     {
-        var nivel = entry1.Text;
-        var potencia = entry2.Text;
+            var nivel = entry1.Text;
+            var potencia = entry2.Text;
 
-        await _monitorLuz.UpdateLuzOptStatus(nivel, potencia);
+            await _monitorLuz.UpdateLuzOptStatus(nivel, potencia, _usuario);
     }
+
 }

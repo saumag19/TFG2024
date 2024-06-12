@@ -19,7 +19,7 @@
     <WindowsSdkPath>
     </WindowsSdkPath>
     <LayoutDir>C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>A254C506DE622346987150CC299E00E3505866A6BEBEA1AEDA03567EEDE2D354</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>F674A7B91D0D19D9172FD5A79461B93EB3B361E2EA96A0F77066302E111C4979</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>b3964ed7-420a-4349-8e14-bb4087b65f75_0.0.5.0_x64__rwbczt88twp1c</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>b3964ed7-420a-4349-8e14-bb4087b65f75_rwbczt88twp1c!App</RegisteredUserModeAppID>
     <RegisteredPackageID>b3964ed7-420a-4349-8e14-bb4087b65f75</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-09T09:03:33.534</Modified>
+      <Modified>2024-06-11T13:22:21.935</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-09T09:03:33.154</Modified>
+      <Modified>2024-06-11T13:22:21.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HidroponiaTFG.runtimeconfig.json">
       <PackagePath>HidroponiaTFG.runtimeconfig.json</PackagePath>
@@ -44,15 +44,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HidroponiaTFG.dll">
       <PackagePath>HidroponiaTFG.dll</PackagePath>
-      <Modified>2024-06-09T09:03:31.314</Modified>
+      <Modified>2024-06-11T13:22:20.291</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>HidroponiaTFG.exe</PackagePath>
-      <Modified>2024-06-09T09:03:31.359</Modified>
+      <Modified>2024-06-11T13:22:20.298</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HidroponiaTFG.deps.json">
       <PackagePath>HidroponiaTFG.deps.json</PackagePath>
-      <Modified>2024-06-09T09:03:32.799</Modified>
+      <Modified>2024-06-11T13:22:21.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.18\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1052,187 +1052,187 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-06-08T10:43:43.622</Modified>
+      <Modified>2024-06-11T13:21:54.309</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.922</Modified>
+      <Modified>2024-06-11T13:21:54.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.938</Modified>
+      <Modified>2024-06-11T13:21:54.561</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.954</Modified>
+      <Modified>2024-06-11T13:21:54.577</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.986</Modified>
+      <Modified>2024-06-11T13:21:54.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-06-08T10:43:44.065</Modified>
+      <Modified>2024-06-11T13:21:54.641</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.717</Modified>
+      <Modified>2024-06-11T13:21:54.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.717</Modified>
+      <Modified>2024-06-11T13:21:54.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.734</Modified>
+      <Modified>2024-06-11T13:21:54.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.725</Modified>
+      <Modified>2024-06-11T13:21:54.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.725</Modified>
+      <Modified>2024-06-11T13:21:54.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.693</Modified>
+      <Modified>2024-06-11T13:21:54.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.695</Modified>
+      <Modified>2024-06-11T13:21:54.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.704</Modified>
+      <Modified>2024-06-11T13:21:54.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.701</Modified>
+      <Modified>2024-06-11T13:21:54.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.704</Modified>
+      <Modified>2024-06-11T13:21:54.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.646</Modified>
+      <Modified>2024-06-11T13:21:54.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.652</Modified>
+      <Modified>2024-06-11T13:21:54.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.653</Modified>
+      <Modified>2024-06-11T13:21:54.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.657</Modified>
+      <Modified>2024-06-11T13:21:54.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.657</Modified>
+      <Modified>2024-06-11T13:21:54.351</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.669</Modified>
+      <Modified>2024-06-11T13:21:54.353</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.671</Modified>
+      <Modified>2024-06-11T13:21:54.356</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.685</Modified>
+      <Modified>2024-06-11T13:21:54.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.675</Modified>
+      <Modified>2024-06-11T13:21:54.356</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.675</Modified>
+      <Modified>2024-06-11T13:21:54.356</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.792</Modified>
+      <Modified>2024-06-11T13:21:54.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.800</Modified>
+      <Modified>2024-06-11T13:21:54.451</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.807</Modified>
+      <Modified>2024-06-11T13:21:54.451</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.812</Modified>
+      <Modified>2024-06-11T13:21:54.466</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.830</Modified>
+      <Modified>2024-06-11T13:21:54.466</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.749</Modified>
+      <Modified>2024-06-11T13:21:54.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.765</Modified>
+      <Modified>2024-06-11T13:21:54.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.765</Modified>
+      <Modified>2024-06-11T13:21:54.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.775</Modified>
+      <Modified>2024-06-11T13:21:54.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.787</Modified>
+      <Modified>2024-06-11T13:21:54.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.734</Modified>
+      <Modified>2024-06-11T13:21:54.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.734</Modified>
+      <Modified>2024-06-11T13:21:54.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.749</Modified>
+      <Modified>2024-06-11T13:21:54.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.749</Modified>
+      <Modified>2024-06-11T13:21:54.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.749</Modified>
+      <Modified>2024-06-11T13:21:54.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.845</Modified>
+      <Modified>2024-06-11T13:21:54.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.849</Modified>
+      <Modified>2024-06-11T13:21:54.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.860</Modified>
+      <Modified>2024-06-11T13:21:54.498</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.875</Modified>
+      <Modified>2024-06-11T13:21:54.498</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.922</Modified>
+      <Modified>2024-06-11T13:21:54.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\cerrar.scale-100.png">
       <PackagePath>cerrar.scale-100.png</PackagePath>
@@ -1244,27 +1244,211 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.610</Modified>
+      <Modified>2024-06-11T13:22:19.572</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.622</Modified>
+      <Modified>2024-06-11T13:22:19.582</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.637</Modified>
+      <Modified>2024-06-11T13:22:19.599</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.657</Modified>
+      <Modified>2024-06-11T13:22:19.611</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-06-08T10:43:43.717</Modified>
+      <Modified>2024-06-11T13:22:19.653</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo.ico">
+      <PackagePath>fondo.ico</PackagePath>
+      <Modified>2024-06-11T13:22:19.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondo.scale-100.jpeg">
       <PackagePath>fondo.scale-100.jpeg</PackagePath>
       <Modified>2024-06-08T09:32:53.594</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLargeTile.scale-100.png">
+      <PackagePath>fondoLargeTile.scale-100.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.795</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLargeTile.scale-125.png">
+      <PackagePath>fondoLargeTile.scale-125.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.811</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLargeTile.scale-150.png">
+      <PackagePath>fondoLargeTile.scale-150.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.827</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLargeTile.scale-200.png">
+      <PackagePath>fondoLargeTile.scale-200.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.842</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLargeTile.scale-400.png">
+      <PackagePath>fondoLargeTile.scale-400.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.937</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>fondoLogo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.624</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>fondoLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.634</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>fondoLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.636</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>fondoLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.636</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>fondoLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.636</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.altform-unplated_targetsize-16.png">
+      <PackagePath>fondoLogo.altform-unplated_targetsize-16.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.611</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>fondoLogo.altform-unplated_targetsize-24.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.620</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>fondoLogo.altform-unplated_targetsize-256.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.624</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>fondoLogo.altform-unplated_targetsize-32.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.620</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>fondoLogo.altform-unplated_targetsize-48.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.624</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.scale-100.png">
+      <PackagePath>fondoLogo.scale-100.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.590</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.scale-125.png">
+      <PackagePath>fondoLogo.scale-125.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.592</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.scale-150.png">
+      <PackagePath>fondoLogo.scale-150.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.594</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.scale-200.png">
+      <PackagePath>fondoLogo.scale-200.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.596</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.scale-400.png">
+      <PackagePath>fondoLogo.scale-400.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.599</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.targetsize-16.png">
+      <PackagePath>fondoLogo.targetsize-16.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.604</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.targetsize-24.png">
+      <PackagePath>fondoLogo.targetsize-24.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.604</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.targetsize-256.png">
+      <PackagePath>fondoLogo.targetsize-256.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.611</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.targetsize-32.png">
+      <PackagePath>fondoLogo.targetsize-32.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.604</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoLogo.targetsize-48.png">
+      <PackagePath>fondoLogo.targetsize-48.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.604</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoMediumTile.scale-100.png">
+      <PackagePath>fondoMediumTile.scale-100.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.668</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoMediumTile.scale-125.png">
+      <PackagePath>fondoMediumTile.scale-125.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.683</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoMediumTile.scale-150.png">
+      <PackagePath>fondoMediumTile.scale-150.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.690</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoMediumTile.scale-200.png">
+      <PackagePath>fondoMediumTile.scale-200.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.699</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoMediumTile.scale-400.png">
+      <PackagePath>fondoMediumTile.scale-400.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.715</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoSmallTile.scale-100.png">
+      <PackagePath>fondoSmallTile.scale-100.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.659</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoSmallTile.scale-125.png">
+      <PackagePath>fondoSmallTile.scale-125.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.659</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoSmallTile.scale-150.png">
+      <PackagePath>fondoSmallTile.scale-150.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.668</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoSmallTile.scale-200.png">
+      <PackagePath>fondoSmallTile.scale-200.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.668</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoSmallTile.scale-400.png">
+      <PackagePath>fondoSmallTile.scale-400.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.668</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoStoreLogo.scale-100.png">
+      <PackagePath>fondoStoreLogo.scale-100.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.636</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoStoreLogo.scale-125.png">
+      <PackagePath>fondoStoreLogo.scale-125.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.636</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoStoreLogo.scale-150.png">
+      <PackagePath>fondoStoreLogo.scale-150.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.652</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoStoreLogo.scale-200.png">
+      <PackagePath>fondoStoreLogo.scale-200.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.653</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoStoreLogo.scale-400.png">
+      <PackagePath>fondoStoreLogo.scale-400.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.659</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoWideTile.scale-100.png">
+      <PackagePath>fondoWideTile.scale-100.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.715</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoWideTile.scale-125.png">
+      <PackagePath>fondoWideTile.scale-125.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.731</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoWideTile.scale-150.png">
+      <PackagePath>fondoWideTile.scale-150.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.731</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoWideTile.scale-200.png">
+      <PackagePath>fondoWideTile.scale-200.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.747</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondoWideTile.scale-400.png">
+      <PackagePath>fondoWideTile.scale-400.png</PackagePath>
+      <Modified>2024-06-11T13:22:19.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\laboratorio.scale-100.png">
       <PackagePath>laboratorio.scale-100.png</PackagePath>

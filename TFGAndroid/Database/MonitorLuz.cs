@@ -6,12 +6,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using TFGAndroid.Models;
+
 namespace TFGAndroid.Database
 {
     public class MonitorLuz
     {
         private readonly IMongoCollection<BsonDocument> _luzCollection;
         private readonly IMongoCollection<BsonDocument> _luzOptCollection;
+        private readonly IMongoCollection<BsonDocument> _registroCollection;
+
         private readonly CancellationTokenSource _cancellationTokenSource;
         private readonly ContentPage _page;
 
@@ -21,6 +25,8 @@ namespace TFGAndroid.Database
             var database = client.GetDatabase("ProyectoTFG");
             _luzCollection = database.GetCollection<BsonDocument>("Luminica");
             _luzOptCollection = database.GetCollection<BsonDocument>("Luminica_opt");
+            _registroCollection = database.GetCollection<BsonDocument>("Registro");
+
 
             _cancellationTokenSource = new CancellationTokenSource();
             _page = page;
@@ -103,7 +109,7 @@ namespace TFGAndroid.Database
             }
         }
 
-        public async Task UpdateLuzOptStatus(string nivel, string potencia)
+        public async Task UpdateLuzOptStatus(string nivel, string potencia, Usuario usuario)
         {
             var filter = Builders<BsonDocument>.Filter.Empty;
             var existingDocument = await _luzOptCollection.Find(filter).FirstOrDefaultAsync();
@@ -111,10 +117,10 @@ namespace TFGAndroid.Database
             if (existingDocument == null)
             {
                 var newDocument = new BsonDocument
-                {
-                    { "nivel", nivel },
-                    { "potencia", potencia }
-                };
+            {
+                { "nivel", nivel },
+                { "potencia", potencia }
+            };
                 await _luzOptCollection.InsertOneAsync(newDocument);
             }
             else
@@ -124,6 +130,10 @@ namespace TFGAndroid.Database
                     .Set("potencia", potencia);
                 await _luzOptCollection.UpdateOneAsync(filter, update);
             }
+
+            // Crear y comenzar hilo para registrar cambios
+            var registroCambioThread = new RegistroCambioThreadLuz(_registroCollection, _luzOptCollection, nivel, potencia, usuario.Nombre);
+            registroCambioThread.Start();
         }
 
 

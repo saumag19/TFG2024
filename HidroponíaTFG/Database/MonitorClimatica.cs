@@ -12,6 +12,7 @@ namespace HidroponíaTFG.Database
         private readonly IMongoCollection<BsonDocument> _climaticaCollection;
         private readonly IMongoCollection<BsonDocument> _climaticaOptCollection;
         private readonly IMongoCollection<BsonDocument> _climaticaActCollection;
+        private readonly IMongoCollection<BsonDocument> _registroCollection;
         private readonly CancellationTokenSource _cancellationTokenSource;
         private readonly ContentPage _page;
 
@@ -22,6 +23,7 @@ namespace HidroponíaTFG.Database
             _climaticaCollection = database.GetCollection<BsonDocument>("Climatica");
             _climaticaOptCollection = database.GetCollection<BsonDocument>("Climatica_opt");
             _climaticaActCollection = database.GetCollection<BsonDocument>("Climatica_act");
+            _registroCollection = database.GetCollection<BsonDocument>("Registro");
 
             _cancellationTokenSource = new CancellationTokenSource();
             _page = page;
@@ -150,16 +152,26 @@ namespace HidroponíaTFG.Database
             }
         }
 
-        public async Task SaveClimaticaData(string optimoTemperatura, string renovacionAire)
+        public async Task SaveClimaticaData(string optimoTemperatura, string renovacionAire, string usuario)
         {
-            var filter = new BsonDocument(); // Assumes there's only one document to update
+            if (string.IsNullOrEmpty(optimoTemperatura) || string.IsNullOrEmpty(renovacionAire) || string.IsNullOrEmpty(usuario))
+            {
+                throw new ArgumentException("Los parámetros no pueden ser nulos o vacíos.");
+            }
+
+            var filter = new BsonDocument(); // Asume que solo hay un documento para actualizar
             var update = Builders<BsonDocument>.Update
                 .Set("optimoTemperatura", optimoTemperatura)
                 .Set("renovacionAire", renovacionAire);
 
             var options = new UpdateOptions { IsUpsert = true };
 
+            // Realizar la actualización
             await _climaticaOptCollection.UpdateOneAsync(filter, update, options);
+
+            // Crear y empezar el hilo para registrar cambios
+            var registroCambioThread = new RegistroCambioThread(_registroCollection, _climaticaOptCollection, usuario, optimoTemperatura, renovacionAire);
+            registroCambioThread.StartClimatica();
         }
     }
 }

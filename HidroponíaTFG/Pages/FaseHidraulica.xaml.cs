@@ -108,31 +108,31 @@ namespace HidroponíaTFG.Pages
         private async void AplicarCambiosNivelDeposito(object sender, EventArgs e)
         {
             var newNivelDeposito = ((Entry)((Button)sender).Parent.FindByName("entryNivelDeposito")).Text;
-            await _monitorHidraulica.UpdateHidraulicaOpt("nivel_deposito", newNivelDeposito);
+            await _monitorHidraulica.UpdateHidraulicaOpt("nivel_deposito", newNivelDeposito, _usuario.Nombre);
         }
 
         private async void AplicarCambiosNitrogeno(object sender, EventArgs e)
         {
             var newNitrogeno = ((Entry)((Button)sender).Parent.FindByName("entryNitrogeno")).Text;
-            await _monitorHidraulica.UpdateHidraulicaOpt("nitrogeno", newNitrogeno);
+            await _monitorHidraulica.UpdateHidraulicaOpt("nitrogeno", newNitrogeno, _usuario.Nombre);
         }
 
         private async void AplicarCambiosPotasio(object sender, EventArgs e)
         {
             var newPotasio = ((Entry)((Button)sender).Parent.FindByName("entryPotasio")).Text;
-            await _monitorHidraulica.UpdateHidraulicaOpt("potasio", newPotasio);
+            await _monitorHidraulica.UpdateHidraulicaOpt("potasio", newPotasio, _usuario.Nombre);
         }
 
         private async void AplicarCambiosFosforo(object sender, EventArgs e)
         {
             var newFosforo = ((Entry)((Button)sender).Parent.FindByName("entryFosforo")).Text;
-            await _monitorHidraulica.UpdateHidraulicaOpt("fosforo", newFosforo);
+            await _monitorHidraulica.UpdateHidraulicaOpt("fosforo", newFosforo, _usuario.Nombre);
         }
 
         private async void AplicarCambiosOxigeno(object sender, EventArgs e)
         {
             var newOxigeno = ((Entry)((Button)sender).Parent.FindByName("entryOxigeno")).Text;
-            await _monitorHidraulica.UpdateHidraulicaOpt("oxigeno", newOxigeno);
+            await _monitorHidraulica.UpdateHidraulicaOpt("oxigeno", newOxigeno, _usuario.Nombre);
         }
     }
 }

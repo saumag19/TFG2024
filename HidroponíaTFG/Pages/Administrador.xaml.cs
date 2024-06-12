@@ -19,6 +19,7 @@ public partial class Administrador : ContentPage
         menulateral.setUsuario(_usuario);
         _bbdd = new BBDD();
         CargarUsuarios();
+        CargarRegistros();
     }
 
     private async void ToggleMenu(object sender, EventArgs e)
@@ -63,6 +64,14 @@ public partial class Administrador : ContentPage
         UsuariosListView.ItemsSource = nombresUsuarios;
     }
 
+    private void CargarRegistros()
+    {
+        // Obtener los registros desde la base de datos
+        List<string> registros = _bbdd.ObtenerTodosRegistros();
+
+        // Asignar los registros como origen de datos de la segunda ListView
+        UsuariosListView1.ItemsSource = registros;
+    }
 
 
 
@@ -351,6 +360,24 @@ public partial class Administrador : ContentPage
 
 
     }
+    private void SearchBar1_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        // Obtener los registros desde la base de datos
+        List<string> registros = _bbdd.ObtenerTodosRegistros();
+
+        // Obtener el término de búsqueda actual
+        string searchTerm = searchBar1.Text.ToLower();
+
+        // Filtrar los registros basados en el término de búsqueda
+        var filteredRegistros = registros.Where(registro => registro.ToLower().Contains(searchTerm)).ToList();
+
+        // Actualizar el ListView's ItemsSource con los registros filtrados
+        UsuariosListView1.ItemsSource = filteredRegistros;
+    }
+
+
+
+
     private bool EsEmailValido(string email)
     {
         // Expresión regular para validar el email

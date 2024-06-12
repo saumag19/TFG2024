@@ -53,18 +53,18 @@ public partial class FaseLaboratorio : ContentPage
 
     private async void AplicarCambiosSemilla(object sender, EventArgs e)
     {
-        await _monitorLaboratorio.UpdateLaboratorioOpt("humedad_semilla", entry1.Text);
-        await _monitorLaboratorio.UpdateLaboratorioOpt("oxigeno_semilla", entry2.Text);
-        await _monitorLaboratorio.UpdateLaboratorioOpt("luz_semilla", entry3.Text);
-        await _monitorLaboratorio.UpdateLaboratorioOpt("nutrientes_semilla", entry4.Text);
+        await _monitorLaboratorio.UpdateLaboratorioOpt("humedad_semilla", entry1.Text, _usuario.Nombre);
+        await _monitorLaboratorio.UpdateLaboratorioOpt("oxigeno_semilla", entry2.Text, _usuario.Nombre);
+        await _monitorLaboratorio.UpdateLaboratorioOpt("luz_semilla", entry3.Text, _usuario.Nombre);
+        await _monitorLaboratorio.UpdateLaboratorioOpt("nutrientes_semilla", entry4.Text, _usuario.Nombre);
     }
 
     private async void AplicarCambiosPlantula(object sender, EventArgs e)
     {
-        await _monitorLaboratorio.UpdateLaboratorioOpt("humedad_plantula", entry5.Text);
-        await _monitorLaboratorio.UpdateLaboratorioOpt("oxigeno_plantula", entry6.Text);
-        await _monitorLaboratorio.UpdateLaboratorioOpt("luz_plantula", entry7.Text);
-        await _monitorLaboratorio.UpdateLaboratorioOpt("nutrientes_plantula", entry8.Text);
+        await _monitorLaboratorio.UpdateLaboratorioOpt("humedad_plantula", entry5.Text, _usuario.Nombre);
+        await _monitorLaboratorio.UpdateLaboratorioOpt("oxigeno_plantula", entry6.Text, _usuario.Nombre);
+        await _monitorLaboratorio.UpdateLaboratorioOpt("luz_plantula", entry7.Text, _usuario.Nombre);
+        await _monitorLaboratorio.UpdateLaboratorioOpt("nutrientes_plantula", entry8.Text, _usuario.Nombre);
     }
 
     private async void ClickButon1s(object sender, EventArgs e)

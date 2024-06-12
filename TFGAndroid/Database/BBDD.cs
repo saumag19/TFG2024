@@ -10,11 +10,15 @@ namespace TFGAndroid.Database
         private IMongoDatabase _database;
         private IMongoCollection<BsonDocument> _usuariosCollection;
 
+        private IMongoCollection<BsonDocument> _registroCollection;
+
         public BBDD()
         {
             var client = new MongoClient("mongodb://root:root@ac-pn6khua-shard-00-00.vprqszh.mongodb.net:27017,ac-pn6khua-shard-00-01.vprqszh.mongodb.net:27017,ac-pn6khua-shard-00-02.vprqszh.mongodb.net:27017/?ssl=true&replicaSet=atlas-a8s0cb-shard-0&authSource=admin&retryWrites=true&w=majority&appName=ProyectoTFG");
             _database = client.GetDatabase("ProyectoTFG");
             _usuariosCollection = _database.GetCollection<BsonDocument>("Usuarios");
+
+            _registroCollection = _database.GetCollection<BsonDocument>("Registro");
         }
 
         public List<BsonDocument> ObtenerTodosUsuarios()
@@ -41,6 +45,16 @@ namespace TFGAndroid.Database
                 // Si no existe un usuario con el mismo nombre, insertarlo en la colección
                 _usuariosCollection.InsertOne(usuario);
             }
+        }
+        public List<string> ObtenerTodosRegistros()
+        {
+            var registros = _registroCollection.Find(new BsonDocument()).ToList();
+            var registrosString = new List<string>();
+            foreach (var registro in registros)
+            {
+                registrosString.Add(registro.ToString()); // Convertir cada BsonDocument a string y agregar a la lista
+            }
+            return registrosString;
         }
 
         public void ActualizarUsuario(string nombreOriginal, BsonDocument usuario)
@@ -104,6 +118,18 @@ namespace TFGAndroid.Database
                 bson["pass"].AsString,
                 bson["type"].AsString
             );
+        }
+
+        public List<string> ObtenerRegistrosFiltrados(string searchTerm)
+        {
+            var filtro = Builders<BsonDocument>.Filter.Regex("nombreDeTuCampoEnElBSON", new BsonRegularExpression(searchTerm, "i")); // "i" indica insensibilidad a mayúsculas y minúsculas
+            var registros = _registroCollection.Find(filtro).ToList();
+            var registrosString = new List<string>();
+            foreach (var registro in registros)
+            {
+                registrosString.Add(registro.ToString()); // Convertir cada BsonDocument a string y agregar a la lista
+            }
+            return registrosString;
         }
         public bool VerificarUsuario(string nombre, string contraseña)
         {

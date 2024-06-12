@@ -21,27 +21,9 @@
 
 
             <SearchBar x:Name="searchBar" Placeholder="Buscar usuario..." Margin="10" TextChanged="SearchBar_TextChanged"/>
-            <ListView x:Name="UsuariosListView" BackgroundColor="#D6EAF8" MaximumHeightRequest="400" ItemTapped="UsuariosListView_ItemTapped">
+            <ListView x:Name="UsuariosListView" BackgroundColor="#D6EAF8" MaximumHeightRequest="300" ItemTapped="UsuariosListView_ItemTapped">
                 <ListView.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
-                        <x:String>Usuario 1</x:String>
-                        <x:String>Usuario 2</x:String>
-                        <x:String>Usuario 1</x:String>
-                        <x:String>Usuario 2</x:String>
-                        <x:String>Usuario 1</x:String>
-                        <x:String>Usuario 2</x:String>
-                        <x:String>Usuario 1</x:String>
-                        <x:String>Usuario 2</x:String>
-                        <x:String>Usuario 1</x:String>
-                        <x:String>Usuario 2</x:String>
-                        <x:String>Usuario 1</x:String>
-                        <x:String>Usuario 2</x:String>
-                        <x:String>Usuario 1</x:String>
-                        <x:String>Usuario 2</x:String>
-                        <x:String>Usuario 1</x:String>
-                        <x:String>Usuario 2</x:String>
-                        <x:String>Usuario 1</x:String>
-                        <x:String>Usuario 2</x:String>
                         <x:String>Usuario 1</x:String>
                         <x:String>Usuario 2</x:String>
                         <x:String>Usuario 1</x:String>
@@ -53,12 +35,28 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Label Text="{Binding}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                            <Label Text="{Binding}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
 
             </ListView>
+
+            <SearchBar x:Name="searchBar1" Placeholder="Buscar registro..." TextChanged="SearchBar1_TextChanged" />
+            <ListView x:Name="UsuariosListView1" BackgroundColor="#D6EAF8" MaximumHeightRequest="300" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10" VerticalOptions="FillAndExpand">
+                                <Label Text="{Binding}" 
+                           LineBreakMode="WordWrap"
+                           HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
 
             <Label Text="Nombre:" Margin="10"/>
             <Entry x:Name="EntryNombre" Placeholder="Introduce aquí el nombre " Margin="10"/>

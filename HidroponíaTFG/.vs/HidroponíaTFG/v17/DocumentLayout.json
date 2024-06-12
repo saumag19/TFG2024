@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\monitorlaboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\monitorlaboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\bbdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\bbdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\hidroponiatfg.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -13,6 +13,82 @@
     {
       "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\administrador.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\administrador.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\monitorluz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\monitorluz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\monitorlaboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\monitorlaboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\monitorhidraulica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\monitorhidraulica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\monitorclimatica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\monitorclimatica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\registrocambiothreadluz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\registrocambiothreadluz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\registrocambiothread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\registrocambiothread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\administrador.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\administrador.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\faseclimatica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\faseclimatica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\faseluminica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\faseluminica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\faseluminica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\faseluminica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\faselaboratorio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\faselaboratorio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\faselaboratorio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\faselaboratorio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\faseclimatica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\faseclimatica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\registrocambiothreadlaboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\registrocambiothreadlaboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\registrocambiothreadhidraulica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\registrocambiothreadhidraulica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\hidroponiatfg.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:hidroponiatfg.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\fasehidraulica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\fasehidraulica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\fasehidraulica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\fasehidraulica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\menulateral.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -39,38 +115,6 @@
       "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\iniciosesion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\bbdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\bbdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\administrador.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\administrador.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\monitorclimatica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\monitorclimatica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\faseclimatica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\faseclimatica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\faseclimatica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\faseclimatica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\fasehidraulica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\fasehidraulica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\faselaboratorio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\faselaboratorio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\faseluminica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\faseluminica.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\fasered.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\fasered.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -79,28 +123,8 @@
       "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\fasered.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\faseluminica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\faseluminica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\faselaboratorio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\faselaboratorio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\monitorred.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\monitorred.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\monitorluz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\monitorluz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\database\\monitorhidraulica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:database\\monitorhidraulica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\fasehidraulica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\fasehidraulica.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\registro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -141,10 +165,6 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\SamuelArribasGallart\\AppData\\Local\\Temp\\.vsdbgsrc\\bcaf4ad2c1632eaf82f1031330654700b74849cb\\Pages_FaseClimatica.xaml.sg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\hidropon\u00EDatfg\\pages\\popupview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D701CEA-B1C4-434D-A0FA-3CC7F0F577E4}|HidroponiaTFG.csproj|solutionrelative:pages\\popupview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -183,20 +203,20 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 457,
+          "DockedWidth": 523,
           "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FaseClimatica.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseClimatica.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\FaseClimatica.xaml.cs",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseClimatica.xaml.cs",
-              "RelativeToolTip": "Pages\\FaseClimatica.xaml.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAArwDcAAABTAAAA",
+              "DocumentIndex": 3,
+              "Title": "MonitorLuz.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorLuz.cs",
+              "RelativeDocumentMoniker": "Database\\MonitorLuz.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorLuz.cs",
+              "RelativeToolTip": "Database\\MonitorLuz.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T10:31:58.874Z"
+              "WhenOpened": "2024-05-23T10:32:09.929Z"
             },
             {
               "$type": "Document",
@@ -206,47 +226,45 @@
               "RelativeDocumentMoniker": "Pages\\Administrador.xaml.cs",
               "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Administrador.xaml.cs",
               "RelativeToolTip": "Pages\\Administrador.xaml.cs",
-              "ViewState": "AQIAALsAAAAAAAAAAAAqwMoAAAAxAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHcBAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T11:32:06.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MenuLateral.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\MenuLateral.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\MenuLateral.xaml.cs",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\MenuLateral.xaml.cs",
-              "RelativeToolTip": "Pages\\MenuLateral.xaml.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T08:29:14.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T11:32:06.536Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Popupview.xaml",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Popupview.xaml",
-              "RelativeDocumentMoniker": "Pages\\Popupview.xaml",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Popupview.xaml",
-              "RelativeToolTip": "Pages\\Popupview.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-23T07:34:58.32Z"
+              "Title": "MonitorClimatica.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorClimatica.cs",
+              "RelativeDocumentMoniker": "Database\\MonitorClimatica.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorClimatica.cs",
+              "RelativeToolTip": "Database\\MonitorClimatica.cs",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAIwK4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T08:47:13.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FaseClimatica.xaml",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseClimatica.xaml",
-              "RelativeDocumentMoniker": "Pages\\FaseClimatica.xaml",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseClimatica.xaml",
-              "RelativeToolTip": "Pages\\FaseClimatica.xaml",
-              "ViewState": "AQIAAL8AAAAAAAAAAAAowMQAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-13T10:31:35.975Z"
+              "DocumentIndex": 7,
+              "Title": "RegistroCambioThreadLuz.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\RegistroCambioThreadLuz.cs",
+              "RelativeDocumentMoniker": "Database\\RegistroCambioThreadLuz.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\RegistroCambioThreadLuz.cs",
+              "RelativeToolTip": "Database\\RegistroCambioThreadLuz.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T08:38:52.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegistroCambioThread.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\RegistroCambioThread.cs",
+              "RelativeDocumentMoniker": "Database\\RegistroCambioThread.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\RegistroCambioThread.cs",
+              "RelativeToolTip": "Database\\RegistroCambioThread.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T08:48:07.369Z"
             },
             {
               "$type": "Document",
@@ -256,7 +274,7 @@
               "RelativeDocumentMoniker": "HidroponiaTFG.csproj",
               "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\HidroponiaTFG.csproj",
               "RelativeToolTip": "HidroponiaTFG.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAABhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-05-07T13:14:11.854Z",
               "EditorCaption": ""
@@ -264,285 +282,187 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MonitorLaboratorio.cs",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorLaboratorio.cs",
-              "RelativeDocumentMoniker": "Database\\MonitorLaboratorio.cs",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorLaboratorio.cs*",
-              "RelativeToolTip": "Database\\MonitorLaboratorio.cs*",
-              "ViewState": "AQIAAD0AAAAAAAAAAADwv0gAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T07:58:19.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "BBDD.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\BBDD.cs",
               "RelativeDocumentMoniker": "Database\\BBDD.cs",
               "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\BBDD.cs",
               "RelativeToolTip": "Database\\BBDD.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAkwCsAAAAJAAAA",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAIwBoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T13:14:49.449Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Registro.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Registro.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\Registro.xaml.cs",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Registro.xaml.cs",
-              "RelativeToolTip": "Pages\\Registro.xaml.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAgwCQAAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T08:31:10.758Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MenuLateral.xaml",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\MenuLateral.xaml",
-              "RelativeDocumentMoniker": "Pages\\MenuLateral.xaml",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\MenuLateral.xaml",
-              "RelativeToolTip": "Pages\\MenuLateral.xaml",
-              "ViewState": "AQIAAHcAAAAAAAAAAAAAAIEAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-23T08:38:45.671Z",
+              "WhenOpened": "2024-05-07T13:14:49.449Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MonitorLaboratorio.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorLaboratorio.cs",
+              "RelativeDocumentMoniker": "Database\\MonitorLaboratorio.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorLaboratorio.cs",
+              "RelativeToolTip": "Database\\MonitorLaboratorio.cs",
+              "ViewState": "AQIAAKcAAAAAAAAAAAAUwN8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T07:58:19.792Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "InicioSesion.xaml",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\InicioSesion.xaml",
-              "RelativeDocumentMoniker": "Pages\\InicioSesion.xaml",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\InicioSesion.xaml",
-              "RelativeToolTip": "Pages\\InicioSesion.xaml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAcAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-07T13:20:46.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "InicioSesion.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\InicioSesion.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\InicioSesion.xaml.cs",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\InicioSesion.xaml.cs",
-              "RelativeToolTip": "Pages\\InicioSesion.xaml.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAkwDAAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T13:38:03.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FaseLaboratorio.xaml",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLaboratorio.xaml",
-              "RelativeDocumentMoniker": "Pages\\FaseLaboratorio.xaml",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLaboratorio.xaml",
-              "RelativeToolTip": "Pages\\FaseLaboratorio.xaml",
-              "ViewState": "AQIAAM0AAAAAAAAAAAAAANMAAABmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-13T11:19:16.076Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Administrador.xaml",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Administrador.xaml",
-              "RelativeDocumentMoniker": "Pages\\Administrador.xaml",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Administrador.xaml",
-              "RelativeToolTip": "Pages\\Administrador.xaml",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAowEQAAACuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-13T11:31:04.525Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FaseRed.xaml",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseRed.xaml",
-              "RelativeDocumentMoniker": "Pages\\FaseRed.xaml",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseRed.xaml",
-              "RelativeToolTip": "Pages\\FaseRed.xaml",
-              "ViewState": "AQIAAIsAAAAAAAAAAAAAAI4AAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-13T11:27:55.17Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MonitorClimatica.cs",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorClimatica.cs",
-              "RelativeDocumentMoniker": "Database\\MonitorClimatica.cs",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorClimatica.cs",
-              "RelativeToolTip": "Database\\MonitorClimatica.cs",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAmwJ8AAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T15:06:15.667Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FaseHidraulica.xaml",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseHidraulica.xaml",
-              "RelativeDocumentMoniker": "Pages\\FaseHidraulica.xaml",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseHidraulica.xaml",
-              "RelativeToolTip": "Pages\\FaseHidraulica.xaml",
-              "ViewState": "AQIAAJYAAAAAAAAAAAAYwJ4AAADqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-15T10:29:10.701Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FaseLuminica.xaml",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLuminica.xaml",
-              "RelativeDocumentMoniker": "Pages\\FaseLuminica.xaml",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLuminica.xaml",
-              "RelativeToolTip": "Pages\\FaseLuminica.xaml",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAYwGoAAABmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-13T11:22:01.902Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FaseRed.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseRed.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\FaseRed.xaml.cs",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseRed.xaml.cs",
-              "RelativeToolTip": "Pages\\FaseRed.xaml.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAgwB8AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T11:28:38.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FaseLuminica.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLuminica.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\FaseLuminica.xaml.cs",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLuminica.xaml.cs",
-              "RelativeToolTip": "Pages\\FaseLuminica.xaml.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAwwEAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T11:22:43.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FaseLaboratorio.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLaboratorio.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\FaseLaboratorio.xaml.cs",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLaboratorio.xaml.cs",
-              "RelativeToolTip": "Pages\\FaseLaboratorio.xaml.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAgwNoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T11:19:46.107Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "MonitorRed.cs",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorRed.cs",
-              "RelativeDocumentMoniker": "Database\\MonitorRed.cs",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorRed.cs",
-              "RelativeToolTip": "Database\\MonitorRed.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T14:34:26.384Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
               "Title": "MonitorHidraulica.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorHidraulica.cs",
               "RelativeDocumentMoniker": "Database\\MonitorHidraulica.cs",
               "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorHidraulica.cs",
               "RelativeToolTip": "Database\\MonitorHidraulica.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAgwDwAAAA6AAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T14:52:34.813Z"
+              "WhenOpened": "2024-06-11T07:22:54.652Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "MonitorLuz.cs",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorLuz.cs",
-              "RelativeDocumentMoniker": "Database\\MonitorLuz.cs",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorLuz.cs",
-              "RelativeToolTip": "Database\\MonitorLuz.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAkwDAAAAA6AAAA",
+              "DocumentIndex": 11,
+              "Title": "FaseLuminica.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLuminica.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\FaseLuminica.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLuminica.xaml.cs",
+              "RelativeToolTip": "Pages\\FaseLuminica.xaml.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAwwD8AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T10:32:09.929Z"
+              "WhenOpened": "2024-05-13T11:22:43.897Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 12,
+              "Title": "FaseLuminica.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLuminica.xaml",
+              "RelativeDocumentMoniker": "Pages\\FaseLuminica.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLuminica.xaml",
+              "RelativeToolTip": "Pages\\FaseLuminica.xaml",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAYwF4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-13T11:22:01.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FaseLaboratorio.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLaboratorio.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\FaseLaboratorio.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLaboratorio.xaml.cs",
+              "RelativeToolTip": "Pages\\FaseLaboratorio.xaml.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAswJkAAABpAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T11:19:46.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Administrador.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Administrador.xaml",
+              "RelativeDocumentMoniker": "Pages\\Administrador.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Administrador.xaml",
+              "RelativeToolTip": "Pages\\Administrador.xaml",
+              "ViewState": "AQIAACgAAAAAAAAAAAAcwEAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-13T11:31:04.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FaseClimatica.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseClimatica.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\FaseClimatica.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseClimatica.xaml.cs",
+              "RelativeToolTip": "Pages\\FaseClimatica.xaml.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T10:31:58.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FaseLaboratorio.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLaboratorio.xaml",
+              "RelativeDocumentMoniker": "Pages\\FaseLaboratorio.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseLaboratorio.xaml",
+              "RelativeToolTip": "Pages\\FaseLaboratorio.xaml",
+              "ViewState": "AQIAALIAAAAAAAAAAAAowMMAAAA0AQAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-13T11:19:16.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FaseClimatica.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseClimatica.xaml",
+              "RelativeDocumentMoniker": "Pages\\FaseClimatica.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseClimatica.xaml",
+              "RelativeToolTip": "Pages\\FaseClimatica.xaml",
+              "ViewState": "AQIAALoAAAAAAAAAAAAowMYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-13T10:31:35.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RegistroCambioThreadLaboratorio.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\RegistroCambioThreadLaboratorio.cs",
+              "RelativeDocumentMoniker": "Database\\RegistroCambioThreadLaboratorio.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\RegistroCambioThreadLaboratorio.cs",
+              "RelativeToolTip": "Database\\RegistroCambioThreadLaboratorio.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwBIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T07:40:18.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RegistroCambioThreadHidraulica.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\RegistroCambioThreadHidraulica.cs",
+              "RelativeDocumentMoniker": "Database\\RegistroCambioThreadHidraulica.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\RegistroCambioThreadHidraulica.cs",
+              "RelativeToolTip": "Database\\RegistroCambioThreadHidraulica.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAmwDIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T07:24:05.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MenuLateral.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\MenuLateral.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\MenuLateral.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\MenuLateral.xaml.cs",
+              "RelativeToolTip": "Pages\\MenuLateral.xaml.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T08:29:14.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HidroponiaTFG",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\HidroponiaTFG.csproj",
+              "RelativeDocumentMoniker": "HidroponiaTFG.csproj",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\HidroponiaTFG.csproj",
+              "RelativeToolTip": "HidroponiaTFG.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-11T07:45:17.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "FaseHidraulica.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseHidraulica.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\FaseHidraulica.xaml.cs",
               "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseHidraulica.xaml.cs",
               "RelativeToolTip": "Pages\\FaseHidraulica.xaml.cs",
-              "ViewState": "AQIAAHcAAAAAAAAAAAA8wIgAAAAFAAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAwHsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T10:29:22.58Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAgwAcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T13:22:16.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Registro.xaml",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Registro.xaml",
-              "RelativeDocumentMoniker": "Pages\\Registro.xaml",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Registro.xaml",
-              "RelativeToolTip": "Pages\\Registro.xaml",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAE8AAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-22T09:02:35.444Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Styles.xaml",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Resources\\Styles\\Styles.xaml",
-              "RelativeDocumentMoniker": "Resources\\Styles\\Styles.xaml",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Resources\\Styles\\Styles.xaml",
-              "RelativeToolTip": "Resources\\Styles\\Styles.xaml",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAnwHAAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-07T13:39:30.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Colors.xaml",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Resources\\Styles\\Colors.xaml",
-              "RelativeDocumentMoniker": "Resources\\Styles\\Colors.xaml",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Resources\\Styles\\Colors.xaml",
-              "RelativeToolTip": "Resources\\Styles\\Colors.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-07T13:40:00.928Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 21,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
@@ -554,7 +474,163 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 20,
+              "Title": "FaseHidraulica.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseHidraulica.xaml",
+              "RelativeDocumentMoniker": "Pages\\FaseHidraulica.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseHidraulica.xaml",
+              "RelativeToolTip": "Pages\\FaseHidraulica.xaml",
+              "ViewState": "AQIAAJsAAAAAAAAAAAAowJ4AAADsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-15T10:29:10.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Popupview.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Popupview.xaml",
+              "RelativeDocumentMoniker": "Pages\\Popupview.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Popupview.xaml",
+              "RelativeToolTip": "Pages\\Popupview.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-23T07:34:58.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Registro.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Registro.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\Registro.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Registro.xaml.cs",
+              "RelativeToolTip": "Pages\\Registro.xaml.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAgwCQAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T08:31:10.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MenuLateral.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\MenuLateral.xaml",
+              "RelativeDocumentMoniker": "Pages\\MenuLateral.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\MenuLateral.xaml",
+              "RelativeToolTip": "Pages\\MenuLateral.xaml",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAAAIEAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-23T08:38:45.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "InicioSesion.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\InicioSesion.xaml",
+              "RelativeDocumentMoniker": "Pages\\InicioSesion.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\InicioSesion.xaml",
+              "RelativeToolTip": "Pages\\InicioSesion.xaml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-07T13:20:46.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "InicioSesion.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\InicioSesion.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\InicioSesion.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\InicioSesion.xaml.cs",
+              "RelativeToolTip": "Pages\\InicioSesion.xaml.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAkwDAAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T13:38:03.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FaseRed.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseRed.xaml",
+              "RelativeDocumentMoniker": "Pages\\FaseRed.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseRed.xaml",
+              "RelativeToolTip": "Pages\\FaseRed.xaml",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAAAI4AAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-13T11:27:55.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "FaseRed.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseRed.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\FaseRed.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\FaseRed.xaml.cs",
+              "RelativeToolTip": "Pages\\FaseRed.xaml.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwB8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T11:28:38.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MonitorRed.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorRed.cs",
+              "RelativeDocumentMoniker": "Database\\MonitorRed.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Database\\MonitorRed.cs",
+              "RelativeToolTip": "Database\\MonitorRed.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T14:34:26.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAgwAcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T13:22:16.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Registro.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Registro.xaml",
+              "RelativeDocumentMoniker": "Pages\\Registro.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Registro.xaml",
+              "RelativeToolTip": "Pages\\Registro.xaml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAE8AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-22T09:02:35.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Resources\\Styles\\Styles.xaml",
+              "RelativeDocumentMoniker": "Resources\\Styles\\Styles.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Resources\\Styles\\Styles.xaml",
+              "RelativeToolTip": "Resources\\Styles\\Styles.xaml",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAnwHAAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-07T13:39:30.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Colors.xaml",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Resources\\Styles\\Colors.xaml",
+              "RelativeDocumentMoniker": "Resources\\Styles\\Colors.xaml",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Resources\\Styles\\Colors.xaml",
+              "RelativeToolTip": "Resources\\Styles\\Colors.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-07T13:40:00.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
               "Title": "Popupview.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Pages\\Popupview.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\Popupview.xaml.cs",
@@ -566,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 43,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
@@ -578,7 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "Microsoft.Android.Sdk.Aot.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\33.0.95\\targets\\Microsoft.Android.Sdk.Aot.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\33.0.95\\targets\\Microsoft.Android.Sdk.Aot.targets",
@@ -590,7 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "App.g.i.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "RelativeDocumentMoniker": "obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
@@ -602,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 44,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -614,7 +690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 45,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",
@@ -626,7 +702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 46,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -638,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 47,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",
@@ -650,7 +726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "Microsoft.NET.RuntimeIdentifierInference.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.RuntimeIdentifierInference.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.204\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.RuntimeIdentifierInference.targets",
@@ -662,7 +738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
@@ -674,7 +750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "Pages_InicioSesion.xaml.sg.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\AppData\\Local\\Temp\\.vsdbgsrc\\e7f538242fc7690b6ec48e2be962d5f934b653e1\\Pages_InicioSesion.xaml.sg.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\e7f538242fc7690b6ec48e2be962d5f934b653e1\\Pages_InicioSesion.xaml.sg.cs",
@@ -686,7 +762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "Pages_Administrador.xaml.sg.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\AppData\\Local\\Temp\\.vsdbgsrc\\577c1f13bee66f64eb8df5f761d183cc0dc0fb46\\Pages_Administrador.xaml.sg.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\577c1f13bee66f64eb8df5f761d183cc0dc0fb46\\Pages_Administrador.xaml.sg.cs",
@@ -698,7 +774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 41,
               "Title": "Pages_FaseClimatica.xaml.sg.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\AppData\\Local\\Temp\\.vsdbgsrc\\bcaf4ad2c1632eaf82f1031330654700b74849cb\\Pages_FaseClimatica.xaml.sg.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\bcaf4ad2c1632eaf82f1031330654700b74849cb\\Pages_FaseClimatica.xaml.sg.cs",
@@ -710,7 +786,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 48,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
@@ -722,7 +798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 49,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\Hidropon\u00EDaTFG\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",

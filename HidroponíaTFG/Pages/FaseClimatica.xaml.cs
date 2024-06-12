@@ -53,7 +53,7 @@ public partial class FaseClimatica : ContentPage
         var optimoTemperatura = entry1.Text;
         var renovacionAire = entry2.Text;
 
-        await _monitorClimatica.SaveClimaticaData(optimoTemperatura, renovacionAire);
+        await _monitorClimatica.SaveClimaticaData(optimoTemperatura, renovacionAire, _usuario.Nombre);
     }
 
 }

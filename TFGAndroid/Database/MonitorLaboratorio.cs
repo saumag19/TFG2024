@@ -11,7 +11,9 @@ namespace TFGAndroid.Database
     public class MonitorLaboratorio
     {
         private readonly IMongoCollection<BsonDocument> _laboratorioOptCollection;
-        private  IMongoCollection<BsonDocument> _laboratorioCollection;
+        private readonly IMongoCollection<BsonDocument> _registroCollection;
+
+        private IMongoCollection<BsonDocument> _laboratorioCollection;
         private readonly CancellationTokenSource _cancellationTokenSource;
         private readonly ContentPage _page;
         private IMongoDatabase database;
@@ -22,6 +24,7 @@ namespace TFGAndroid.Database
             database = client.GetDatabase("ProyectoTFG");
             _laboratorioOptCollection = database.GetCollection<BsonDocument>("Laboratorio_opt");
             _laboratorioCollection = database.GetCollection<BsonDocument>("Laboratorio_p1");
+            _registroCollection = database.GetCollection<BsonDocument>("Registro");
 
             _cancellationTokenSource = new CancellationTokenSource();
             _page = page;
@@ -130,13 +133,41 @@ namespace TFGAndroid.Database
 
 
         // Métodos para actualizar los datos en la base de datos
-        public async Task UpdateLaboratorioOpt(string field, string newValue)
+        public async Task UpdateLaboratorioOpt(string field, string newValue, string usuario)
         {
             if (double.TryParse(newValue, out double numericValue))
             {
                 var filter = Builders<BsonDocument>.Filter.Empty;
                 var update = Builders<BsonDocument>.Update.Set(field, numericValue);
+
+                // Obtener el valor anterior antes de actualizar
+                var latestOptEntry = await _laboratorioOptCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
+
+                string oldValue = "";
+                if (latestOptEntry != null && latestOptEntry.Contains(field))
+                {
+                    // Verificar el tipo de dato antes de convertirlo
+                    if (latestOptEntry[field].BsonType == BsonType.Double)
+                    {
+                        oldValue = latestOptEntry[field].AsDouble.ToString(); // Convertir a string si es Double
+                    }
+                    else if (latestOptEntry[field].BsonType == BsonType.String)
+                    {
+                        oldValue = latestOptEntry[field].AsString; // Tomar directamente si es String
+                    }
+                    else
+                    {
+                        // Manejar otros tipos según sea necesario
+                        oldValue = latestOptEntry[field].ToString(); // Convertir a string en caso general
+                    }
+                }
+
+
                 await _laboratorioOptCollection.UpdateOneAsync(filter, update, new UpdateOptions { IsUpsert = true });
+
+                // Crear y empezar el hilo para registrar cambios
+                var registroCambioThreadLaboratorio = new RegistroCambioThreadLaboratorio(_registroCollection, usuario, field, oldValue, newValue);
+                registroCambioThreadLaboratorio.Start();
             }
             else
             {

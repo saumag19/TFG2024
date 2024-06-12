@@ -23,28 +23,52 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <StackLayout Grid.Column="0"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="20" BackgroundColor="#EBF5FB">
-                <SearchBar x:Name="searchBar" Placeholder="Buscar usuario..." TextChanged="SearchBar_TextChanged" ToolTipProperties.Text="Escribe aquí la cadena de texto para filtrar los nombres de los usuarios"/>
-                <ListView x:Name="UsuariosListView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#D6EAF8"  ItemTapped="UsuariosListView_ItemTapped" ToolTipProperties.Text="Estos son los usuarios registrados en la aplicación">
-                    <ListView.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Usuario 1</x:String>
-                            <x:String>Usuario 2</x:String>
-                        </x:Array>
-                    </ListView.ItemsSource>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
 
-                    <!-- Aquí se define la apariencia de cada elemento de la lista -->
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <Label Text="{Binding}" HorizontalTextAlignment="Center" Margin="0,20,0,20" VerticalTextAlignment="Center" />
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
+                <StackLayout Grid.Row="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="20" BackgroundColor="#EBF5FB">
+                    <SearchBar x:Name="searchBar" Placeholder="Buscar usuario..." TextChanged="SearchBar_TextChanged" ToolTipProperties.Text="Escribe aquí la cadena de texto para filtrar los nombres de los usuarios"/>
+                    <ListView x:Name="UsuariosListView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#D6EAF8"  ItemTapped="UsuariosListView_ItemTapped" ToolTipProperties.Text="Estos son los usuarios registrados en la aplicación">
+                        <ListView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Usuario 1</x:String>
+                                <x:String>Usuario 2</x:String>
+                            </x:Array>
+                        </ListView.ItemsSource>
 
-                </ListView>
+                        <!-- Aquí se define la apariencia de cada elemento de la lista -->
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Label Text="{Binding}" HorizontalTextAlignment="Center" Margin="0,20,0,20" VerticalTextAlignment="Center" />
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
 
-            </StackLayout>
+                    </ListView>
+
+                </StackLayout>
+                <StackLayout Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="20" BackgroundColor="#EBF5FB">
+                    <SearchBar x:Name="searchBar1" Placeholder="Buscar registro..." TextChanged="SearchBar1_TextChanged" ToolTipProperties.Text="Escribe aquí la cadena de texto para filtrar los registros"/>
+                    <ListView x:Name="UsuariosListView1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#D6EAF8"  ToolTipProperties.Text="Estos son los cambios registrados">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Label Text="{Binding}" HorizontalTextAlignment="Center" Margin="0,20,0,20" VerticalTextAlignment="Center" />
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+
+                    </ListView>
+                    
+                </StackLayout>
+                
+                
+            </Grid>
+            
             <!-- Formulario -->
             <StackLayout Grid.Column="1"  Padding="20" Margin="30">
                 <Grid>

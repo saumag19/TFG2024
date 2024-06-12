@@ -15,6 +15,7 @@ namespace HidroponíaTFG.Database
     {
         private readonly IMongoCollection<BsonDocument> _hidraulicaCollection;
         private readonly IMongoCollection<BsonDocument> _hidraulicaOptCollection;
+        private readonly IMongoCollection<BsonDocument> _registroCollection;
         private readonly CancellationTokenSource _cancellationTokenSource;
         private readonly ContentPage _page;
         private readonly ChartView _chartView1;
@@ -29,6 +30,7 @@ namespace HidroponíaTFG.Database
             var database = client.GetDatabase("ProyectoTFG");
             _hidraulicaCollection = database.GetCollection<BsonDocument>("Hidraulica");
             _hidraulicaOptCollection = database.GetCollection<BsonDocument>("Hidraulica_opt");
+            _registroCollection = database.GetCollection<BsonDocument>("Registro");
 
             _cancellationTokenSource = new CancellationTokenSource();
             _page = page;
@@ -116,13 +118,17 @@ namespace HidroponíaTFG.Database
             }
         }
 
-        public async Task UpdateHidraulicaOpt(string field, string newValue)
+        public async Task UpdateHidraulicaOpt(string field, string newValue, string usuario)
         {
             if (double.TryParse(newValue, out double numericValue))
             {
                 var filter = Builders<BsonDocument>.Filter.Empty;
                 var update = Builders<BsonDocument>.Update.Set(field, numericValue);
                 await _hidraulicaOptCollection.UpdateOneAsync(filter, update, new UpdateOptions { IsUpsert = true });
+
+                // Crear y empezar el hilo para registrar cambios
+                var registroCambioThreadHidraulica = new RegistroCambioThreadHidraulica(_registroCollection, _hidraulicaOptCollection, usuario, field, newValue);
+                registroCambioThreadHidraulica.Start();
             }
             else
             {
@@ -132,6 +138,8 @@ namespace HidroponíaTFG.Database
                 });
             }
         }
+
+
 
         private async Task UpdateChartView()
         {
