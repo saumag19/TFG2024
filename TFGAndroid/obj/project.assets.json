@@ -36922,11 +36922,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\TFGAndroid.csproj",
+      "projectUniqueName": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\TFGAndroid\\TFGAndroid.csproj",
       "projectName": "TFGAndroid",
-      "projectPath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\TFGAndroid.csproj",
+      "projectPath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\TFGAndroid\\TFGAndroid.csproj",
       "packagesPath": "C:\\Users\\SamuelArribasGallart\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\obj\\",
+      "outputPath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\TFGAndroid\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

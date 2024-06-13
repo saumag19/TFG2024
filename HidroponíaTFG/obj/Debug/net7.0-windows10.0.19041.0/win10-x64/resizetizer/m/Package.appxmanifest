@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap rescap">
-  <Identity Name="b3964ed7-420a-4349-8e14-bb4087b65f75" Publisher="CN=SamuelArribasGallarte" Version="0.0.5.0" />
+  <Identity Name="b3964ed7-420a-4349-8e14-bb4087b65f75" Publisher="CN=SamuelArribasGallarte" Version="1.0.6.0" />
   <mp:PhoneIdentity PhoneProductId="152FCACF-C292-46A2-9820-3F0EA8F4DAFE" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>HidroponíaTFG</DisplayName>

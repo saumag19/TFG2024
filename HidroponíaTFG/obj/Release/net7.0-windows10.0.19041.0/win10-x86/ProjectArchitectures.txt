@@ -1,1 +1,1 @@
-C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\HidroponiaTFG.csproj;x86
+C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\HidroponiaTFG.csproj;x86

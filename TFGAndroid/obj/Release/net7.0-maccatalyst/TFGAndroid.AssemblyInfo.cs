@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TFGAndroid")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b47a3c249ef8c9ce2847e51ae2dab0bf01f84884")]
 [assembly: System.Reflection.AssemblyProductAttribute("TFGAndroid")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TFGAndroid")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

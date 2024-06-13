@@ -12,7 +12,7 @@
   <Properties>
     <DisplayName>TFGAndroid</DisplayName>
     <PublisherDisplayName>User Name</PublisherDisplayName>
-    <Logo>appiconStoreLogo.png</Logo>
+    <Logo>fondoStoreLogo.png</Logo>
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
@@ -24,8 +24,8 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="TFGAndroid.exe" EntryPoint="Windows.FullTrustApplication">
-      <uap:VisualElements DisplayName="TFGAndroid" Description="TFGAndroid" Square150x150Logo="appiconMediumTile.png" Square44x44Logo="appiconLogo.png" BackgroundColor="transparent">
-        <uap:DefaultTile Square71x71Logo="appiconSmallTile.png" Wide310x150Logo="appiconWideTile.png" Square310x310Logo="appiconLargeTile.png" ShortName="TFGAndroid">
+      <uap:VisualElements DisplayName="TFGAndroid" Description="TFGAndroid" Square150x150Logo="fondoMediumTile.png" Square44x44Logo="fondoLogo.png" BackgroundColor="transparent">
+        <uap:DefaultTile Square71x71Logo="fondoSmallTile.png" Wide310x150Logo="fondoWideTile.png" Square310x310Logo="fondoLargeTile.png" ShortName="TFGAndroid">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
             <uap:ShowOn Tile="wide310x150Logo" />

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\HidroponíaTFG\\HidroponiaTFG.csproj": {}
+    "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\HidroponíaTFG\\HidroponiaTFG.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\HidroponíaTFG\\HidroponiaTFG.csproj": {
+    "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\HidroponíaTFG\\HidroponiaTFG.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\HidroponíaTFG\\HidroponiaTFG.csproj",
+        "projectUniqueName": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\HidroponíaTFG\\HidroponiaTFG.csproj",
         "projectName": "HidroponiaTFG",
-        "projectPath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\HidroponíaTFG\\HidroponiaTFG.csproj",
+        "projectPath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\HidroponíaTFG\\HidroponiaTFG.csproj",
         "packagesPath": "C:\\Users\\SamuelArribasGallart\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\HidroponíaTFG\\obj\\",
+        "outputPath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\HidroponíaTFG\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

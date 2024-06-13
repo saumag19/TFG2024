@@ -10,34 +10,34 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>b3964ed7-420a-4349-8e14-bb4087b65f75</PackageIdentityName>
     <PackageIdentityPublisher>CN=SamuelArribasGallarte</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath></WindowsSdkPath>
-    <LayoutDir>C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Release\net7.0-windows10.0.19041.0\win10-x86\AppX</LayoutDir>
+    <LayoutDir>C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\bin\Release\net7.0-windows10.0.19041.0\win10-x86\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Release\net7.0-windows10.0.19041.0\win10-x86\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\bin\Release\net7.0-windows10.0.19041.0\win10-x86\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Release\net7.0-windows10.0.19041.0\win10-x86\resources.pri">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\bin\Release\net7.0-windows10.0.19041.0\win10-x86\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Release\net7.0-windows10.0.19041.0\win10-x86\HidroponiaTFG.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\bin\Release\net7.0-windows10.0.19041.0\win10-x86\HidroponiaTFG.runtimeconfig.json">
       <PackagePath>HidroponiaTFG.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Release\net7.0-windows10.0.19041.0\win10-x86\HidroponiaTFG.dll">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\bin\Release\net7.0-windows10.0.19041.0\win10-x86\HidroponiaTFG.dll">
       <PackagePath>HidroponiaTFG.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\apphost.exe">
       <PackagePath>HidroponiaTFG.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Release\net7.0-windows10.0.19041.0\win10-x86\HidroponiaTFG.deps.json">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\bin\Release\net7.0-windows10.0.19041.0\win10-x86\HidroponiaTFG.deps.json">
       <PackagePath>HidroponiaTFG.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\.nuget\packages\microsoft.netcore.app.runtime.win-x86\7.0.18\runtimes\win-x86\lib\net7.0\Microsoft.CSharp.dll">
@@ -754,205 +754,343 @@
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\.nuget\packages\microsoft.maui.core.ref.win\7.0.101\ref\net7.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\aa.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\aa.scale-100.png">
       <PackagePath>aa.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\admin.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\admin.scale-100.png">
       <PackagePath>admin.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\agua.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\agua.scale-100.png">
       <PackagePath>agua.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\climatica.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\climatica.scale-100.png">
       <PackagePath>climatica.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondo.scale-100.jpeg">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondo.ico">
+      <PackagePath>fondo.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondo.scale-100.jpeg">
       <PackagePath>fondo.scale-100.jpeg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\laboratorio.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLargeTile.scale-100.png">
+      <PackagePath>fondoLargeTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLargeTile.scale-125.png">
+      <PackagePath>fondoLargeTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLargeTile.scale-150.png">
+      <PackagePath>fondoLargeTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLargeTile.scale-200.png">
+      <PackagePath>fondoLargeTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLargeTile.scale-400.png">
+      <PackagePath>fondoLargeTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>fondoLogo.altform-lightunplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>fondoLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>fondoLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>fondoLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>fondoLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.altform-unplated_targetsize-16.png">
+      <PackagePath>fondoLogo.altform-unplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>fondoLogo.altform-unplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>fondoLogo.altform-unplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>fondoLogo.altform-unplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>fondoLogo.altform-unplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.scale-100.png">
+      <PackagePath>fondoLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.scale-125.png">
+      <PackagePath>fondoLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.scale-150.png">
+      <PackagePath>fondoLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.scale-200.png">
+      <PackagePath>fondoLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.scale-400.png">
+      <PackagePath>fondoLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.targetsize-16.png">
+      <PackagePath>fondoLogo.targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.targetsize-24.png">
+      <PackagePath>fondoLogo.targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.targetsize-256.png">
+      <PackagePath>fondoLogo.targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.targetsize-32.png">
+      <PackagePath>fondoLogo.targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoLogo.targetsize-48.png">
+      <PackagePath>fondoLogo.targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoMediumTile.scale-100.png">
+      <PackagePath>fondoMediumTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoMediumTile.scale-125.png">
+      <PackagePath>fondoMediumTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoMediumTile.scale-150.png">
+      <PackagePath>fondoMediumTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoMediumTile.scale-200.png">
+      <PackagePath>fondoMediumTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoMediumTile.scale-400.png">
+      <PackagePath>fondoMediumTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoSmallTile.scale-100.png">
+      <PackagePath>fondoSmallTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoSmallTile.scale-125.png">
+      <PackagePath>fondoSmallTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoSmallTile.scale-150.png">
+      <PackagePath>fondoSmallTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoSmallTile.scale-200.png">
+      <PackagePath>fondoSmallTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoSmallTile.scale-400.png">
+      <PackagePath>fondoSmallTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoStoreLogo.scale-100.png">
+      <PackagePath>fondoStoreLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoStoreLogo.scale-125.png">
+      <PackagePath>fondoStoreLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoStoreLogo.scale-150.png">
+      <PackagePath>fondoStoreLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoStoreLogo.scale-200.png">
+      <PackagePath>fondoStoreLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoStoreLogo.scale-400.png">
+      <PackagePath>fondoStoreLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoWideTile.scale-100.png">
+      <PackagePath>fondoWideTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoWideTile.scale-125.png">
+      <PackagePath>fondoWideTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoWideTile.scale-150.png">
+      <PackagePath>fondoWideTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoWideTile.scale-200.png">
+      <PackagePath>fondoWideTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\fondoWideTile.scale-400.png">
+      <PackagePath>fondoWideTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\laboratorio.scale-100.png">
       <PackagePath>laboratorio.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\luz.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\luz.scale-100.png">
       <PackagePath>luz.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\red.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\HidroponíaTFG\obj\Release\net7.0-windows10.0.19041.0\win10-x86\resizetizer\r\red.scale-100.png">
       <PackagePath>red.scale-100.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

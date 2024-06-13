@@ -7,12 +7,12 @@
 
     Para obtener más información acerca de los archivos de manifiesto del paquete, vea http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="b3964ed7-420a-4349-8e14-bb4087b65f75" Publisher="CN=SamuelArribasGallarte" Version="0.0.5.0" ProcessorArchitecture="x86" />
+  <Identity Name="b3964ed7-420a-4349-8e14-bb4087b65f75" Publisher="CN=SamuelArribasGallarte" Version="1.0.6.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="152FCACF-C292-46A2-9820-3F0EA8F4DAFE" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>HidroponíaTFG</DisplayName>
     <PublisherDisplayName>User Name</PublisherDisplayName>
-    <Logo>appiconStoreLogo.png</Logo>
+    <Logo>fondoStoreLogo.png</Logo>
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
@@ -24,8 +24,8 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="HidroponiaTFG.exe" EntryPoint="Windows.FullTrustApplication">
-      <uap:VisualElements DisplayName="HidroponíaTFG" Description="HidroponíaTFG" Square150x150Logo="appiconMediumTile.png" Square44x44Logo="appiconLogo.png" BackgroundColor="transparent">
-        <uap:DefaultTile Square71x71Logo="appiconSmallTile.png" Wide310x150Logo="appiconWideTile.png" Square310x310Logo="appiconLargeTile.png" ShortName="HidroponíaTFG">
+      <uap:VisualElements DisplayName="HidroponíaTFG" Description="HidroponíaTFG" Square150x150Logo="fondoMediumTile.png" Square44x44Logo="fondoLogo.png" BackgroundColor="transparent">
+        <uap:DefaultTile Square71x71Logo="fondoSmallTile.png" Wide310x150Logo="fondoWideTile.png" Square310x310Logo="fondoLargeTile.png" ShortName="HidroponíaTFG">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
             <uap:ShowOn Tile="wide310x150Logo" />

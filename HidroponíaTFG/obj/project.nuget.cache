@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t4vNIqWMKQCp1wy7WObtdsA6eoLm2C+XmGG2nEkLem++huPnKEkhiBfqPhYbXoweVGntywfWq2hkPewIgYt7HQ==",
+  "dgSpecHash": "kBioITSrpv+t8x3deIxXaUISqwVK8DuA9vTTwYLfex4GFJ3OF49OzZawcRajs1VpWiRC+bpOgQfV/vBiY8kBCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\HidroponíaTFG\\HidroponiaTFG.csproj",
+  "projectFilePath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\HidroponíaTFG\\HidroponiaTFG.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SamuelArribasGallart\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\SamuelArribasGallart\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

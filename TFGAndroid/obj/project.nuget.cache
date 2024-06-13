@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OcuDSJnUl+EY/uRebhU0Rli+ZImQCht8/ZGLm/zTcVdhnal63/M1EivaiMFqsDVGYoI7XZAveux1F5Q0Az536g==",
+  "dgSpecHash": "2wdKxz6pJ4WIVd1z2KxWEozmmjvbBXrW4/Cce/ovIoJdhSPVzKfwxxo7M4LL2OdJUVA9f6kDoOdD26TUyhCOVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\TFGAndroid.csproj",
+  "projectFilePath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\TFGAndroid\\TFGAndroid.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SamuelArribasGallart\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\SamuelArribasGallart\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

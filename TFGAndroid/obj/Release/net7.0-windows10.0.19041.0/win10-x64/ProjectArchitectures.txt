@@ -1,1 +1,1 @@
-C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFGAndroid\TFGAndroid.csproj;x64
+C:\Users\SamuelArribasGallart\Desktop\SamProyect\TFG2024\TFGAndroid\TFGAndroid.csproj;x64
