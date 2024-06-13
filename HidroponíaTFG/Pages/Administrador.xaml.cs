@@ -8,44 +8,48 @@ namespace HidroponíaTFG.Pages;
 
 public partial class Administrador : ContentPage
 {
-    private BBDD _bbdd;
-    private List<string> usuarios = new List<string>();
-    private Usuario usuario = new Usuario();
-    private Usuario _usuario;
+    private BBDD _bbdd;// Instancia de la clase BBDD para interactuar con la base de datos
+    private Usuario usuario = new Usuario();// Instancia de la clase Usuario
+    private Usuario _usuario;// Usuario actual
+
+    // Constructor de la página Administrador
     public Administrador(Usuario usuarioParam)
 	{
-        _usuario = usuarioParam;
-		InitializeComponent();
-        menulateral.setUsuario(_usuario);
-        _bbdd = new BBDD();
-        CargarUsuarios();
-        CargarRegistros();
+        _usuario = usuarioParam;// Asigna el usuario recibido como parámetro
+        InitializeComponent();// Inicializa los componentes de la página
+        menulateral.setUsuario(_usuario);// Configura el usuario en el menú lateral
+        _bbdd = new BBDD();// Inicializa la instancia de BBDD para operaciones de base de datos
+        CargarUsuarios();// Carga la lista de usuarios en la interfaz
+        CargarRegistros();// Carga los registros en la interfaz
     }
 
+    // Método para controlar la acción de mostrar/ocultar el menú lateral
     private async void ToggleMenu(object sender, EventArgs e)
     {
         if (menulateral.IsVisible)
         {
-            menulateral.UnShow("administrador");
+            menulateral.UnShow("administrador");// Oculta el menú lateral
         }
         else
         {
-            menulateral.Show("administrador");
+            menulateral.Show("administrador");// Muestra el menú lateral
         }
 
     }
 
+    // Método para manejar el evento de pulsar en una etiqueta de RadioButton
     private void RadioButtonLabelTapped(object sender, EventArgs e)
     {
         if (sender is Label label && label.GestureRecognizers[0] is TapGestureRecognizer tapGestureRecognizer)
         {
             if (tapGestureRecognizer.CommandParameter is RadioButton radioButton)
             {
-                radioButton.IsChecked = true;
+                radioButton.IsChecked = true; // Marca el RadioButton seleccionado
             }
         }
     }
 
+    // Método para cargar la lista de usuarios en la interfaz
     private void CargarUsuarios()
     {
         // Obtener la lista de usuarios desde la base de datos
@@ -64,6 +68,7 @@ public partial class Administrador : ContentPage
         UsuariosListView.ItemsSource = nombresUsuarios;
     }
 
+    // Método para cargar los registros en la interfaz
     private void CargarRegistros()
     {
         // Obtener los registros desde la base de datos
@@ -74,7 +79,7 @@ public partial class Administrador : ContentPage
     }
 
 
-
+    // Método invocado al seleccionar un usuario en el ListView
     private void UsuariosListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {
         if (e.Item != null && e.Item is string nombreUsuario)
@@ -112,6 +117,7 @@ public partial class Administrador : ContentPage
         }
     }
 
+    // Método para limpiar los campos del formulario
     private void BtnVaciarFormulario_Clicked(object sender, EventArgs e)
     {
         // Vaciar los campos del formulario
@@ -205,55 +211,59 @@ public partial class Administrador : ContentPage
 
     private void BtnEliminarUsuario_Clicked(object sender, EventArgs e)
     {
-        // Get the user's name to be deleted
+        // Obtiene el nombre del usuario a eliminar
         string nombreUsuario = EntryNombre.Text;
+        // Verifica que no se intente eliminar el usuario administrador
         if (nombreUsuario == "a")
         {
             DisplayAlert("Error", "No puedes eliminar el usuario administrador", "Aceptar");
             return;
         }
-        // Validate that a name is provided
+        // Valida que se haya proporcionado un nombre
         if (string.IsNullOrEmpty(nombreUsuario))
         {
             DisplayAlert("Error", "Debes introducir el nombre del usuario a eliminar.", "Aceptar");
             return;
         }
 
-        // Attempt to delete the user from the database
+        // Intenta eliminar el usuario de la base de datos
         try
         {
             _bbdd.EliminarUsuario(nombreUsuario);
 
-            // Display a success message
+            // Muestra un mensaje de éxito
             DisplayAlert("Éxito", $"Usuario '{nombreUsuario}' eliminado correctamente.", "Aceptar");
 
-            // Reload the user list in the ListView
+            // Recarga la lista de usuarios en el ListView
             CargarUsuarios();
 
-            // Clear the input field
+            // Limpia el campo de entrada
             EntryNombre.Text = "";
         }
         catch (Exception ex)
         {
-            // Display an error message if deletion fails
+            // Muestra un mensaje de error si falla la eliminación
             DisplayAlert("Error", $"Ocurrió un error al eliminar el usuario: {ex.Message}", "Aceptar");
         }
     }
 
+    // Método para modificar un usuario existente
     private void BtnModificarUsuario_Clicked(object sender, EventArgs e)
     {
-        // Get updated user information from UI elements
+        // Obtiene la información actualizada del usuario desde los elementos de la interfaz
         string nombre = EntryNombre.Text;
         string nuevaContraseña = EntryContraseña.Text;
         string email = EntryEmail.Text;
         string tipoUsuario = "";
 
-        // Validate user input (excluding password)
+        // Valida la entrada del usuario (excepto la contraseña)
         if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(email))
         {
             DisplayAlert("Error", "Los campos nombre y email son obligatorios.", "Aceptar");
             return;
         }
+        // Valida que no se intente modificar el usuario administrador
+
         if (nombre == "a")
         {
             DisplayAlert("Error", "No puedes modificar el usuario administrador", "Aceptar");
@@ -266,14 +276,14 @@ public partial class Administrador : ContentPage
             return;
         }
 
-        // Verificar que al menos un RadioButton esté seleccionado
+        // Verifica que al menos un RadioButton esté seleccionado
         if (!InvitadoRadioButton.IsChecked && !JardineroRadioButton.IsChecked && !AdministradorRadioButton.IsChecked)
         {
             DisplayAlert("Error", "Seleccione un tipo de usuario.", "Aceptar");
             return;
         }
 
-        // Determine the selected user type
+        // Determina el tipo de usuario seleccionado
         if (InvitadoRadioButton.IsChecked)
         {
             tipoUsuario = "invit";
@@ -303,10 +313,10 @@ public partial class Administrador : ContentPage
         }
         string contraseñaActualCifrada = usuarioActual.Pass; // Asumiendo que tu clase Usuario tiene una propiedad Pass
 
-        // Usar la nueva contraseña si se ha proporcionado, de lo contrario, usar la contraseña cifrada actual
+        // Utiliza la nueva contraseña si se proporcionó, de lo contrario, usa la contraseña cifrada actual
         string contraseñaAUsar = !string.IsNullOrEmpty(nuevaContraseña) ? BCrypt.Net.BCrypt.HashPassword(nuevaContraseña) : contraseñaActualCifrada;
 
-        // Construct BsonDocument with updated user information
+        // Construye un documento BSON con la información actualizada del usuario
         var updatedUsuario = new BsonDocument
     {
         { "name", nombre },
@@ -317,19 +327,19 @@ public partial class Administrador : ContentPage
 
         try
         {
-            // Update user in MongoDB
+            // Actualiza el usuario en MongoDB
             _bbdd.ActualizarUsuario(usuario.Nombre, updatedUsuario);
 
-            // Display success message and reload user list
+            // Muestra un mensaje de éxito y recarga la lista de usuarios
             DisplayAlert("Éxito", "Usuario modificado correctamente.", "Aceptar");
             CargarUsuarios();
 
-            // Optionally clear the modification form
+            // Opcionalmente, limpia el formulario de modificación
             BtnVaciarFormulario_Clicked(vaciar, e);
         }
         catch (Exception ex)
         {
-            // Display error message if an issue occurs during update
+            // Muestra un mensaje de error si ocurre algún problema durante la actualización
             DisplayAlert("Error", $"Ocurrió un error al modificar el usuario: {ex.Message}", "Aceptar");
         }
     }
@@ -337,7 +347,7 @@ public partial class Administrador : ContentPage
 
 
 
-
+    // Método para manejar el cambio de texto en la barra de búsqueda de usuarios
     private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
     {
 
@@ -360,6 +370,8 @@ public partial class Administrador : ContentPage
 
 
     }
+
+    // Método para manejar el cambio de texto en la barra de búsqueda de registros
     private void SearchBar1_TextChanged(object sender, TextChangedEventArgs e)
     {
         // Obtener los registros desde la base de datos
@@ -376,15 +388,12 @@ public partial class Administrador : ContentPage
     }
 
 
-
-
+    // Método para verificar si un email es válido utilizando una expresión regular
     private bool EsEmailValido(string email)
     {
         // Expresión regular para validar el email
         string patronEmail = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
         return Regex.IsMatch(email, patronEmail);
     }
-
-
 
 }

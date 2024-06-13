@@ -30,29 +30,29 @@
     <AppXManifest Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-11T13:22:21.935</Modified>
+      <Modified>2024-06-12T15:59:01.496</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-11T13:22:21.619</Modified>
+      <Modified>2024-06-12T15:59:01.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HidroponiaTFG.runtimeconfig.json">
       <PackagePath>HidroponiaTFG.runtimeconfig.json</PackagePath>
-      <Modified>2024-06-09T09:03:32.896</Modified>
+      <Modified>2024-06-12T09:31:18.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HidroponiaTFG.dll">
       <PackagePath>HidroponiaTFG.dll</PackagePath>
-      <Modified>2024-06-11T13:22:20.291</Modified>
+      <Modified>2024-06-12T15:58:59.623</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>HidroponiaTFG.exe</PackagePath>
-      <Modified>2024-06-11T13:22:20.298</Modified>
+      <Modified>2024-06-12T15:58:59.657</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\HidroponiaTFG.deps.json">
       <PackagePath>HidroponiaTFG.deps.json</PackagePath>
-      <Modified>2024-06-11T13:22:21.556</Modified>
+      <Modified>2024-06-12T09:31:18.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\SamuelArribasGallart\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.18\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

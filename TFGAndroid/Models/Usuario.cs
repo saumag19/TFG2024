@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TFGAndroid.Models
 {
+    // Clase que representa un usuario en el sistema
     public class Usuario
     {
         public string Id { get; set; }

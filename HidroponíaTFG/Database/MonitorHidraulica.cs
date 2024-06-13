@@ -13,17 +13,22 @@ namespace HidroponíaTFG.Database
 {
     public class MonitorHidraulica
     {
+        // Colecciones de MongoDB
         private readonly IMongoCollection<BsonDocument> _hidraulicaCollection;
         private readonly IMongoCollection<BsonDocument> _hidraulicaOptCollection;
         private readonly IMongoCollection<BsonDocument> _registroCollection;
+        // Fuente de token para cancelar las tareas asíncronas
         private readonly CancellationTokenSource _cancellationTokenSource;
+        // Página de contenido
         private readonly ContentPage _page;
+        // Graficos de la pagina que se actualizarán
         private readonly ChartView _chartView1;
         private readonly ChartView _chartView2;
         private readonly ChartView _chartView3;
         private readonly ChartView _chartView5;
         private readonly ChartView _chartView6;
 
+        // Constructor que inicializa las colecciones de MongoDB y los componentes de la interfaz
         public MonitorHidraulica(ContentPage page, ChartView chartView1, ChartView chartView2, ChartView chartView3, ChartView chartView5, ChartView chartView6)
         {
             var client = new MongoClient("mongodb+srv://root:root@proyectotfg.vprqszh.mongodb.net/?retryWrites=true&w=majority&appName=ProyectoTFG");
@@ -41,16 +46,19 @@ namespace HidroponíaTFG.Database
             _chartView6 = chartView6;
         }
 
+        // Método para iniciar el monitoreo
         public void StartMonitoring()
         {
             Task.Run(async () => await MonitorLoop(_cancellationTokenSource.Token));
         }
 
+        // Método para detener el monitoreo
         public void StopMonitoring()
         {
             _cancellationTokenSource.Cancel();
         }
 
+        // Bucle principal de monitoreo
         private async Task MonitorLoop(CancellationToken cancellationToken)
         {
             while (!cancellationToken.IsCancellationRequested)
@@ -69,6 +77,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Método para comprobar el estado de la hidráulica y actulizar los datos
         private async Task CheckHidraulicaStatus()
         {
             var latestEntry = await _hidraulicaCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
@@ -100,6 +109,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Método para actualizar el texto de un Label en la interfaz
         private void UpdateLabelText(string labelName, string text)
         {
             var label = _page.FindByName<Label>(labelName);
@@ -109,6 +119,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Método para actualizar el texto de un Entry en la interfaz
         private void UpdateEntryText(string entryName, string text)
         {
             var entry = _page.FindByName<Entry>(entryName);
@@ -118,6 +129,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Método para actualizar los datos óptimos de la hidráulica en la base de datos
         public async Task UpdateHidraulicaOpt(string field, string newValue, string usuario)
         {
             if (double.TryParse(newValue, out double numericValue))
@@ -140,7 +152,7 @@ namespace HidroponíaTFG.Database
         }
 
 
-
+        //Método para actualizar los datos de los diferentes graficos
         private async Task UpdateChartView()
         {
             var latestEntries = await _hidraulicaCollection.Find(new BsonDocument()).SortByDescending(x => x["_id"]).Limit(5).ToListAsync();

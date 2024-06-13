@@ -9,6 +9,13 @@
              Disappearing="desaparece">
 
     <Grid BackgroundColor="#79B4BE">
+
+        <FlyoutBase.ContextFlyout>
+            <MenuFlyout>
+                <MenuFlyoutItem Text="Recargar datos" Clicked="recargar"/>
+            </MenuFlyout>
+        </FlyoutBase.ContextFlyout>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
@@ -55,9 +62,9 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" Text="Nivel requerido" VerticalOptions="Center" Margin="10"/>
-                                    <Entry x:Name="entryNivelDeposito" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5"/>
+                                    <Entry x:Name="entryNivelDeposito" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5" SemanticProperties.Description="Introduce el nivel requerido del nivel de deposito"/>
                                 </Grid>
-                                <Button x:Name="btn1" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosNivelDeposito" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido"/>
+                                <Button x:Name="btn1" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosNivelDeposito" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido" SemanticProperties.Description="Haz click para aplicar los cambios del nivel requerido de deposito"/>
                             </Grid>
                         </Frame>
                         <Frame Grid.Column="1" Grid.Row="0" BackgroundColor="#ADCDCC" Margin="2" ToolTipProperties.Text="Aquí que muestran los valores referentes nivel de nitrogeno del agua que circula">
@@ -79,9 +86,9 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" Text="Nivel requerido" VerticalOptions="Center" Margin="10"/>
-                                    <Entry x:Name="entryNitrogeno" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5"/>
+                                    <Entry x:Name="entryNitrogeno" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5" SemanticProperties.Description="Introduce el nivel requerido de nitrogeno"/>
                                 </Grid>
-                                <Button x:Name="btn2" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosNitrogeno" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido"/>
+                                <Button x:Name="btn2" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosNitrogeno" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido" SemanticProperties.Description="Haz click para aplicar los cambios del nivel requerido de nitrogeno"/>
                             </Grid>
                         </Frame>
                         <Frame Grid.Column="2" Grid.Row="0" BackgroundColor="#ADCDCC" Margin="2" ToolTipProperties.Text="Aquí que muestran los valores referentes nivel de potasio del agua que circula">
@@ -103,9 +110,9 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" Text="Nivel requerido" VerticalOptions="Center" Margin="10"/>
-                                    <Entry x:Name="entryPotasio" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5"/>
+                                    <Entry x:Name="entryPotasio" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5" SemanticProperties.Description="Introduce el nivel requerido de potasio"/>
                                 </Grid>
-                                <Button x:Name="btn3" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosPotasio" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido"/>
+                                <Button x:Name="btn3" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosPotasio" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido" SemanticProperties.Description="Haz click para aplicar los cambios del nivel requerido de potasio"/>
                             </Grid>
                         </Frame>
 
@@ -130,9 +137,9 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" Text="Nivel requerido" VerticalOptions="Center" Margin="10"/>
-                                    <Entry x:Name="entryFosforo" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5"/>
+                                    <Entry x:Name="entryFosforo" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5" SemanticProperties.Description="Introduce el nivel requerido de fosforo"/>
                                 </Grid>
-                                <Button x:Name="btn4" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosFosforo" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido"/>
+                                <Button x:Name="btn4" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosFosforo" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido" SemanticProperties.Description="Haz click para aplicar los cambios del nivel requerido de fosforo"/>
                             </Grid>
                         </Frame>
                         <Frame Grid.Column="2" Grid.Row="1" BackgroundColor="#ADCDCC" Margin="2" ToolTipProperties.Text="Aquí que muestran los valores referentes nivel de oxígeno del agua que circula">
@@ -154,9 +161,9 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Column="0" Text="Nivel requerido" VerticalOptions="Center" Margin="10"/>
-                                    <Entry x:Name="entryOxigeno" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5"/>
+                                    <Entry x:Name="entryOxigeno" Grid.Column="1" Placeholder="Introduce el nivel requerido" Margin="5" SemanticProperties.Description="Introduce el nivel requerido de oxigeno"/>
                                 </Grid>
-                                <Button x:Name="btn5" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosOxigeno" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido"/>
+                                <Button x:Name="btn5" Grid.Row="3" Text="APLICAR CAMBIOS" Padding="0" Margin="100,0,100,0" Clicked="AplicarCambiosOxigeno" ToolTipProperties.Text="Haz click para aplicar los cambios del nivel requerido" SemanticProperties.Description="Haz click para aplicar los cambios del nivel requerido de oxigeno"/>
                             </Grid>
                         </Frame>
                     </Grid>
@@ -173,7 +180,7 @@
                 <!-- StackLayout para el botón de ocultar el menú -->
                 <StackLayout VerticalOptions="FillAndExpand" >
                     <!-- Botón para ocultar el menú -->
-                    <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumWidthRequest="0" Text="||" Padding="0"  VerticalOptions="FillAndExpand" BackgroundColor="Transparent" />
+                    <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumWidthRequest="0" Text="||" Padding="0"  VerticalOptions="FillAndExpand" BackgroundColor="Transparent" SemanticProperties.Description="Boton para mostrar el menu lateral"/>
                 </StackLayout>
             </StackLayout>
         </Grid>

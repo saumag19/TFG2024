@@ -7,12 +7,13 @@ namespace TFGAndroid.Database
 {
     public class RegistroCambioThreadHidraulica
     {
-        private readonly IMongoCollection<BsonDocument> _registroCollection;
-        private readonly IMongoCollection<BsonDocument> _hidraulicaOptCollection;
-        private readonly string _usuario;
-        private readonly string _field;
-        private readonly string _newValue;
+        private readonly IMongoCollection<BsonDocument> _registroCollection;// Colección para registros de cambios
+        private readonly IMongoCollection<BsonDocument> _hidraulicaOptCollection;// Colección para opciones óptimas de hidráulica
+        private readonly string _usuario;// Nombre de usuario asociado al cambio
+        private readonly string _field;// Campo a actualizar
+        private readonly string _newValue;// Nuevo valor del campo a actualizar
 
+        // Constructor de la clase
         public RegistroCambioThreadHidraulica(IMongoCollection<BsonDocument> registroCollection, IMongoCollection<BsonDocument> hidraulicaOptCollection, string usuario, string field, string newValue)
         {
             _registroCollection = registroCollection;
@@ -22,12 +23,14 @@ namespace TFGAndroid.Database
             _newValue = newValue;
         }
 
+        // Método para iniciar el hilo de registro de cambios
         public void Start()
         {
             Thread registroThread = new Thread(RegistrarCambios);
             registroThread.Start();
         }
 
+        // Método privado para realizar el registro de cambios
         private void RegistrarCambios()
         {
             // Este método se ejecutará en un hilo separado

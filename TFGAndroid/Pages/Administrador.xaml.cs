@@ -8,22 +8,25 @@ namespace TFGAndroid.Pages;
 
 public partial class Administrador : ContentPage
 {
-    private BBDD _bbdd;
-    private List<string> usuarios = new List<string>();
-    private Usuario usuario = new Usuario();
-    private Usuario _usuario;
+    private BBDD _bbdd;// Instancia de la clase BBDD para interactuar con la base de datos
+    private List<string> usuarios; // Lista de nombres de usuarios
+    private Usuario usuario = new Usuario();// Instancia de Usuario para almacenar datos de usuario actualmente seleccionado
+    private Usuario _usuario; // Usuario actualmente logueado en la aplicación
+
+    // Constructor de la página Administrador
     public Administrador(Usuario usuario)
 	{
 		InitializeComponent();
 
         _usuario = usuario;
-        menulateral.setUsuario(_usuario);
-        _bbdd = new BBDD();
-        CargarUsuarios();
+        menulateral.setUsuario(_usuario);// Configurar el usuario en el menú lateral
+        _bbdd = new BBDD();// Inicializar la instancia de BBDD para acceder a la base de datos
+        CargarUsuarios();// Cargar la lista de usuarios en la interfaz
 
-        CargarRegistros();
+        CargarRegistros();// Cargar los registros en la interfaz
     }
 
+    // Método para mostrar u ocultar el menú lateral al hacer clic en el botón correspondiente
     private async void ToggleMenu(object sender, EventArgs e)
     {
         if (menulateral.IsVisible)
@@ -36,6 +39,7 @@ public partial class Administrador : ContentPage
         }
     }
 
+    // Método que maneja el evento de tocar la etiqueta de un RadioButton
     private void RadioButtonLabelTapped(object sender, EventArgs e)
     {
         if (sender is Label label && label.GestureRecognizers[0] is TapGestureRecognizer tapGestureRecognizer)
@@ -47,6 +51,7 @@ public partial class Administrador : ContentPage
         }
     }
 
+    // Método para cargar la lista de usuarios en el ListView correspondiente
     private void CargarUsuarios()
     {
         // Obtener la lista de usuarios desde la base de datos
@@ -65,6 +70,7 @@ public partial class Administrador : ContentPage
         UsuariosListView.ItemsSource = nombresUsuarios;
     }
 
+    // Método para cargar los registros en el ListView correspondiente
     private void CargarRegistros()
     {
         // Obtener los registros desde la base de datos
@@ -74,6 +80,7 @@ public partial class Administrador : ContentPage
         UsuariosListView1.ItemsSource = registros;
     }
 
+    // Manejador del evento cuando se toca un ítem en el ListView de usuarios
     private void UsuariosListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {
         if (e.Item != null && e.Item is string nombreUsuario)
@@ -111,9 +118,9 @@ public partial class Administrador : ContentPage
         }
     }
 
+    // Método para limpiar los campos del formulario
     private void BtnVaciarFormulario_Clicked(object sender, EventArgs e)
     {
-        // Vaciar los campos del formulario
         EntryNombre.Text = string.Empty;
         EntryContraseña.Text = string.Empty;
         EntryContraseña.Placeholder = "Introduce aquí la contraseña";
@@ -123,6 +130,7 @@ public partial class Administrador : ContentPage
         AdministradorRadioButton.IsChecked = false;
     }
 
+    // Método para insertar un nuevo usuario en la base de datos
     private void BtnInsertarUsuario_Clicked(object sender, EventArgs e)
     {
         // Obtener los datos del formulario
@@ -202,6 +210,7 @@ public partial class Administrador : ContentPage
         }
     }
 
+    // Método para eliminar un usuario seleccionado de la base de datos
     private void BtnEliminarUsuario_Clicked(object sender, EventArgs e)
     {
         // Get the user's name to be deleted
@@ -240,6 +249,7 @@ public partial class Administrador : ContentPage
         }
     }
 
+    // Método para modificar un usuario existente en la base de datos
     private void BtnModificarUsuario_Clicked(object sender, EventArgs e)
     {
         // Get updated user information from UI elements
@@ -321,10 +331,7 @@ public partial class Administrador : ContentPage
         }
     }
 
-
-
-
-
+    // Método para filtrar la lista de usuarios según el término de búsqueda ingresado
     private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
     {
 
@@ -345,9 +352,9 @@ public partial class Administrador : ContentPage
         // Update the ListView's ItemsSource with the filtered names
         UsuariosListView.ItemsSource = filteredNombresUsuarios;
 
-
     }
 
+    // Método para filtrar la lista de registros según el término de búsqueda ingresado
     private void SearchBar1_TextChanged(object sender, TextChangedEventArgs e)
     {
         // Obtener los registros desde la base de datos
@@ -363,6 +370,7 @@ public partial class Administrador : ContentPage
         UsuariosListView1.ItemsSource = filteredRegistros;
     }
 
+    // Método para validar si una dirección de correo electrónico es válida usando una expresión regular
     private bool EsEmailValido(string email)
     {
         // Expresión regular para validar el email

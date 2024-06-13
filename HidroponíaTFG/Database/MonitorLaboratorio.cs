@@ -13,14 +13,19 @@ namespace HidroponíaTFG.Database
 {
     public class MonitorLaboratorio
     {
+        // Colecciones de MongoDB
         private readonly IMongoCollection<BsonDocument> _laboratorioOptCollection;
         private readonly IMongoCollection<BsonDocument> _registroCollection;
         private  IMongoCollection<BsonDocument> _laboratorioCollection;
+        // Fuente de token para cancelar las tareas asíncronas
         private readonly CancellationTokenSource _cancellationTokenSource;
+        // Página de contenido
         private readonly ContentPage _page;
+        // Grafico que se va a actualizar
         private readonly ChartView _chartView;
         private IMongoDatabase database;
 
+        // Constructor que inicializa las colecciones de MongoDB y los componentes de la interfaz
         public MonitorLaboratorio(ContentPage page, ChartView chartView)
         {
             var client = new MongoClient("mongodb+srv://root:root@proyectotfg.vprqszh.mongodb.net/?retryWrites=true&w=majority&appName=ProyectoTFG");
@@ -34,17 +39,20 @@ namespace HidroponíaTFG.Database
             _chartView = chartView;
         }
 
+        // Método para iniciar el monitoreo
         public void StartMonitoring()
         {
             Task.Run(async () => await MonitorLoop(_cancellationTokenSource.Token));
             Task.Run(async () => await MonitorLoop2(_cancellationTokenSource.Token));
         }
 
+        // Método para detener el monitoreo
         public void StopMonitoring()
         {
             _cancellationTokenSource.Cancel();
         }
 
+        // Bucle principal de monitoreo para cargar el estado óptimo del laboratorio
         private async Task MonitorLoop(CancellationToken cancellationToken)
         {
             while (!cancellationToken.IsCancellationRequested)
@@ -63,6 +71,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Bucle principal de monitoreo para cargar el estado del laboratorio p1
         private async Task MonitorLoop2(CancellationToken cancellationToken)
         {
             while (!cancellationToken.IsCancellationRequested)
@@ -81,6 +90,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Método para cargar el estado óptimo del laboratorio
         private async Task LoadLaboratorioOptStatus()
         {
             var latestOptEntry = await _laboratorioOptCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
@@ -101,6 +111,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Método para cargar el estado del laboratorio p1
         private async Task LoadLaboratorioP1Status()
         {
             var latestP1Entry = await _laboratorioCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
@@ -120,6 +131,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Método para actualizar el texto de un Entry en la interfaz
         private void UpdateEntryText(string entryName, string text)
         {
             var entry = _page.FindByName<Entry>(entryName);
@@ -129,6 +141,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Método para actualizar el texto de un Label en la interfaz
         private void UpdateLabelText(string labelName, string text)
         {
             var label = _page.FindByName<Label>(labelName);
@@ -138,6 +151,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Método para actualizar las entradas del ChartView
         private void UpdateChartView(BsonDocument latestP1Entry)
         {
             // Crear una lista de entradas para el ChartView
@@ -223,7 +237,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
-
+        // Método para cambiar la colección en base al nombre del botón
         public async Task ChangeCollection(string nombreBTN)
         {
             if(nombreBTN == "btn1s")

@@ -7,23 +7,26 @@ namespace TFGAndroid.Pages;
 
 public partial class Registro : ContentPage
 {
-    private BBDD _bbdd;
-    ContentPage inicio;
+    private BBDD _bbdd;// Instancia de la base de datos
+    ContentPage inicio;// Página de inicio de sesión
 
+    // Constructor de la clase
     public Registro()
 	{
-		InitializeComponent();
-        _bbdd = new BBDD();
-        inicio = new InicioSesion();
+		InitializeComponent();// Inicializa los componentes visuales de la página
+        _bbdd = new BBDD();// Inicializa la instancia de la base de datos
+        inicio = new InicioSesion();// Crea una instancia de la página de inicio de sesión
     }
 
+    // Método invocado al hacer clic en el botón de iniciar sesión
     private async void OnButtonIniciarClicked(object sender, EventArgs e)
     {
-        var inicio = new InicioSesion();
-        await Navigation.PushAsync(inicio);
+        var inicio = new InicioSesion();// Crea una instancia de la página de inicio de sesión
+        await Navigation.PushAsync(inicio);// Navega hacia la página de inicio de sesión
 
     }
 
+    // Método invocado al hacer clic en el botón de registrarse
     private void OnButtonRegistrarseClicked(object sender, EventArgs e)
     {
         // Obtener los datos del formulario
@@ -80,7 +83,7 @@ public partial class Registro : ContentPage
                         // Mostrar un mensaje de éxito
                         DisplayAlert("Éxito", "Usuario insertado correctamente.", "Aceptar");
 
-                        OnButtonIniciarClicked(sender, e);
+                        OnButtonIniciarClicked(sender, e);// Llama al método de inicio de sesión después de registrar correctamente
                     }
                     catch (Exception ex)
                     {
@@ -92,10 +95,11 @@ public partial class Registro : ContentPage
         }
     }
 
+    // Método para validar si un email tiene una estructura válida
     private bool EsEmailValido(string email)
     {
         // Expresión regular para validar el email
         string patronEmail = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-        return Regex.IsMatch(email, patronEmail);
+        return Regex.IsMatch(email, patronEmail);// Retorna true si el email cumple con el patrón
     }
 }

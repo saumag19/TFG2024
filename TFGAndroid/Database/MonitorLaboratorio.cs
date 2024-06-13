@@ -10,18 +10,20 @@ namespace TFGAndroid.Database
 {
     public class MonitorLaboratorio
     {
-        private readonly IMongoCollection<BsonDocument> _laboratorioOptCollection;
-        private readonly IMongoCollection<BsonDocument> _registroCollection;
+        private readonly IMongoCollection<BsonDocument> _laboratorioOptCollection;// Colección para opciones de laboratorio
+        private readonly IMongoCollection<BsonDocument> _registroCollection;// Colección para registro de cambios
 
-        private IMongoCollection<BsonDocument> _laboratorioCollection;
-        private readonly CancellationTokenSource _cancellationTokenSource;
-        private readonly ContentPage _page;
-        private IMongoDatabase database;
+        private IMongoCollection<BsonDocument> _laboratorioCollection;// Colección para datos de laboratorio seleccionada dinámicamente
+        private readonly CancellationTokenSource _cancellationTokenSource;// Fuente de cancelación para detener el monitoreo
+        private readonly ContentPage _page;// Página de la aplicación donde se actualizan los elementos de la interfaz de usuario
+        private IMongoDatabase database;// Base de datos MongoDB
 
+        // Constructor de la clase MonitorLaboratorio
         public MonitorLaboratorio(ContentPage page)
         {
             var client = new MongoClient("mongodb://root:root@ac-pn6khua-shard-00-00.vprqszh.mongodb.net:27017,ac-pn6khua-shard-00-01.vprqszh.mongodb.net:27017,ac-pn6khua-shard-00-02.vprqszh.mongodb.net:27017/?ssl=true&replicaSet=atlas-a8s0cb-shard-0&authSource=admin&retryWrites=true&w=majority&appName=ProyectoTFG");
             database = client.GetDatabase("ProyectoTFG");
+            // Obtener las colecciones de MongoDB necesarias
             _laboratorioOptCollection = database.GetCollection<BsonDocument>("Laboratorio_opt");
             _laboratorioCollection = database.GetCollection<BsonDocument>("Laboratorio_p1");
             _registroCollection = database.GetCollection<BsonDocument>("Registro");
@@ -30,22 +32,25 @@ namespace TFGAndroid.Database
             _page = page;
         }
 
+        // Método para iniciar el monitoreo continuo de los datos de laboratorio
         public void StartMonitoring()
         {
             Task.Run(async () => await MonitorLoop(_cancellationTokenSource.Token));
             Task.Run(async () => await MonitorLoop2(_cancellationTokenSource.Token));
         }
 
+        // Método para detener el monitoreo de los datos de laboratorio
         public void StopMonitoring()
         {
             _cancellationTokenSource.Cancel();
         }
 
+        // Bucle 1 del monitoreo para las opciones de laboratorio
         private async Task MonitorLoop(CancellationToken cancellationToken)
         {
             while (!cancellationToken.IsCancellationRequested)
             {
-                await LoadLaboratorioOptStatus();
+                await LoadLaboratorioOptStatus();// Cargar el estado actual de las opciones de laboratorio
 
                 // Esperar 1 minuto antes de la siguiente comprobación
                 try
@@ -58,6 +63,7 @@ namespace TFGAndroid.Database
                 }
             }
         }
+        // Bucle 2 del monitoreo para los datos de laboratorio específicos
         private async Task MonitorLoop2(CancellationToken cancellationToken)
         {
             while (!cancellationToken.IsCancellationRequested)
@@ -77,12 +83,14 @@ namespace TFGAndroid.Database
             }
         }
 
+        // Método para cargar y actualizar el estado actual de las opciones de laboratorio
         private async Task LoadLaboratorioOptStatus()
         {
             var latestOptEntry = await _laboratorioOptCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
 
             if (latestOptEntry != null)
             {
+                // Actualizar entradas de la interfaz de usuario con los valores obtenidos
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
                     UpdateEntryText("entry1", latestOptEntry["humedad_semilla"].ToString());
@@ -97,12 +105,14 @@ namespace TFGAndroid.Database
             }
         }
 
+        // Método para cargar y actualizar el estado actual de los datos de laboratorio P1, la collection cambiará según el boton seleccionado
         private async Task LoadLaboratorioP1Status()
         {
             var latestP1Entry = await _laboratorioCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
 
             if (latestP1Entry != null)
             {
+                // Actualizar etiquetas de la interfaz de usuario con los valores obtenidos
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
                     UpdateLabelText("lblHumedad", $"Nivel de humedad: {latestP1Entry["humedad"]}");
@@ -113,6 +123,7 @@ namespace TFGAndroid.Database
             }
         }
 
+        // Método para actualizar el texto de una entrada en la interfaz de usuario
         private void UpdateEntryText(string entryName, string text)
         {
             var entry = _page.FindByName<Entry>(entryName);
@@ -122,6 +133,7 @@ namespace TFGAndroid.Database
             }
         }
 
+        // Método para actualizar el texto de una etiqueta en la interfaz de usuario
         private void UpdateLabelText(string labelName, string text)
         {
             var label = _page.FindByName<Label>(labelName);
@@ -178,6 +190,7 @@ namespace TFGAndroid.Database
             }
         }
 
+        // Método para cambiar dinámicamente la colección de laboratorio actual
         public async Task ChangeCollection(string nombreBTN)
         {
             if(nombreBTN == "btn1s")

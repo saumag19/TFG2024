@@ -9,15 +9,20 @@ namespace HidroponíaTFG.Database
 {
     public class MonitorClimatica
     {
+        // Colecciones de MongoDB
         private readonly IMongoCollection<BsonDocument> _climaticaCollection;
         private readonly IMongoCollection<BsonDocument> _climaticaOptCollection;
         private readonly IMongoCollection<BsonDocument> _climaticaActCollection;
         private readonly IMongoCollection<BsonDocument> _registroCollection;
+
+        // Fuente de token para cancelar las tareas asíncronas
         private readonly CancellationTokenSource _cancellationTokenSource;
+        // Página de contenido
         private readonly ContentPage _page;
 
         public MonitorClimatica(ContentPage page)
         {
+            // Inicializa el cliente MongoDB y obtiene las colecciones necesarias
             var client = new MongoClient("mongodb+srv://root:root@proyectotfg.vprqszh.mongodb.net/?retryWrites=true&w=majority&appName=ProyectoTFG");
             var database = client.GetDatabase("ProyectoTFG");
             _climaticaCollection = database.GetCollection<BsonDocument>("Climatica");
@@ -29,16 +34,19 @@ namespace HidroponíaTFG.Database
             _page = page;
         }
 
+        // Inicia el monitoreo en un hilo separado
         public void StartMonitoring()
         {
             Task.Run(async () => await MonitorLoop(_cancellationTokenSource.Token));
         }
 
+        // Detiene el monitoreo
         public void StopMonitoring()
         {
             _cancellationTokenSource.Cancel();
         }
 
+        // Bucle de monitoreo
         private async Task MonitorLoop(CancellationToken cancellationToken)
         {
             while (!cancellationToken.IsCancellationRequested)
@@ -59,6 +67,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Verifica y actualiza el estado de los botones de la fase climática
         private async Task CheckClimaticaStatus()
         {
             var latestEntry = await _climaticaCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
@@ -78,7 +87,7 @@ namespace HidroponíaTFG.Database
                 });
             }
         }
-
+        // Verifica y actualiza el estado de los entry de la fase climática
         private async Task CheckClimaticaOptStatus()
         {
             var latestEntry = await _climaticaOptCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
@@ -94,6 +103,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Verifica y actualiza el estado de los actuadores de la fase climática
         private async Task CheckClimaticaActStatus()
         {
             var latestEntry = await _climaticaActCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
@@ -122,6 +132,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Actualiza el texto de un botón en la UI
         private void UpdateButtonText(string buttonName, string text)
         {
             var button = _page.FindByName<Button>(buttonName);
@@ -143,6 +154,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Actualiza el texto de una entrada en la UI
         private void UpdateEntryText(string entryName, string text)
         {
             var entry = _page.FindByName<Entry>(entryName);
@@ -152,6 +164,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Guarda los datos climáticos y registra los cambios
         public async Task SaveClimaticaData(string optimoTemperatura, string renovacionAire, string usuario)
         {
             if (string.IsNullOrEmpty(optimoTemperatura) || string.IsNullOrEmpty(renovacionAire) || string.IsNullOrEmpty(usuario))

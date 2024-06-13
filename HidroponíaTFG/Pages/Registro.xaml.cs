@@ -6,22 +6,26 @@ namespace HidroponíaTFG.Pages;
 
 public partial class Registro : ContentPage
 {
-    private BBDD _bbdd;
-    ContentPage inicio;
+    private BBDD _bbdd;// Instancia de la clase BBDD para interactuar con la base de datos
+    ContentPage inicio;// Página de inicio de sesión
+
+    // Constructor de la clase Registro
     public Registro()
 	{
-		InitializeComponent();
-        _bbdd = new BBDD();
-        inicio = new InicioSesion();
+		InitializeComponent();// Inicializa los componentes visuales de la página
+        _bbdd = new BBDD();// Inicializa la instancia de BBDD para operaciones con la base de datos
+        inicio = new InicioSesion();// Crea una instancia de la página de inicio de sesión
     }
 
+    // Método para manejar el evento de clic en el botón de iniciar sesión
     private async void OnButtonIniciarClicked(object sender, EventArgs e)
     {
-        var inicio = new InicioSesion();
-        await Navigation.PushAsync(inicio);
+        var inicio = new InicioSesion(); // Crea una instancia de la página de inicio de sesión
+        await Navigation.PushAsync(inicio);// Navega hacia la página de inicio de sesión
 
     }
 
+    // Método para manejar el evento de clic en el botón de registrar
     private void OnButtonRegistrarseClicked(object sender, EventArgs e)
     {
         // Obtener los datos del formulario
@@ -76,7 +80,7 @@ public partial class Registro : ContentPage
                         // Mostrar un mensaje de éxito
                         DisplayAlert("Éxito", "Usuario insertado correctamente.", "Aceptar");
 
-                        OnButtonIniciarClicked(sender, e);
+                        OnButtonIniciarClicked(sender, e);// Llamar al método de inicio de sesión después del registro
                     }
                     catch (Exception ex)
                     {
@@ -87,10 +91,12 @@ public partial class Registro : ContentPage
             }
         }
     }
+
+    // Método para validar si un correo electrónico tiene una estructura válida
     private bool EsEmailValido(string email)
     {
         // Expresión regular para validar el email
         string patronEmail = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-        return Regex.IsMatch(email, patronEmail);
+        return Regex.IsMatch(email, patronEmail);// Devuelve true si el email coincide con el patrón especificado
     }
 }

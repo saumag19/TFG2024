@@ -7,12 +7,15 @@ namespace HidroponíaTFG.Database
 {
     public class RegistroCambioThread
     {
+        // Colecciones de MongoDB
         private readonly IMongoCollection<BsonDocument> _registroCollection;
         private readonly IMongoCollection<BsonDocument> _climaticaOptCollection;
+        // Información del usuario y valores a actualizar
         private readonly string _usuario;
         private readonly string _optimoTemperatura;
         private readonly string _renovacionAire;
 
+        // Constructor de la clase RegistroCambioThread que inicializa las colecciones de MongoDB y otros campos necesarios
         public RegistroCambioThread(IMongoCollection<BsonDocument> registroCollection, IMongoCollection<BsonDocument> climaticaOptCollection, string usuario, string optimoTemperatura, string renovacionAire)
         {
             _registroCollection = registroCollection;
@@ -22,12 +25,14 @@ namespace HidroponíaTFG.Database
             _renovacionAire = renovacionAire;
         }
 
+        // Método para iniciar el hilo de registro de cambios en las condiciones climáticas
         public void StartClimatica()
         {
             Thread registroThread = new Thread(RegistrarCambios);
             registroThread.Start();
         }
 
+        // Método que registra los cambios en las condiciones climáticas
         private void RegistrarCambios()
         {
             // Este método se ejecutará en un hilo separado

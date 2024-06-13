@@ -7,12 +7,13 @@ namespace HidroponíaTFG.Database
 {
     internal class BBDD
     {
-        private IMongoDatabase _database;
-        private IMongoCollection<BsonDocument> _usuariosCollection;
-        private IMongoCollection<BsonDocument> _registroCollection;
+        private IMongoDatabase _database;// Instancia de la base de datos MongoDB
+        private IMongoCollection<BsonDocument> _usuariosCollection;// Colección de documentos de usuarios
+        private IMongoCollection<BsonDocument> _registroCollection;// Colección de documentos de registros
 
         public BBDD()
         {
+            // Inicializa el cliente MongoDB con la cadena de conexión y obtiene las colecciones
             var client = new MongoClient("mongodb://root:root@ac-pn6khua-shard-00-00.vprqszh.mongodb.net:27017,ac-pn6khua-shard-00-01.vprqszh.mongodb.net:27017,ac-pn6khua-shard-00-02.vprqszh.mongodb.net:27017/?ssl=true&replicaSet=atlas-a8s0cb-shard-0&authSource=admin&retryWrites=true&w=majority&appName=ProyectoTFG");
             _database = client.GetDatabase("ProyectoTFG");
             _usuariosCollection = _database.GetCollection<BsonDocument>("Usuarios");
@@ -21,11 +22,13 @@ namespace HidroponíaTFG.Database
 
         public List<BsonDocument> ObtenerTodosUsuarios()
         {
+            // Devuelve todos los documentos de la colección de usuarios
             return _usuariosCollection.Find(new BsonDocument()).ToList();
         }
 
         public List<string> ObtenerTodosRegistros()
         {
+            // Devuelve todos los documentos de la colección de registros como cadenas de texto
             var registros = _registroCollection.Find(new BsonDocument()).ToList();
             var registrosString = new List<string>();
             foreach (var registro in registros)
@@ -48,6 +51,7 @@ namespace HidroponíaTFG.Database
             }
             else
             {
+                // Cifra la contraseña del usuario 
                 var contraseña = usuario.GetValue("pass").AsString;
                 var contraseñaCifrada = BCrypt.Net.BCrypt.HashPassword(contraseña);
                 usuario.Set("pass", contraseñaCifrada);
@@ -58,32 +62,28 @@ namespace HidroponíaTFG.Database
 
         public void ActualizarUsuario(string nombreOriginal, BsonDocument usuario)
         {
-            // Extract new name and original name
+            // Verifica si un usuario con el nuevo nombre ya existe, excluyendo el usuario actual
             var newNombre = usuario.GetValue("name").ToString();
             var originalNombre = nombreOriginal;
 
-            // Check if a user with the new name exists (excluding the user being modified)
             var filtroNuevoNombre = Builders<BsonDocument>.Filter.Eq("name", newNombre);
             var filtroExcluirUsuarioActual = Builders<BsonDocument>.Filter.Ne("name", originalNombre);
             var filtroCombinado = filtroNuevoNombre & filtroExcluirUsuarioActual;
             var usuarioExistenteConNuevoNombre = _usuariosCollection.Find(filtroCombinado).FirstOrDefault();
 
-            // If the new name exists and is not the original name, prevent the update
             if (usuarioExistenteConNuevoNombre != null)
             {
+                // Si el nuevo nombre ya existe, lanzar una excepción
                 throw new InvalidOperationException("Ya existe un usuario con el mismo nombre.");
             }
-
-            // Perform the update using the original name as the filter
+            // Actualiza el usuario utilizando el nombre original como filtro
             var filtroOriginalNombre = Builders<BsonDocument>.Filter.Eq("name", originalNombre);
             _usuariosCollection.ReplaceOne(filtroOriginalNombre, usuario);
         }
 
-
-
-
         public Usuario ObtenerUsuarioPorNombre(string nombre)
         {
+            // Obtiene un usuario por su nombre
             var filtro = Builders<BsonDocument>.Filter.Eq("name", nombre);
             var usuarioBson = _usuariosCollection.Find(filtro).FirstOrDefault();
 
@@ -92,17 +92,19 @@ namespace HidroponíaTFG.Database
                 return null;
             }
 
-            return BsonToUsuario(usuarioBson);
+            return BsonToUsuario(usuarioBson);// Convierte el BsonDocument a un objeto Usuario
         }
 
         public void EliminarUsuario(string nombre)
         {
+            // Elimina un usuario por su nombre
             var filter = Builders<BsonDocument>.Filter.Eq("name", nombre);
             _usuariosCollection.DeleteOne(filter);
         }
 
         public List<Usuario> GetUsuarios()
         {
+            // Devuelve una lista de objetos Usuario a partir de la colección de usuarios
             var collection = _database.GetCollection<BsonDocument>("Usuarios");
             var bsonUsuarios = collection.Find(new BsonDocument()).ToList();
             var usuarios = bsonUsuarios.Select(bson => BsonToUsuario(bson)).ToList();
@@ -111,6 +113,7 @@ namespace HidroponíaTFG.Database
 
         private Usuario BsonToUsuario(BsonDocument bson)
         {
+            // Convierte un BsonDocument a un objeto Usuario
             return new Usuario(
                 bson["name"].AsString,
                 bson["mail"].AsString,
@@ -120,6 +123,7 @@ namespace HidroponíaTFG.Database
         }
         public bool VerificarUsuario(string nombre, string contraseña)
         {
+            // Verifica las credenciales de un usuario
             var filtro = Builders<BsonDocument>.Filter.Eq("name", nombre);
             var usuario = _usuariosCollection.Find(filtro).FirstOrDefault();
 
@@ -129,9 +133,10 @@ namespace HidroponíaTFG.Database
             }
 
             var contraseñaCifrada = usuario.GetValue("pass").AsString;
-            return BCrypt.Net.BCrypt.Verify(contraseña, contraseñaCifrada);
+            return BCrypt.Net.BCrypt.Verify(contraseña, contraseñaCifrada);// Verifica la contraseña
         }
 
+        // Devuelve registros que coincidan con el término de búsqueda en un campo específico
         public List<string> ObtenerRegistrosFiltrados(string searchTerm)
         {
             var filtro = Builders<BsonDocument>.Filter.Regex("nombreDeTuCampoEnElBSON", new BsonRegularExpression(searchTerm, "i")); // "i" indica insensibilidad a mayúsculas y minúsculas

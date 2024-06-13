@@ -9,15 +9,18 @@ namespace TFGAndroid.Database
 {
     public class MonitorClimatica
     {
+        // Colecciones MongoDB para diferentes tipos de datos climáticos
         private readonly IMongoCollection<BsonDocument> _climaticaCollection;
         private readonly IMongoCollection<BsonDocument> _climaticaOptCollection;
         private readonly IMongoCollection<BsonDocument> _climaticaActCollection;
         private readonly IMongoCollection<BsonDocument> _registroCollection;
-        private readonly CancellationTokenSource _cancellationTokenSource;
-        private readonly ContentPage _page;
+        private readonly CancellationTokenSource _cancellationTokenSource;// Fuente de cancelación para detener el monitoreo
+        private readonly ContentPage _page; // Página de contenido asociada para actualizar la interfaz de usuario
 
+        // Constructor que inicializa las colecciones y la fuente de cancelación
         public MonitorClimatica(ContentPage page)
         {
+            // Configuración de la conexión MongoDB Atlas y obtención de las colecciones
             var client = new MongoClient("mongodb://root:root@ac-pn6khua-shard-00-00.vprqszh.mongodb.net:27017,ac-pn6khua-shard-00-01.vprqszh.mongodb.net:27017,ac-pn6khua-shard-00-02.vprqszh.mongodb.net:27017/?ssl=true&replicaSet=atlas-a8s0cb-shard-0&authSource=admin&retryWrites=true&w=majority&appName=ProyectoTFG");
             var database = client.GetDatabase("ProyectoTFG");
             _climaticaCollection = database.GetCollection<BsonDocument>("Climatica");
@@ -25,40 +28,44 @@ namespace TFGAndroid.Database
             _climaticaActCollection = database.GetCollection<BsonDocument>("Climatica_act");
             _registroCollection = database.GetCollection<BsonDocument>("Registro");
 
-            _cancellationTokenSource = new CancellationTokenSource();
-            _page = page;
+            _cancellationTokenSource = new CancellationTokenSource();// Inicializa la fuente de cancelación
+            _page = page;// Asigna la página de contenido proporcionada
         }
 
+        // Método para iniciar el monitoreo climático
         public void StartMonitoring()
         {
-            Task.Run(async () => await MonitorLoop(_cancellationTokenSource.Token));
+            Task.Run(async () => await MonitorLoop(_cancellationTokenSource.Token));// Ejecuta el bucle de monitoreo en un hilo separado
         }
 
+        // Método para detener el monitoreo climático
         public void StopMonitoring()
         {
-            _cancellationTokenSource.Cancel();
+            _cancellationTokenSource.Cancel();// Cancela la tarea de monitoreo al detener el token de cancelación
         }
 
+        // Bucle de monitoreo que verifica periódicamente los datos climáticos
         private async Task MonitorLoop(CancellationToken cancellationToken)
         {
             while (!cancellationToken.IsCancellationRequested)
             {
-                await CheckClimaticaStatus();
-                await CheckClimaticaOptStatus();
-                await CheckClimaticaActStatus();
+                await CheckClimaticaStatus();// Verifica el estado de los datos climáticos generales
+                await CheckClimaticaOptStatus();// Verifica el estado de los datos climáticos óptimos
+                await CheckClimaticaActStatus();// Verifica el estado de los datos climáticos activos
 
-                // Esperar 1 minuto antes de la siguiente comprobación
+                // Espera 1 minuto antes de la siguiente comprobación, manejando excepciones de cancelación
                 try
                 {
                     await Task.Delay(TimeSpan.FromMinutes(1), cancellationToken);
                 }
                 catch (TaskCanceledException)
                 {
-                    // Ignorar la excepción si la tarea fue cancelada
+                    // Ignora la excepción si la tarea fue cancelada
                 }
             }
         }
 
+        // Método para verificar el estado de los datos climáticos generales
         private async Task CheckClimaticaStatus()
         {
             var latestEntry = await _climaticaCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
@@ -67,6 +74,7 @@ namespace TFGAndroid.Database
             {
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
+                    // Actualiza los botones de la interfaz con los datos climáticos obtenidos
                     UpdateButtonText("ButonZona1", latestEntry["sensor1"].ToString() + "º");
                     UpdateButtonText("ButonZona2", latestEntry["sensor2"].ToString() + "º");
                     UpdateButtonText("ButonZona3", latestEntry["sensor3"].ToString() + "º");
@@ -79,6 +87,7 @@ namespace TFGAndroid.Database
             }
         }
 
+        // Método para verificar el estado de los datos climáticos óptimos
         private async Task CheckClimaticaOptStatus()
         {
             var latestEntry = await _climaticaOptCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
@@ -87,13 +96,14 @@ namespace TFGAndroid.Database
             {
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
-                    // Actualizar los Entry con los valores obtenidos
+                    // Actualiza los Entry de la interfaz con los datos climáticos óptimos obtenidos
                     UpdateEntryText("entry1", latestEntry.GetValue("optimoTemperatura", "").ToString());
                     UpdateEntryText("entry2", latestEntry.GetValue("renovacionAire", "").ToString());
                 });
             }
         }
 
+        // Método para verificar el estado de los datos climáticos activos
         private async Task CheckClimaticaActStatus()
         {
             var latestEntry = await _climaticaActCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
@@ -102,6 +112,7 @@ namespace TFGAndroid.Database
             {
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
+                    // Actualiza los botones de la interfaz con los datos climáticos activos obtenidos
                     UpdateButtonText("acta1", latestEntry.GetValue("acta1", "").ToString());
                     UpdateButtonText("acta2", latestEntry.GetValue("acta2", "").ToString());
 
@@ -122,6 +133,7 @@ namespace TFGAndroid.Database
             }
         }
 
+        // Método para actualizar el texto de los botones en la interfaz de usuario
         private void UpdateButtonText(string buttonName, string text)
         {
             var button = _page.FindByName<Button>(buttonName);
@@ -129,6 +141,7 @@ namespace TFGAndroid.Database
             {
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
+                    // Actualiza el texto del botón según los valores recibidos
                     if (text == "false")
                     {
                         button.Text = "OFF";
@@ -147,38 +160,35 @@ namespace TFGAndroid.Database
         }
 
 
-        private Color GetAppThemeColor(string lightColorKey, string darkColorKey)
-        {
-            var lightColor = (Color)Application.Current.Resources[lightColorKey];
-            var darkColor = (Color)Application.Current.Resources[darkColorKey];
 
-            return Application.Current.RequestedTheme == AppTheme.Dark ? darkColor : lightColor;
-        }
-
+        // Método para actualizar el texto de los Entry en la interfaz de usuario
         private void UpdateEntryText(string entryName, string text)
         {
             var entry = _page.FindByName<Entry>(entryName);
             if (entry != null)
             {
-                entry.Text = text;
+                entry.Text = text;// Actualiza el texto del Entry con el valor recibido
             }
         }
 
+        // Método para guardar los datos climáticos óptimos en la base de datos y registrar cambios
         public async Task SaveClimaticaData(string optimoTemperatura, string renovacionAire, string usuario)
         {
+            // Verifica que los parámetros no sean nulos o vacíos
             if (string.IsNullOrEmpty(optimoTemperatura) || string.IsNullOrEmpty(renovacionAire) || string.IsNullOrEmpty(usuario))
             {
                 throw new ArgumentException("Los parámetros no pueden ser nulos o vacíos.");
             }
 
-            var filter = new BsonDocument(); // Asume que solo hay un documento para actualizar
+            // Filtro para actualizar o insertar los datos climáticos óptimos
+            var filter = new BsonDocument();
             var update = Builders<BsonDocument>.Update
                 .Set("optimoTemperatura", optimoTemperatura)
                 .Set("renovacionAire", renovacionAire);
 
-            var options = new UpdateOptions { IsUpsert = true };
+            var options = new UpdateOptions { IsUpsert = true };// Opciones para la operación de actualización
 
-            // Realizar la actualización
+            // Realiza la actualización en la colección de datos climáticos óptimos
             await _climaticaOptCollection.UpdateOneAsync(filter, update, options);
 
             // Crear y empezar el hilo para registrar cambios

@@ -10,16 +10,18 @@ namespace TFGAndroid.Database
 {
     public class MonitorHidraulica
     {
-        private readonly IMongoCollection<BsonDocument> _hidraulicaCollection;
-        private readonly IMongoCollection<BsonDocument> _hidraulicaOptCollection;
-        private readonly IMongoCollection<BsonDocument> _registroCollection;
-        private readonly CancellationTokenSource _cancellationTokenSource;
-        private readonly ContentPage _page;
+        private readonly IMongoCollection<BsonDocument> _hidraulicaCollection;// Colección para datos hidráulicos
+        private readonly IMongoCollection<BsonDocument> _hidraulicaOptCollection;// Colección para opciones de datos hidráulicos
+        private readonly IMongoCollection<BsonDocument> _registroCollection;// Colección para registro de cambios
+        private readonly CancellationTokenSource _cancellationTokenSource;// Fuente de cancelación para detener el monitoreo
+        private readonly ContentPage _page;// Página de la aplicación donde se actualizan los elementos de la interfaz de usuario
 
+        // Constructor de la clase MonitorHidraulica
         public MonitorHidraulica(ContentPage page)
         {
             var client = new MongoClient("mongodb://root:root@ac-pn6khua-shard-00-00.vprqszh.mongodb.net:27017,ac-pn6khua-shard-00-01.vprqszh.mongodb.net:27017,ac-pn6khua-shard-00-02.vprqszh.mongodb.net:27017/?ssl=true&replicaSet=atlas-a8s0cb-shard-0&authSource=admin&retryWrites=true&w=majority&appName=ProyectoTFG");
             var database = client.GetDatabase("ProyectoTFG");
+            // Obtener las colecciones de MongoDB necesarias
             _hidraulicaCollection = database.GetCollection<BsonDocument>("Hidraulica");
             _hidraulicaOptCollection = database.GetCollection<BsonDocument>("Hidraulica_opt");
             _registroCollection = database.GetCollection<BsonDocument>("Registro");
@@ -29,21 +31,24 @@ namespace TFGAndroid.Database
             _page = page;
         }
 
+        // Método para iniciar el monitoreo continuo de los datos hidráulicos
         public void StartMonitoring()
         {
             Task.Run(async () => await MonitorLoop(_cancellationTokenSource.Token));
         }
 
+        // Método para detener el monitoreo de los datos hidráulicos
         public void StopMonitoring()
         {
             _cancellationTokenSource.Cancel();
         }
 
+        // Bucle principal del monitoreo que se ejecuta continuamente hasta que se solicita la cancelación
         private async Task MonitorLoop(CancellationToken cancellationToken)
         {
             while (!cancellationToken.IsCancellationRequested)
             {
-                await CheckHidraulicaStatus();
+                await CheckHidraulicaStatus();// Verificar el estado actual de los datos hidráulicos
 
                 // Esperar 1 minuto antes de la siguiente comprobación
                 try
@@ -57,13 +62,16 @@ namespace TFGAndroid.Database
             }
         }
 
+        // Método para verificar y actualizar el estado actual de los datos hidráulicos
         private async Task CheckHidraulicaStatus()
         {
+            // Obtener la última entrada de las colecciones de datos hidráulicos y opciones
             var latestEntry = await _hidraulicaCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
             var latestOptEntry = await _hidraulicaOptCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
 
             if (latestEntry != null)
             {
+                // Actualizar etiquetas de la interfaz de usuario con los valores obtenidos
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
                     UpdateLabelText("lblNivelDeposito", "Nivel actual del depósito: " + latestEntry["nivel_deposito"].ToString());
@@ -76,6 +84,7 @@ namespace TFGAndroid.Database
 
             if (latestOptEntry != null)
             {
+                // Actualizar entradas de la interfaz de usuario con los valores obtenidos
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
                     UpdateEntryText("entryNivelDeposito", latestOptEntry["nivel_deposito"].ToString());
@@ -87,6 +96,7 @@ namespace TFGAndroid.Database
             }
         }
 
+        // Método para actualizar el texto de una etiqueta en la interfaz de usuario
         private void UpdateLabelText(string labelName, string text)
         {
             var label = _page.FindByName<Label>(labelName);
@@ -96,6 +106,7 @@ namespace TFGAndroid.Database
             }
         }
 
+        // Método para actualizar el texto de una entrada en la interfaz de usuario
         private void UpdateEntryText(string entryName, string text)
         {
             var entry = _page.FindByName<Entry>(entryName);
@@ -105,20 +116,23 @@ namespace TFGAndroid.Database
             }
         }
 
+        // Método para actualizar las opciones de datos hidráulicos y registrar los cambios
         public async Task UpdateHidraulicaOpt(string field, string newValue, string usuario)
         {
             if (double.TryParse(newValue, out double numericValue))
             {
+                // Definir el filtro y la actualización para la colección de opciones de hidráulica
                 var filter = Builders<BsonDocument>.Filter.Empty;
                 var update = Builders<BsonDocument>.Update.Set(field, numericValue);
                 await _hidraulicaOptCollection.UpdateOneAsync(filter, update, new UpdateOptions { IsUpsert = true });
 
-                // Crear y empezar el hilo para registrar cambios
+                // Crear y empezar un hilo para registrar cambios en el registro
                 var registroCambioThreadHidraulica = new RegistroCambioThreadHidraulica(_registroCollection, _hidraulicaOptCollection, usuario, field, newValue);
                 registroCambioThreadHidraulica.Start();
             }
             else
             {
+                // Mostrar un mensaje de error si el valor no es numérico
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
                     _page.DisplayAlert("Error", "Solo se deben introducir números.", "OK");

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HidroponíaTFG.Models
 {
+    // Clase objeto para almacenar usuarios
     public class Usuario
     {
-        public string Id { get; set; }
         public string Nombre { get; set; }
         public string Mail { get; set; }
         public string Pass { get; set; }

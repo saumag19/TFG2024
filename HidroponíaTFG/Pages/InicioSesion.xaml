@@ -35,27 +35,27 @@
                 Grid.Column="1" 
                 Grid.ColumnSpan="3"
                 Grid.Row="1" 
-                Margin="0,0,0,10"/>
+                Margin="0,0,0,10" SemanticProperties.Description="Nombre de usuario" Completed="OnButtonIniciarClicked"/>
             <Entry x:Name="contrasenaEntry" 
                 Placeholder="Contraseña" 
                 IsPassword="True"
                 Grid.Column="1" 
                 Grid.ColumnSpan="3"
                 Grid.Row="2" 
-                Margin="0,0,0,10"/>
+                Margin="0,0,0,10" SemanticProperties.Description="Contraseña" Completed="OnButtonIniciarClicked"/>
             <Button Text="Iniciar Sesión" 
                 Grid.Column="1"
                 Grid.Row="3"
                 Margin="0,0,10,0"
                 Clicked="OnButtonIniciarClicked"
-                HorizontalOptions="Fill"/>
+                HorizontalOptions="Fill" SemanticProperties.Description="Iniciar Sesión"/>
             <Button 
                 Text="Registrarse"
                 Grid.Column="3"
                 Grid.Row="3"
                 Margin="10,0,0,0" 
                 Clicked="OnButtonRegistrarseClicked"
-                HorizontalOptions="Fill"/>
+                HorizontalOptions="Fill" SemanticProperties.Description="Registrarse"/>
         </Grid>
     </Grid>
 </ContentPage>

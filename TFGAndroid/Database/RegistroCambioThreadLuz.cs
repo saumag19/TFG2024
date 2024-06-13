@@ -7,12 +7,13 @@ namespace TFGAndroid.Database
 {
     internal class RegistroCambioThreadLuz
     {
-        private readonly IMongoCollection<BsonDocument> _registroCollection;
-        private readonly IMongoCollection<BsonDocument> _luminicaOptCollection;
-        private readonly string _usuario;
-        private readonly string _nivel;
-        private readonly string _potencia;
+        private readonly IMongoCollection<BsonDocument> _registroCollection;// Colección para registros de cambios
+        private readonly IMongoCollection<BsonDocument> _luminicaOptCollection;// Colección de configuración óptima de luminica
+        private readonly string _usuario;// Nombre de usuario asociado al cambio
+        private readonly string _nivel;// Nuevo nivel de luminosidad
+        private readonly string _potencia;// Nueva potencia de luminica
 
+        // Constructor de la clase
         public RegistroCambioThreadLuz(IMongoCollection<BsonDocument> registroCollection, IMongoCollection<BsonDocument> luminicaOptCollection, string nivel, string potencia, string usuario)
         {
             _registroCollection = registroCollection;
@@ -22,12 +23,14 @@ namespace TFGAndroid.Database
             _potencia = potencia;
         }
 
+        // Método para iniciar el hilo de registro de cambio
         public void Start()
         {
             Thread registroThread = new Thread(RegistrarCambios);
             registroThread.Start();
         }
 
+        // Método privado para registrar el cambio
         private void RegistrarCambios()
         {
             // Este método se ejecutará en un hilo separado

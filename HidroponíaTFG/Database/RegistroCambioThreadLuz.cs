@@ -7,12 +7,15 @@ namespace HidroponíaTFG.Database
 {
     internal class RegistroCambioThreadLuz
     {
+        // Colecciones de MongoDB
         private readonly IMongoCollection<BsonDocument> _registroCollection;
         private readonly IMongoCollection<BsonDocument> _luminicaOptCollection;
+        // Información del usuario y valores a actualizar
         private readonly string _usuario;
         private readonly string _nivel;
         private readonly string _potencia;
 
+        // Constructor de la clase RegistroCambioThreadLuz que inicializa las colecciones de MongoDB y otros campos necesarios
         public RegistroCambioThreadLuz(IMongoCollection<BsonDocument> registroCollection, IMongoCollection<BsonDocument> luminicaOptCollection, string nivel, string potencia, string usuario)
         {
             _registroCollection = registroCollection;
@@ -22,12 +25,14 @@ namespace HidroponíaTFG.Database
             _potencia = potencia;
         }
 
+        // Método para iniciar el hilo de registro de cambios en la luminica
         public void Start()
         {
             Thread registroThread = new Thread(RegistrarCambios);
             registroThread.Start();
         }
 
+        // Método que realiza el registro del cambio en la colección de configuración de luminica
         private void RegistrarCambios()
         {
             // Este método se ejecutará en un hilo separado

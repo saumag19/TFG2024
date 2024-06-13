@@ -8,6 +8,13 @@
              Appearing="aparece"
              Disappearing="desaparece">
     <Grid BackgroundColor="#79B4BE" >
+
+        <FlyoutBase.ContextFlyout>
+            <MenuFlyout>
+                <MenuFlyoutItem Text="Recargar datos" Clicked="recargar"/>
+            </MenuFlyout>
+        </FlyoutBase.ContextFlyout>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
@@ -47,12 +54,17 @@
 
                             <Label Text="Etapa semilla" Grid.Column="0" Grid.Row="0" Margin="10"/>
 
-                            <Button x:Name="btn1s" Text="nivel 1" Grid.Row="2" Margin="10,5,10,0" Clicked="ClickButon1s" ToolTipProperties.Text="Nivel 1 de la caja sellada para la etapa semilla"/>
-                            <Button x:Name="btn2s" Text="nivel 2" Grid.Row="3" Margin="10,0,10,0" Clicked="ClickButon2s" ToolTipProperties.Text="Nivel 2 de la caja sellada para la etapa semilla"/>
-                            <Button x:Name="btn3s" Text="nivel 3" Grid.Row="4" Margin="10,0,10,0" Clicked="ClickButon3s" ToolTipProperties.Text="Nivel 3 de la caja sellada para la etapa semilla"/>
-                            <Button x:Name="btn4s" Text="nivel 4" Grid.Row="5" Margin="10,0,10,0" Clicked="ClickButon4s" ToolTipProperties.Text="Nivel 4 de la caja sellada para la etapa semilla"/>
-                            <Button x:Name="btn5s" Text="nivel 5" Grid.Row="6" Margin="10,0,10,0" Clicked="ClickButon5s" ToolTipProperties.Text="Nivel 5 de la caja sellada para la etapa semilla"/>
-                            <Button x:Name="btn6s" Text="nivel 6" Grid.Row="7" Margin="10,0,10,5" Clicked="ClickButon6s" ToolTipProperties.Text="Nivel 6 de la caja sellada para la etapa semilla"/>
+                            <Button x:Name="btn1s" Text="nivel 1" Grid.Row="2" Margin="10,5,10,0" Clicked="ClickButon1s" ToolTipProperties.Text="Nivel 1 de la caja sellada para la etapa semilla" SemanticProperties.Description="Nivel 1 de la caja sellada para la etapa semilla"/>
+
+                            <Button x:Name="btn2s" Text="nivel 2" Grid.Row="3" Margin="10,0,10,0" Clicked="ClickButon2s" ToolTipProperties.Text="Nivel 2 de la caja sellada para la etapa semilla" SemanticProperties.Description="Nivel 2 de la caja sellada para la etapa semilla"/>
+
+                            <Button x:Name="btn3s" Text="nivel 3" Grid.Row="4" Margin="10,0,10,0" Clicked="ClickButon3s" ToolTipProperties.Text="Nivel 3 de la caja sellada para la etapa semilla" SemanticProperties.Description="Nivel 3 de la caja sellada para la etapa semilla"/>
+
+                            <Button x:Name="btn4s" Text="nivel 4" Grid.Row="5" Margin="10,0,10,0" Clicked="ClickButon4s" ToolTipProperties.Text="Nivel 4 de la caja sellada para la etapa semilla" SemanticProperties.Description="Nivel 4 de la caja sellada para la etapa semilla"/>
+
+                            <Button x:Name="btn5s" Text="nivel 5" Grid.Row="6" Margin="10,0,10,0" Clicked="ClickButon5s" ToolTipProperties.Text="Nivel 5 de la caja sellada para la etapa semilla" SemanticProperties.Description="Nivel 5 de la caja sellada para la etapa semilla"/>
+                            
+                            <Button x:Name="btn6s" Text="nivel 6" Grid.Row="7" Margin="10,0,10,5" Clicked="ClickButon6s" ToolTipProperties.Text="Nivel 6 de la caja sellada para la etapa semilla" SemanticProperties.Description="Nivel 6 de la caja sellada para la etapa semilla"/>
 
                             <Frame Grid.Row="8" Margin="10" BackgroundColor="#79BEAC" ToolTipProperties.Text="Niveles de los sensores correspondientes al nivel seleccionado">
                                 <Grid>
@@ -80,10 +92,10 @@
                                         </Grid.ColumnDefinitions>
 
 
-                                        <Label x:Name="lblHumedad" Text="Nivel de humedad: X" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center"/>
-                                        <Label x:Name="lblOxigeno" Text="Nivel de oxigeno: X" Grid.Row="2" Grid.Column="1" HorizontalOptions="Center"/>
-                                        <Label x:Name="lblLuz" Text="Nivel de luz: X" Grid.Row="0" Grid.Column="3" HorizontalOptions="Center"/>
-                                        <Label x:Name="lblNutrientes" Text="Nivel de nutrientes: X" Grid.Row="2" Grid.Column="3" HorizontalOptions="Center"/>
+                                        <Label x:Name="lblHumedad" Text="Nivel de humedad: X" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" SemanticProperties.Description="Nivel de humedad"/>
+                                        <Label x:Name="lblOxigeno" Text="Nivel de oxigeno: X" Grid.Row="2" Grid.Column="1" HorizontalOptions="Center" SemanticProperties.Description="Nivel de oxigeno"/>
+                                        <Label x:Name="lblLuz" Text="Nivel de luz: X" Grid.Row="0" Grid.Column="3" HorizontalOptions="Center" SemanticProperties.Description="Nivel de luz"/>
+                                        <Label x:Name="lblNutrientes" Text="Nivel de nutrientes: X" Grid.Row="2" Grid.Column="3" HorizontalOptions="Center" SemanticProperties.Description="Nivel de nutrientes"/>
 
 
                                     </Grid>
@@ -113,12 +125,17 @@
 
                             <Label Text="Etapa plantula" Grid.Column="0" Grid.Row="0" Margin="10"/>
 
-                            <Button x:Name="btn1p" Text="nivel 1" Grid.Row="2" Margin="10,5,10,0" Clicked="ClickButon1p" ToolTipProperties.Text="Nivel 1 de la bandeja flotante para la etapa plantula"/>
-                            <Button x:Name="btn2p" Text="nivel 2" Grid.Row="3" Margin="10,0,10,0" Clicked="ClickButon2p" ToolTipProperties.Text="Nivel 2 de la bandeja flotante para la etapa plantula"/>
-                            <Button x:Name="btn3p" Text="nivel 3" Grid.Row="4" Margin="10,0,10,0" Clicked="ClickButon3p" ToolTipProperties.Text="Nivel 3 de la bandeja flotante para la etapa plantula"/>
-                            <Button x:Name="btn4p" Text="nivel 4" Grid.Row="5" Margin="10,0,10,0" Clicked="ClickButon4p" ToolTipProperties.Text="Nivel 4 de la bandeja flotante para la etapa plantula"/>
-                            <Button x:Name="btn5p" Text="nivel 5" Grid.Row="6" Margin="10,0,10,0" Clicked="ClickButon5p" ToolTipProperties.Text="Nivel 5 de la bandeja flotante para la etapa plantula"/>
-                            <Button x:Name="btn6p" Text="nivel 6" Grid.Row="7" Margin="10,0,10,5" Clicked="ClickButon6p" ToolTipProperties.Text="Nivel 6 de la bandeja flotante para la etapa plantula"/>
+                            <Button x:Name="btn1p" Text="nivel 1" Grid.Row="2" Margin="10,5,10,0" Clicked="ClickButon1p" ToolTipProperties.Text="Nivel 1 de la bandeja flotante para la etapa plantula" SemanticProperties.Description="Nivel 1 de la bandeja flotante para la etapa plantula"/>
+                            
+                            <Button x:Name="btn2p" Text="nivel 2" Grid.Row="3" Margin="10,0,10,0" Clicked="ClickButon2p" ToolTipProperties.Text="Nivel 2 de la bandeja flotante para la etapa plantula" SemanticProperties.Description="Nivel 2 de la bandeja flotante para la etapa plantula"/>
+
+                            <Button x:Name="btn3p" Text="nivel 3" Grid.Row="4" Margin="10,0,10,0" Clicked="ClickButon3p" ToolTipProperties.Text="Nivel 3 de la bandeja flotante para la etapa plantula" SemanticProperties.Description="Nivel 3 de la bandeja flotante para la etapa plantula"/>
+
+                            <Button x:Name="btn4p" Text="nivel 4" Grid.Row="5" Margin="10,0,10,0" Clicked="ClickButon4p" ToolTipProperties.Text="Nivel 4 de la bandeja flotante para la etapa plantula" SemanticProperties.Description="Nivel 4 de la bandeja flotante para la etapa plantula"/>
+                            
+                            <Button x:Name="btn5p" Text="nivel 5" Grid.Row="6" Margin="10,0,10,0" Clicked="ClickButon5p" ToolTipProperties.Text="Nivel 5 de la bandeja flotante para la etapa plantula" SemanticProperties.Description="Nivel 5 de la bandeja flotante para la etapa plantula"/>
+                            
+                            <Button x:Name="btn6p" Text="nivel 6" Grid.Row="7" Margin="10,0,10,5" Clicked="ClickButon6p" ToolTipProperties.Text="Nivel 6 de la bandeja flotante para la etapa plantula" SemanticProperties.Description="Nivel 6 de la bandeja flotante para la etapa plantula"/>
 
                             <Grid Grid.Row="8" >
                                 <Grid.ColumnDefinitions>
@@ -147,18 +164,18 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Text="Nivel de humedad optimos (etapa semilla): " Grid.Row="0" Grid.Column="1" VerticalOptions="Center" ToolTipProperties.Text="Nivel de humedad optimos para la etapa semilla"/>
-                                    <Entry x:Name="entry1" Text="X" Grid.Row="0" Grid.Column="3" VerticalOptions="Center" />
+                                    <Entry x:Name="entry1" Text="X" Grid.Row="0" Grid.Column="3" VerticalOptions="Center" SemanticProperties.Description="Nivel de humedad optimos para la etapa semilla"/>
 
                                     <Label Text="Nivel de oxigeno optimos (etapa semilla): " Grid.Row="1" Grid.Column="1" VerticalOptions="Center" ToolTipProperties.Text="Nivel de oxigeno optimos para la etapa semilla"/>
-                                    <Entry x:Name="entry2" Text="X" Grid.Row="1" Grid.Column="3" VerticalOptions="Center" />
+                                    <Entry x:Name="entry2" Text="X" Grid.Row="1" Grid.Column="3" VerticalOptions="Center" SemanticProperties.Description="Nivel de oxigeno optimos para la etapa semilla"/>
 
                                     <Label Text="Nivel de luz optimos (etapa semilla): " Grid.Row="2" Grid.Column="1" VerticalOptions="Center" ToolTipProperties.Text="Nivel de luz optimos para la etapa semilla"/>
-                                    <Entry x:Name="entry3" Text="X" Grid.Row="2" Grid.Column="3" VerticalOptions="Center" />
+                                    <Entry x:Name="entry3" Text="X" Grid.Row="2" Grid.Column="3" VerticalOptions="Center" SemanticProperties.Description="Nivel de luz optimos para la etapa semilla"/>
 
                                     <Label Text="Nivel de nutrientes optimos (etapa semilla): " Grid.Row="3" Grid.Column="1" VerticalOptions="Center" ToolTipProperties.Text="Nivel de nutrientes optimos para la etapa semilla"/>
-                                    <Entry x:Name="entry4" Text="X" Grid.Row="3" Grid.Column="3" VerticalOptions="Center" />
+                                    <Entry x:Name="entry4" Text="X" Grid.Row="3" Grid.Column="3" VerticalOptions="Center" SemanticProperties.Description="Nivel de nutrientes optimos para la etapa semilla"/>
 
-                                    <Button x:Name="btnAplicar1" Text="Aplicar cambios" Grid.Column="1" Grid.Row="8" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Clicked="AplicarCambiosSemilla" ToolTipProperties.Text="Haz click para aplicar los cambios de niveles optimos en la etapa semilla"/>
+                                    <Button x:Name="btnAplicar1" Text="Aplicar cambios" Grid.Column="1" Grid.Row="8" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Clicked="AplicarCambiosSemilla" ToolTipProperties.Text="Haz click para aplicar los cambios de niveles optimos en la etapa semilla" SemanticProperties.Description="Haz click para aplicar los cambios de niveles optimos en la etapa semilla"/>
 
                                 </Grid>
                                 <Grid Grid.Column="1" Margin="10">
@@ -182,18 +199,18 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Text="Nivel de humedad optimos (etapa plantula): " Grid.Row="0" Grid.Column="1" VerticalOptions="Center" ToolTipProperties.Text="Nivel de humedad optimos para la etapa plantula" />
-                                    <Entry x:Name="entry5" Text="X" Grid.Row="0" Grid.Column="3" VerticalOptions="Center" />
+                                    <Entry x:Name="entry5" Text="X" Grid.Row="0" Grid.Column="3" VerticalOptions="Center" SemanticProperties.Description="Nivel de humedad optimos para la etapa plantula"/>
 
-                                    <Label Text="Nivel de oxigeno optimos (etapa plantula): " Grid.Row="1" Grid.Column="1" VerticalOptions="Center" ToolTipProperties.Text="Nivel de oxigeno optimos para la etapa plantula"/>
-                                    <Entry x:Name="entry6" Text="X" Grid.Row="1" Grid.Column="3" VerticalOptions="Center" />
+                                    <Label Text="Nivel de oxigeno optimos (etapa plantula): " Grid.Row="1" Grid.Column="1" VerticalOptions="Center" ToolTipProperties.Text="Nivel de oxigeno optimos para la etapa plantula" />
+                                    <Entry x:Name="entry6" Text="X" Grid.Row="1" Grid.Column="3" VerticalOptions="Center" SemanticProperties.Description="Nivel de oxigeno optimos para la etapa plantula"/>
 
                                     <Label Text="Nivel de luz optimos (etapa plantula): " Grid.Row="2" Grid.Column="1" VerticalOptions="Center" ToolTipProperties.Text="Nivel de luz optimos para la etapa plantula"/>
-                                    <Entry x:Name="entry7" Text="X" Grid.Row="2" Grid.Column="3" VerticalOptions="Center" />
+                                    <Entry x:Name="entry7" Text="X" Grid.Row="2" Grid.Column="3" VerticalOptions="Center" SemanticProperties.Description="Nivel de luz optimos para la etapa plantula"/>
 
                                     <Label Text="Nivel de nutrientes optimos (etapa plantula): " Grid.Row="3" Grid.Column="1" VerticalOptions="Center" ToolTipProperties.Text="Nivel de nutrientes optimos para la etapa plantula"/>
-                                    <Entry x:Name="entry8" Text="X" Grid.Row="3" Grid.Column="3" VerticalOptions="Center" />
+                                    <Entry x:Name="entry8" Text="X" Grid.Row="3" Grid.Column="3" VerticalOptions="Center" SemanticProperties.Description="Nivel de nutrientes optimos para la etapa plantula"/>
 
-                                    <Button x:Name="btnAplicar2" Text="Aplicar cambios" Grid.Column="1" Grid.Row="8" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Clicked="AplicarCambiosPlantula" ToolTipProperties.Text="Haz click para aplicar los cambios de niveles optimos en la etapa semilla"/>
+                                    <Button x:Name="btnAplicar2" Text="Aplicar cambios" Grid.Column="1" Grid.Row="8" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Clicked="AplicarCambiosPlantula" ToolTipProperties.Text="Haz click para aplicar los cambios de niveles optimos en la etapa semilla" SemanticProperties.Description="Haz click para aplicar los cambios de niveles optimos en la etapa semilla"/>
 
                                 </Grid>
 
@@ -216,7 +233,7 @@
                 <!-- StackLayout para el botón de ocultar el menú -->
                 <StackLayout VerticalOptions="FillAndExpand" >
                     <!-- Botón para ocultar el menú -->
-                    <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumWidthRequest="0" Text="||" Padding="0"  VerticalOptions="FillAndExpand" BackgroundColor="Transparent" />
+                    <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumWidthRequest="0" Text="||" Padding="0"  VerticalOptions="FillAndExpand" BackgroundColor="Transparent" SemanticProperties.Description="Boton para mostrar el menu lateral"/>
                 </StackLayout>
             </StackLayout>
         </Grid>

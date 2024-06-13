@@ -8,9 +8,10 @@ namespace HidroponíaTFG.Pages;
 
 public partial class FaseLaboratorio : ContentPage
 {
-    private MonitorLaboratorio _monitorLaboratorio;
-    private Usuario _usuario;
+    private MonitorLaboratorio _monitorLaboratorio;// Instancia del monitor de laboratorio
+    private Usuario _usuario;// Variable para almacenar información del usuario
 
+    // Arreglo de entradas para los gráficos de ejemplo
     ChartEntry[] entries2 = new[]
         {
             new ChartEntry(456)
@@ -90,12 +91,15 @@ public partial class FaseLaboratorio : ContentPage
             }
         };
     bool toggle = true;
+
+    // Constructor que recibe un usuario al inicializar la página
     public FaseLaboratorio(Usuario usuario)
 	{
-        _usuario = usuario;
-		InitializeComponent();
-        menulateral.setUsuario(_usuario);
+        _usuario = usuario;// Asigna el usuario recibido
+        InitializeComponent();// Inicializa los componentes visuales de la página
+        menulateral.setUsuario(_usuario);// Configura el usuario en el menú lateral
 
+        // Si el tipo de usuario es invitado, deshabilita ciertos botones en la interfaz
         if (usuario.Type == "invit")
         {
             btnAplicar1.IsEnabled = false;
@@ -109,38 +113,44 @@ public partial class FaseLaboratorio : ContentPage
             entry7.IsEnabled = false;
             entry8.IsEnabled = false;
         }
-        
+
+        // Configura el gráfico de tipo HalfRadialGaugeChart con las entradas proporcionadas
         chartView1.Chart = new HalfRadialGaugeChart
         {
             Entries = entries2,
         };
+
+        // Inicializa el monitor de laboratorio asociado a esta página
         _monitorLaboratorio = new MonitorLaboratorio(this, chartView1);
-        _monitorLaboratorio.StartMonitoring();
+        _monitorLaboratorio.StartMonitoring();// Comienza el monitoreo del laboratorio
     }
+    // Método para manejar el evento de mostrar/ocultar el menú lateral
     private async void ToggleMenu(object sender, EventArgs e)
     {
         if (menulateral.IsVisible)
         {
-            menulateral.UnShow("laboratorio");
+            menulateral.UnShow("laboratorio");// Oculta el menú lateral específico para esta sección
         }
         else
         {
-            menulateral.Show("laboratorio");
+            menulateral.Show("laboratorio");// Muestra el menú lateral específico para esta sección
         }
 
     }
 
-
+    // Método para manejar el evento de aparecer nuevamente en la página
     private void aparece(object sender, EventArgs e)
     {
-        _monitorLaboratorio.StartMonitoring();
+        _monitorLaboratorio.StartMonitoring();// Reinicia el monitoreo del laboratorio al aparecer la página
     }
 
+    // Método para manejar el evento de desaparecer de la página
     private void desaparece(object sender, EventArgs e)
     {
-        _monitorLaboratorio.StopMonitoring();
+        _monitorLaboratorio.StopMonitoring();// Detiene el monitoreo del laboratorio al desaparecer la página
     }
 
+    // Método para aplicar cambios en las condiciones de la semilla según lo ingresado por el usuario
     private async void AplicarCambiosSemilla(object sender, EventArgs e)
     {
         await _monitorLaboratorio.UpdateLaboratorioOpt("humedad_semilla", entry1.Text, _usuario.Nombre);
@@ -149,6 +159,7 @@ public partial class FaseLaboratorio : ContentPage
         await _monitorLaboratorio.UpdateLaboratorioOpt("nutrientes_semilla", entry4.Text, _usuario.Nombre);
     }
 
+    // Método para aplicar cambios en las condiciones de la plantula según lo ingresado por el usuario
     private async void AplicarCambiosPlantula(object sender, EventArgs e)
     {
         await _monitorLaboratorio.UpdateLaboratorioOpt("humedad_plantula", entry5.Text, _usuario.Nombre);
@@ -157,6 +168,8 @@ public partial class FaseLaboratorio : ContentPage
         await _monitorLaboratorio.UpdateLaboratorioOpt("nutrientes_plantula", entry8.Text, _usuario.Nombre);
     }
 
+
+    // Métodos para manejar los eventos de click en los botones
     private async void ClickButon1s(object sender, EventArgs e)
     { 
             await _monitorLaboratorio.ChangeCollection("btn1s");
@@ -215,6 +228,11 @@ public partial class FaseLaboratorio : ContentPage
         await _monitorLaboratorio.ChangeCollection("btn6p");
     }
 
+    // Metodo para recargar los datos visibles
+    private async void recargar(object sender, EventArgs e)
+    {
+        aparece(sender, e);
+    }
 
 
 }

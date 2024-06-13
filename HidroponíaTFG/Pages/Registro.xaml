@@ -40,7 +40,8 @@
                 Placeholder="Nombre de usuario" 
                 Margin="0,0,0,10"
                 BackgroundColor="White"
-                HorizontalOptions="FillAndExpand"/>
+                HorizontalOptions="FillAndExpand" 
+                SemanticProperties.Description="Nombre de usuario"/>
             <Entry x:Name="EntryContraseña" 
                 Grid.Column="1" 
                 Grid.ColumnSpan="3"
@@ -49,7 +50,8 @@
                 IsPassword="True" 
                 Margin="0,0,0,10"
                 BackgroundColor="White"
-                HorizontalOptions="FillAndExpand"/>
+                HorizontalOptions="FillAndExpand" 
+                SemanticProperties.Description="Contraseña"/>
             <Entry x:Name="EntryContraseña2" 
                 Grid.Column="1" 
                 Grid.ColumnSpan="3"
@@ -58,7 +60,8 @@
                 IsPassword="True"
                 Margin="0,0,0,10"  
                 BackgroundColor="White"
-                HorizontalOptions="FillAndExpand"/>
+                HorizontalOptions="FillAndExpand" 
+                SemanticProperties.Description="Confirmar contraseña"/>
             <Entry x:Name="EntryEmail"
                 Grid.Column="1" 
                 Grid.ColumnSpan="3"
@@ -66,7 +69,8 @@
                 Placeholder="E-Mail" 
                 Margin="0,0,0,10"   
                 BackgroundColor="White"
-                HorizontalOptions="FillAndExpand"/>
+                HorizontalOptions="FillAndExpand" 
+                SemanticProperties.Description="E-Mail"/>
 
             <Button Text="Inicio de Sesión" 
                 Grid.Column="1" 
@@ -77,7 +81,8 @@
                 Grid.Column="3" 
                 Grid.Row="5"
                 Margin="10,0,0,0" 
-                Clicked="OnButtonRegistrarseClicked"/>
+                Clicked="OnButtonRegistrarseClicked"
+                SemanticProperties.Description="Registrarse"/>
         </Grid>
     </Grid>
 </ContentPage>

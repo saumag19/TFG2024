@@ -5,6 +5,16 @@
              x:Class="HidroponíaTFG.Pages.Administrador"
              Title="Administrador">
     <Grid >
+        
+        <FlyoutBase.ContextFlyout>
+            <MenuFlyout>
+                <MenuFlyoutItem Text="Vaciar formulario" Clicked="BtnVaciarFormulario_Clicked"/>
+                <MenuFlyoutItem Text="Eliminar usuario seleccionado" Clicked="BtnEliminarUsuario_Clicked"/>
+                <MenuFlyoutItem Text="Insertar usuario seleccionado" Clicked="BtnInsertarUsuario_Clicked"/>
+                <MenuFlyoutItem Text="Modificar usuario seleccionado" Clicked="BtnModificarUsuario_Clicked"/>
+            </MenuFlyout>
+        </FlyoutBase.ContextFlyout>
+        
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                 <GradientStop Color="#91D5E1" Offset="0.0" />
@@ -30,8 +40,9 @@
                 </Grid.RowDefinitions>
 
                 <StackLayout Grid.Row="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="20" BackgroundColor="#EBF5FB">
-                    <SearchBar x:Name="searchBar" Placeholder="Buscar usuario..." TextChanged="SearchBar_TextChanged" ToolTipProperties.Text="Escribe aquí la cadena de texto para filtrar los nombres de los usuarios"/>
-                    <ListView x:Name="UsuariosListView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#D6EAF8"  ItemTapped="UsuariosListView_ItemTapped" ToolTipProperties.Text="Estos son los usuarios registrados en la aplicación">
+                    <SearchBar x:Name="searchBar" Placeholder="Buscar usuario..." TextChanged="SearchBar_TextChanged" ToolTipProperties.Text="Escribe aquí la cadena de texto para filtrar los nombres de los usuarios"
+                    SemanticProperties.Description="Escribe aquí la cadena de texto para filtrar los nombres de los usuarios"/>
+                    <ListView x:Name="UsuariosListView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#D6EAF8"  ItemTapped="UsuariosListView_ItemTapped" ToolTipProperties.Text="Estos son los usuarios registrados en la aplicación" SemanticProperties.Description="Estos son los usuarios registrados en la aplicación">
                         <ListView.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>Usuario 1</x:String>
@@ -43,7 +54,7 @@
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
-                                    <Label Text="{Binding}" HorizontalTextAlignment="Center" Margin="0,20,0,20" VerticalTextAlignment="Center" />
+                                    <Label Text="{Binding}" HorizontalTextAlignment="Center" Margin="0,20,0,20" VerticalTextAlignment="Center" SemanticProperties.Description="{Binding}"/>
                                 </ViewCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>
@@ -52,12 +63,12 @@
 
                 </StackLayout>
                 <StackLayout Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="20" BackgroundColor="#EBF5FB">
-                    <SearchBar x:Name="searchBar1" Placeholder="Buscar registro..." TextChanged="SearchBar1_TextChanged" ToolTipProperties.Text="Escribe aquí la cadena de texto para filtrar los registros"/>
-                    <ListView x:Name="UsuariosListView1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#D6EAF8"  ToolTipProperties.Text="Estos son los cambios registrados">
+                    <SearchBar x:Name="searchBar1" Placeholder="Buscar registro..." TextChanged="SearchBar1_TextChanged" ToolTipProperties.Text="Escribe aquí la cadena de texto para filtrar los registros" SemanticProperties.Description="Escribe aquí la cadena de texto para filtrar los registros"/>
+                    <ListView x:Name="UsuariosListView1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#D6EAF8"  ToolTipProperties.Text="Estos son los cambios registrados" SemanticProperties.Description="Estos son los cambios registrados">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
-                                    <Label Text="{Binding}" HorizontalTextAlignment="Center" Margin="0,20,0,20" VerticalTextAlignment="Center" />
+                                    <Label Text="{Binding}" HorizontalTextAlignment="Center" Margin="0,20,0,20" VerticalTextAlignment="Center" SemanticProperties.Description="{Binding}"/>
                                 </ViewCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>
@@ -84,32 +95,32 @@
                 
                 
                     <Label Text="Nombre:" VerticalOptions="Center" Margin="0,0,10,0" Grid.Column="0" Grid.Row="0"/>
-                    <Entry x:Name="EntryNombre" Grid.Column="1" Grid.Row="0" Placeholder="Introduce aquí el nombre " Margin="0,10,0,0" BackgroundColor="#D6EAF8"  />
+                    <Entry x:Name="EntryNombre" Grid.Column="1" Grid.Row="0" Placeholder="Introduce aquí el nombre " Margin="0,10,0,0" BackgroundColor="#D6EAF8"  SemanticProperties.Description="Nombre"/>
 
                     <Label Text="Contraseña:" VerticalOptions="Center" Margin="0,0,10,0" Grid.Column="0" Grid.Row="1"/>
-                    <Entry x:Name="EntryContraseña" Grid.Column="1" Grid.Row="1" Placeholder="Introduce aquí la contraseña " Margin="0,10,0,0" BackgroundColor="#D6EAF8" />
+                    <Entry x:Name="EntryContraseña" Grid.Column="1" Grid.Row="1" Placeholder="Introduce aquí la contraseña " Margin="0,10,0,0" BackgroundColor="#D6EAF8" SemanticProperties.Description="Contraseña"/>
 
                     <Label Text="Mail:" VerticalOptions="Center" Margin="0,0,10,0" Grid.Column="0" Grid.Row="2"/>
-                    <Entry x:Name="EntryEmail" Grid.Column="1" Grid.Row="2" Placeholder="Introduce aquí el correo electronico " Margin="0,10,0,0" BackgroundColor="#D6EAF8" />
+                    <Entry x:Name="EntryEmail" Grid.Column="1" Grid.Row="2" Placeholder="Introduce aquí el correo electronico " Margin="0,10,0,0" BackgroundColor="#D6EAF8" SemanticProperties.Description="Mail"/>
                 </Grid>
                 <Label Text="Tipo de Usuario: " Margin="10,30,10,15" />
                 <StackLayout Orientation="Vertical" Margin="0,5,0,0">
                     <StackLayout Orientation="Horizontal" >
-                        <RadioButton x:Name="InvitadoRadioButton"  GroupName="TipoUsuario" Content="Invitado" ToolTipProperties.Text="El usuario invitado solo podrá observar los datos"/>
+                        <RadioButton x:Name="InvitadoRadioButton"  GroupName="TipoUsuario" Content="Invitado" ToolTipProperties.Text="El usuario invitado solo podrá observar los datos" SemanticProperties.Description="InvitadoRadioButton"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <RadioButton x:Name="JardineroRadioButton"  GroupName="TipoUsuario" Content="Jardinero" ToolTipProperties.Text="El usuario jardinero podrá observar y modificar los datos sobre los sensores"/>
+                        <RadioButton x:Name="JardineroRadioButton"  GroupName="TipoUsuario" Content="Jardinero" ToolTipProperties.Text="El usuario jardinero podrá observar y modificar los datos sobre los sensores" SemanticProperties.Description="JardineroRadioButton"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" >
-                        <RadioButton x:Name="AdministradorRadioButton"  GroupName="TipoUsuario" Content="Administrador" ToolTipProperties.Text="El usuario administrador tiene acceso a todo, observar y cambiar datos tanto de los sensores, como de los usuarios"/>
+                        <RadioButton x:Name="AdministradorRadioButton"  GroupName="TipoUsuario" Content="Administrador" ToolTipProperties.Text="El usuario administrador tiene acceso a todo, observar y cambiar datos tanto de los sensores, como de los usuarios" SemanticProperties.Description="AdministradorRadioButton"/>
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
-                    <Button Text="Insertar Usuario" HorizontalOptions="FillAndExpand" Margin="5" Clicked="BtnInsertarUsuario_Clicked" ToolTipProperties.Text="Haz click para insertar los datos del formulario como un nuevo usuario"/>
-                    <Button Text="Modificar" HorizontalOptions="FillAndExpand" Margin="5" Clicked="BtnModificarUsuario_Clicked" ToolTipProperties.Text="Haz click para modificar los datos del usuario elegido previamente en la lista"/>
-                    <Button Text="Eliminar" HorizontalOptions="FillAndExpand" Margin="5" Clicked="BtnEliminarUsuario_Clicked" ToolTipProperties.Text="Haz click para eliminar el usuario seleccionado previamente en la lista"/>
+                    <Button Text="Insertar Usuario" HorizontalOptions="FillAndExpand" Margin="5" Clicked="BtnInsertarUsuario_Clicked" ToolTipProperties.Text="Haz click para insertar los datos del formulario como un nuevo usuario" SemanticProperties.Description="Insertar Usuario"/>
+                    <Button Text="Modificar" HorizontalOptions="FillAndExpand" Margin="5" Clicked="BtnModificarUsuario_Clicked" ToolTipProperties.Text="Haz click para modificar los datos del usuario elegido previamente en la lista" SemanticProperties.Description="Modificar Usuario"/>
+                    <Button Text="Eliminar" HorizontalOptions="FillAndExpand" Margin="5" Clicked="BtnEliminarUsuario_Clicked" ToolTipProperties.Text="Haz click para eliminar el usuario seleccionado previamente en la lista" SemanticProperties.Description="Eliminar Usuario"/>
                 </StackLayout>
-                <Button x:Name="vaciar" Text="Vaciar Formulario" HorizontalOptions="FillAndExpand" Margin="5" Clicked="BtnVaciarFormulario_Clicked" ToolTipProperties.Text="Haz click para eliminar los datos del formulario"/>
+                <Button x:Name="vaciar" Text="Vaciar Formulario" HorizontalOptions="FillAndExpand" Margin="5" Clicked="BtnVaciarFormulario_Clicked" ToolTipProperties.Text="Haz click para eliminar los datos del formulario" SemanticProperties.Description="Vaciar Formulario"/>
                 
             </StackLayout>
         </Grid>

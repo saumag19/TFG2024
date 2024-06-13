@@ -6,7 +6,7 @@
     <!-- StackLayout para los botones del menú -->
     <StackLayout x:Name="Menu" Margin="15,10,0,10" IsVisible="True">
         <!-- Botones del menú -->
-        <Frame x:Name="boton1"  VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent" IsVisible="true">
+        <Frame x:Name="boton1"  VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent" IsVisible="true" SemanticProperties.Description="Fase Climatica">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -28,7 +28,7 @@
                 <TapGestureRecognizer Tapped="onTapClimatica"/>
             </Frame.GestureRecognizers>
         </Frame>
-        <Frame x:Name="boton2" VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent">
+        <Frame x:Name="boton2" VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent" SemanticProperties.Description="Fase Hidraulica">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -49,7 +49,7 @@
                 <TapGestureRecognizer Tapped="onTapHidraulica"/>
             </Frame.GestureRecognizers>
         </Frame>
-        <Frame x:Name="boton3" VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent">
+        <Frame x:Name="boton3" VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent" SemanticProperties.Description="Fase Laboratorio">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -70,7 +70,7 @@
                 <TapGestureRecognizer Tapped="onTapLaboratorio"/>
             </Frame.GestureRecognizers>
         </Frame>
-        <Frame x:Name="boton4"  VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent">
+        <Frame x:Name="boton4"  VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent" SemanticProperties.Description="Fase Luminica">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -91,7 +91,7 @@
                 <TapGestureRecognizer Tapped="onTapLuminica"/>
             </Frame.GestureRecognizers>
         </Frame>
-        <Frame x:Name="boton5" VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent">
+        <Frame x:Name="boton5" VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent" SemanticProperties.Description="Fase Red">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -112,7 +112,7 @@
                 <TapGestureRecognizer Tapped="onTapRed"/>
             </Frame.GestureRecognizers>
         </Frame>
-        <Frame x:Name="boton6" VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent" IsVisible="true">
+        <Frame x:Name="boton6" VerticalOptions="FillAndExpand" Margin="5" MinimumWidthRequest="{Binding Path=Height, Source={x:Reference boton1}}" BackgroundColor="#32DB97" BorderColor="Transparent" IsVisible="true" SemanticProperties.Description="Zona Administrador">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -137,7 +137,7 @@
                 <TapGestureRecognizer Tapped="onTapAdministrador"/>
             </Frame.GestureRecognizers>
         </Frame>
-        <Button x:Name="btn_cerrar" Margin="5" Text="Cerrar Sesión  Usuario: " BackgroundColor="AliceBlue" Clicked="OnClickCerrarSesion"/>
+        <Button x:Name="btn_cerrar" Margin="5" Text="Cerrar Sesión " BackgroundColor="AliceBlue" Clicked="OnClickCerrarSesion" SemanticProperties.Description="Cerrar Sesión "/>
     </StackLayout>
     
 </ContentView>

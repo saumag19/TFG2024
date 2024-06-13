@@ -8,6 +8,13 @@
              Disappearing="desaparece">
 
     <Grid BackgroundColor="#79B4BE">
+
+        <FlyoutBase.ContextFlyout>
+            <MenuFlyout>
+                <MenuFlyoutItem Text="Recargar datos" Clicked="recargar"/>
+            </MenuFlyout>
+        </FlyoutBase.ContextFlyout>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
@@ -48,14 +55,14 @@
                                 <RowDefinition Height="auto"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
-                            <Button x:Name="btn1" Grid.Row="1" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 1"></Button>
-                            <Button x:Name="btn2" Grid.Row="2" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 2"></Button>
-                            <Button x:Name="btn3" Grid.Row="3" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 3"></Button>
-                            <Button x:Name="btn4" Grid.Row="4" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 4"></Button>
-                            <Button x:Name="btn5" Grid.Row="5" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 5"></Button>
-                            <Button x:Name="btn6" Grid.Row="6" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 6"></Button>
-                            <Button x:Name="btn7" Grid.Row="7" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 7"></Button>
-                            <Button x:Name="btn8" Grid.Row="8" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 8"></Button>
+                            <Button x:Name="btn1" Grid.Row="1" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 1" SemanticProperties.Description="Linea de luz 1"></Button>
+                            <Button x:Name="btn2" Grid.Row="2" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 2" SemanticProperties.Description="Linea de luz 2"></Button>
+                            <Button x:Name="btn3" Grid.Row="3" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 3" SemanticProperties.Description="Linea de luz 3"></Button>
+                            <Button x:Name="btn4" Grid.Row="4" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 4" SemanticProperties.Description="Linea de luz 4"></Button>
+                            <Button x:Name="btn5" Grid.Row="5" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 5" SemanticProperties.Description="Linea de luz 5"></Button>
+                            <Button x:Name="btn6" Grid.Row="6" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 6" SemanticProperties.Description="Linea de luz 6"></Button>
+                            <Button x:Name="btn7" Grid.Row="7" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 7" SemanticProperties.Description="Linea de luz 7"></Button>
+                            <Button x:Name="btn8" Grid.Row="8" Margin="10" VerticalOptions="FillAndExpand" ToolTipProperties.Text="Linea de luz 8" SemanticProperties.Description="Linea de luz 8"></Button>
 
                         </Grid>
 
@@ -82,8 +89,8 @@
                                         <Label Text="POTENCIA POR DEFECTO: " VerticalOptions="CenterAndExpand" ToolTipProperties.Text="Nivel potencia de luz por defecto de las tiras led medido en porcentaje "></Label>
                                         </StackLayout>
                                         <StackLayout Grid.Column="2">
-                                            <Entry x:Name="entry1" Placeholder="X Lux" VerticalOptions="CenterAndExpand"/>
-                                            <Entry x:Name="entry2" Placeholder="X%" VerticalOptions="CenterAndExpand"/>
+                                        <Entry x:Name="entry1" Placeholder="X Lux" VerticalOptions="CenterAndExpand" SemanticProperties.Description="Nivel de luz optimo medido en lux"/>
+                                        <Entry x:Name="entry2" Placeholder="X%" VerticalOptions="CenterAndExpand" SemanticProperties.Description="Nivel potencia de luz por defecto de las tiras led medido en porcentaje"/>
                                         </StackLayout>
                                     </Grid>
 
@@ -92,7 +99,7 @@
 
                                 <!-- Segundo StackLayout -->
                                 <StackLayout Grid.Column="2"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                                <Button x:Name="btn10" Margin="0,0,40,0" Padding="50,10,50,10" Text="Aplicar Cambios" Clicked="AplicarCambios"  ToolTipProperties.Text="Haz click aquí para realizar los cambios en el nivel de luz optimo y la potencia por defecto"></Button>
+                                <Button x:Name="btn10" Margin="0,0,40,0" Padding="50,10,50,10" Text="Aplicar Cambios" Clicked="AplicarCambios"  ToolTipProperties.Text="Haz click aquí para realizar los cambios en el nivel de luz optimo y la potencia por defecto" SemanticProperties.Description="Haz click aquí para realizar los cambios en el nivel de luz optimo y la potencia por defecto"></Button>
                                 </StackLayout>
                             </Grid>
                         <Label Grid.Row="2" Text="Fase encargada del factor luminico cada uno de los botones representa cada linea de luz dentro del container" HorizontalOptions="Center" VerticalOptions="End" />
@@ -111,7 +118,7 @@
                 <!-- StackLayout para el botón de ocultar el menú -->
                 <StackLayout VerticalOptions="FillAndExpand" >
                     <!-- Botón para ocultar el menú -->
-                    <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumWidthRequest="0" Text="||" Padding="0"  VerticalOptions="FillAndExpand" BackgroundColor="Transparent" />
+                    <Button x:Name="Btn_Menu" Clicked="ToggleMenu" MinimumWidthRequest="0" Text="||" Padding="0"  VerticalOptions="FillAndExpand" BackgroundColor="Transparent" SemanticProperties.Description="Boton para mostrar el menu lateral"/>
                 </StackLayout>
             </StackLayout>
         </Grid>

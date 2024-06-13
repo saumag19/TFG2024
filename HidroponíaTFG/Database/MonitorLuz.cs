@@ -12,12 +12,16 @@ namespace HidroponíaTFG.Database
 {
     public class MonitorLuz
     {
+        // Colecciones de MongoDB
         private readonly IMongoCollection<BsonDocument> _luzCollection;
         private readonly IMongoCollection<BsonDocument> _luzOptCollection;
         private readonly IMongoCollection<BsonDocument> _registroCollection;
+        // Fuente de token para cancelar las tareas asíncronas
         private readonly CancellationTokenSource _cancellationTokenSource;
+        // Página de contenido
         private readonly ContentPage _page;
 
+        // Constructor de la clase MonitorLuz que inicializa las colecciones de MongoDB y otros campos necesarios
         public MonitorLuz(ContentPage page)
         {
             var client = new MongoClient("mongodb+srv://root:root@proyectotfg.vprqszh.mongodb.net/?retryWrites=true&w=majority&appName=ProyectoTFG");
@@ -30,16 +34,19 @@ namespace HidroponíaTFG.Database
             _page = page;
         }
 
+        // Método para iniciar el monitoreo de la luz en un bucle asíncrono
         public void StartMonitoring()
         {
             Task.Run(async () => await MonitorLoop(_cancellationTokenSource.Token));
         }
 
+        // Método para detener el monitoreo de la luz
         public void StopMonitoring()
         {
             _cancellationTokenSource.Cancel();
         }
 
+        // Bucle principal de monitoreo que verifica el estado de la luz y carga el estado óptimo de luz
         private async Task MonitorLoop(CancellationToken cancellationToken)
         {
             while (!cancellationToken.IsCancellationRequested)
@@ -59,6 +66,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Método para verificar el estado actual de la luz y actualizar la interfaz de usuario
         private async Task CheckLuzStatus()
         {
             var latestEntry = await _luzCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
@@ -79,6 +87,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
+        // Método para cargar el estado óptimo de luz y actualizar la interfaz de usuario
         private async Task LoadLuzOptStatus()
         {
             var latestOptEntry = await _luzOptCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
@@ -98,8 +107,7 @@ namespace HidroponíaTFG.Database
             }
         }
 
-        private readonly SemaphoreSlim _semaphore = new SemaphoreSlim(1);
-
+        // Método para actualizar el estado óptimo de luz en la base de datos y registrar los cambios
 
         public async Task UpdateLuzOptStatus(string nivel, string potencia, Usuario usuario)
         {
@@ -129,7 +137,7 @@ namespace HidroponíaTFG.Database
         }
 
 
-
+        // Método para actualizar el texto de un botón en la interfaz de usuario
         private void UpdateButtonText(string buttonName, string text)
         {
             var button = _page.FindByName<Button>(buttonName);

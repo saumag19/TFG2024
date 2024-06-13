@@ -12,17 +12,19 @@ namespace TFGAndroid.Database
 {
     public class MonitorLuz
     {
-        private readonly IMongoCollection<BsonDocument> _luzCollection;
-        private readonly IMongoCollection<BsonDocument> _luzOptCollection;
-        private readonly IMongoCollection<BsonDocument> _registroCollection;
+        private readonly IMongoCollection<BsonDocument> _luzCollection;// Colección para datos de luminosidad
+        private readonly IMongoCollection<BsonDocument> _luzOptCollection;// Colección para opciones de luminosidad
+        private readonly IMongoCollection<BsonDocument> _registroCollection;// Colección para registro de cambios
 
-        private readonly CancellationTokenSource _cancellationTokenSource;
-        private readonly ContentPage _page;
+        private readonly CancellationTokenSource _cancellationTokenSource;// Fuente de cancelación para detener el monitoreo
+        private readonly ContentPage _page;// Página de la aplicación donde se actualizan los elementos de la interfaz de usuario
 
+        // Constructor de la clase MonitorLuz
         public MonitorLuz(ContentPage page)
         {
             var client = new MongoClient("mongodb://root:root@ac-pn6khua-shard-00-00.vprqszh.mongodb.net:27017,ac-pn6khua-shard-00-01.vprqszh.mongodb.net:27017,ac-pn6khua-shard-00-02.vprqszh.mongodb.net:27017/?ssl=true&replicaSet=atlas-a8s0cb-shard-0&authSource=admin&retryWrites=true&w=majority&appName=ProyectoTFG");
             var database = client.GetDatabase("ProyectoTFG");
+            // Obtener las colecciones de MongoDB necesarias
             _luzCollection = database.GetCollection<BsonDocument>("Luminica");
             _luzOptCollection = database.GetCollection<BsonDocument>("Luminica_opt");
             _registroCollection = database.GetCollection<BsonDocument>("Registro");
@@ -32,22 +34,25 @@ namespace TFGAndroid.Database
             _page = page;
         }
 
+        // Método para iniciar el monitoreo continuo de los datos de luminosidad y opciones
         public void StartMonitoring()
         {
             Task.Run(async () => await MonitorLoop(_cancellationTokenSource.Token));
         }
 
+        // Método para detener el monitoreo de los datos de luminosidad y opciones
         public void StopMonitoring()
         {
             _cancellationTokenSource.Cancel();
         }
 
+        // Bucle principal del monitoreo para los datos de luminosidad
         private async Task MonitorLoop(CancellationToken cancellationToken)
         {
             while (!cancellationToken.IsCancellationRequested)
             {
-                await CheckLuzStatus();
-                await LoadLuzOptStatus();
+                await CheckLuzStatus();// Verificar y actualizar el estado actual de los datos de luminosidad
+                await LoadLuzOptStatus();// Cargar el estado actual de las opciones de luminosidad
 
                 // Esperar 1 minuto antes de la siguiente comprobación
                 try
@@ -61,12 +66,14 @@ namespace TFGAndroid.Database
             }
         }
 
+        // Método para verificar y actualizar el estado actual de los datos de luminosidad
         private async Task CheckLuzStatus()
         {
             var latestEntry = await _luzCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
 
             if (latestEntry != null)
             {
+                // Actualizar botones de la interfaz de usuario con los valores obtenidos
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
                     UpdateButtonText("btn1", "Nivel de luz en linea 1: " + latestEntry["nivel1"].ToString());
@@ -90,12 +97,14 @@ namespace TFGAndroid.Database
             }
         }
 
+        // Método para cargar y actualizar el estado actual de las opciones de luminosidad
         private async Task LoadLuzOptStatus()
         {
             var latestOptEntry = await _luzOptCollection.Find(new BsonDocument()).Sort("{_id: -1}").FirstOrDefaultAsync();
 
             if (latestOptEntry != null)
             {
+                // Actualizar entradas de la interfaz de usuario con los valores obtenidos
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
                     var entry1 = _page.FindByName<Entry>("entry1");
@@ -109,6 +118,7 @@ namespace TFGAndroid.Database
             }
         }
 
+        // Método para actualizar el estado de las opciones de luminosidad en la base de datos
         public async Task UpdateLuzOptStatus(string nivel, string potencia, Usuario usuario)
         {
             var filter = Builders<BsonDocument>.Filter.Empty;
@@ -137,6 +147,7 @@ namespace TFGAndroid.Database
         }
 
 
+        // Método para actualizar el texto de un botón en la interfaz de usuario
         private void UpdateButtonText(string buttonName, string text)
         {
             var button = _page.FindByName<Button>(buttonName);
