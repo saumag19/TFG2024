@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\registro.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\database\\registrocambiothreadluz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:database\\registrocambiothreadluz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\pages\\menulateral.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:pages\\menulateral.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -45,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\database\\registrocambiothreadluz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|solutionrelative:database\\registrocambiothreadluz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B620885F-0C40-4D11-B245-BC3F9B3A61CB}|TFGAndroid.csproj|c:\\users\\samuelarribasgallart\\desktop\\samproyect\\tfgandroid\\database\\registrocambiothreadlaboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -153,24 +153,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 338,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "FaseHidraulica.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseHidraulica.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\FaseHidraulica.xaml.cs",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseHidraulica.xaml.cs",
-              "RelativeToolTip": "Pages\\FaseHidraulica.xaml.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAcwFkAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T11:49:53.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "FaseLaboratorio.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseLaboratorio.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\FaseLaboratorio.xaml.cs",
@@ -178,12 +165,11 @@
               "RelativeToolTip": "Pages\\FaseLaboratorio.xaml.cs",
               "ViewState": "AQIAAIoAAAAAAAAAAAAAAFAAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T15:26:57.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T15:26:57.262Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FaseLuminica.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseLuminica.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\FaseLuminica.xaml.cs",
@@ -191,12 +177,11 @@
               "RelativeToolTip": "Pages\\FaseLuminica.xaml.cs",
               "ViewState": "AQIAADgAAAAAAAAAAAAgwFEAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T10:56:26.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T10:56:26.452Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FaseRed.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseRed.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\FaseRed.xaml.cs",
@@ -204,12 +189,11 @@
               "RelativeToolTip": "Pages\\FaseRed.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T08:48:54.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T08:48:54.76Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "InicioSesion.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\InicioSesion.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\InicioSesion.xaml.cs",
@@ -217,12 +201,11 @@
               "RelativeToolTip": "Pages\\InicioSesion.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T07:33:57.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T07:33:57.452Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MenuLateral.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\MenuLateral.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\MenuLateral.xaml.cs",
@@ -230,8 +213,7 @@
               "RelativeToolTip": "Pages\\MenuLateral.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T11:22:02.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T11:22:02.931Z"
             },
             {
               "$type": "Document",
@@ -241,14 +223,39 @@
               "RelativeDocumentMoniker": "Pages\\Registro.xaml.cs",
               "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\Registro.xaml.cs",
               "RelativeToolTip": "Pages\\Registro.xaml.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAmwAkAAAA3AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T08:53:35.976Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegistroCambioThreadLuz.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\RegistroCambioThreadLuz.cs",
+              "RelativeDocumentMoniker": "Database\\RegistroCambioThreadLuz.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\RegistroCambioThreadLuz.cs",
+              "RelativeToolTip": "Database\\RegistroCambioThreadLuz.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwCAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T09:34:55.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "FaseHidraulica.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseHidraulica.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\FaseHidraulica.xaml.cs",
+              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseHidraulica.xaml.cs",
+              "RelativeToolTip": "Pages\\FaseHidraulica.xaml.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAcwFkAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T11:49:53.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "FaseHidraulica.xaml",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseHidraulica.xaml",
               "RelativeDocumentMoniker": "Pages\\FaseHidraulica.xaml",
@@ -256,12 +263,11 @@
               "RelativeToolTip": "Pages\\FaseHidraulica.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-05T11:35:08.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T11:35:08.984Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "FaseClimatica.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\FaseClimatica.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\FaseClimatica.xaml.cs",
@@ -269,12 +275,11 @@
               "RelativeToolTip": "Pages\\FaseClimatica.xaml.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAowDgAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T09:00:10.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T09:00:10.711Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Administrador.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Pages\\Administrador.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\Administrador.xaml.cs",
@@ -282,8 +287,7 @@
               "RelativeToolTip": "Pages\\Administrador.xaml.cs",
               "ViewState": "AQIAAGUBAAAAAAAAAAAkwHQBAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T11:27:36.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T11:27:36.889Z"
             },
             {
               "$type": "Document",
@@ -311,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
@@ -320,18 +324,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T07:30:30.777Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RegistroCambioThreadLuz.cs",
-              "DocumentMoniker": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\RegistroCambioThreadLuz.cs",
-              "RelativeDocumentMoniker": "Database\\RegistroCambioThreadLuz.cs",
-              "ToolTip": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFGAndroid\\Database\\RegistroCambioThreadLuz.cs",
-              "RelativeToolTip": "Database\\RegistroCambioThreadLuz.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAwwCAAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T09:34:55.303Z"
             },
             {
               "$type": "Document",
@@ -521,8 +513,7 @@
               "RelativeToolTip": "Pages\\FaseLaboratorio.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-06T10:36:59.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T10:36:59.483Z"
             },
             {
               "$type": "Document",
