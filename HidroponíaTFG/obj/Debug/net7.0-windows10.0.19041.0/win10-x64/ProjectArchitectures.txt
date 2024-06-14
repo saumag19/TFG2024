@@ -1,1 +1,1 @@
-C:\Users\SamuelArribasGallart\Desktop\SamProyect\HidroponíaTFG\HidroponiaTFG.csproj;x64
+C:\Users\sauma\OneDrive\Escritorio\git tfg\TFG2024\HidroponíaTFG\HidroponiaTFG.csproj;x64

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\HidroponíaTFG\\HidroponiaTFG.csproj": {}
+    "C:\\Users\\sauma\\OneDrive\\Escritorio\\git tfg\\TFG2024\\HidroponíaTFG\\HidroponiaTFG.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\HidroponíaTFG\\HidroponiaTFG.csproj": {
+    "C:\\Users\\sauma\\OneDrive\\Escritorio\\git tfg\\TFG2024\\HidroponíaTFG\\HidroponiaTFG.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\HidroponíaTFG\\HidroponiaTFG.csproj",
+        "projectUniqueName": "C:\\Users\\sauma\\OneDrive\\Escritorio\\git tfg\\TFG2024\\HidroponíaTFG\\HidroponiaTFG.csproj",
         "projectName": "HidroponiaTFG",
-        "projectPath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\HidroponíaTFG\\HidroponiaTFG.csproj",
-        "packagesPath": "C:\\Users\\SamuelArribasGallart\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SamuelArribasGallart\\Desktop\\SamProyect\\TFG2024\\HidroponíaTFG\\obj\\",
+        "projectPath": "C:\\Users\\sauma\\OneDrive\\Escritorio\\git tfg\\TFG2024\\HidroponíaTFG\\HidroponiaTFG.csproj",
+        "packagesPath": "C:\\Users\\sauma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sauma\\OneDrive\\Escritorio\\git tfg\\TFG2024\\HidroponíaTFG\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SamuelArribasGallart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sauma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

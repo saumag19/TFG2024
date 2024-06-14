@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HidroponiaTFG")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b47a3c249ef8c9ce2847e51ae2dab0bf01f84884")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+20267de2bed9d46062214b057e716276a90b44d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("HidroponiaTFG")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HidroponiaTFG")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

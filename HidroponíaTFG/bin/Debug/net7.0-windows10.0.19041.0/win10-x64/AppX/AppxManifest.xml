@@ -7,7 +7,7 @@
 
     Para obtener más información acerca de los archivos de manifiesto del paquete, vea http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="b3964ed7-420a-4349-8e14-bb4087b65f75" Publisher="CN=SamuelArribasGallarte" Version="0.0.5.0" ProcessorArchitecture="x64" />
+  <Identity Name="b3964ed7-420a-4349-8e14-bb4087b65f75" Publisher="CN=SamuelArribasGallarte" Version="1.0.6.0" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="152FCACF-C292-46A2-9820-3F0EA8F4DAFE" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>HidroponíaTFG</DisplayName>
